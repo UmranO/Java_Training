@@ -7,8 +7,8 @@ public class StudentInfo {
         // DataType variableName = Data
 
         /*
-        String studentName = "Abidullah",
-                school_nam = "Cydeo",
+        String studentName = "Abidullah",   //Multiple variables of same type: use comma after the 1st and 2nd variable
+                school_nam = "Cydeo",       //and put ; after the last variable is assigned.
                 grade_level = "Mid Level JD";
         int num1 = 100, num2 = 200, num3 =300;
         */
