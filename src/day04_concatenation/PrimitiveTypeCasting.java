@@ -43,13 +43,15 @@ public class PrimitiveTypeCasting {
 
         int num = 500;
 
-        byte result = (byte) num;  // explicit casting
+        byte result = (byte) num;  // explicit casting but the num's value can't fit into byte's range
+                                   // so it will give another number after binary calculations.
+                                   // make sure that the larger #'s value fits to the maller primitive's range
 
 
         System.out.println(result);
 
 
-        int r = 50000;
+        int r = 50000;            // explicit casting but the int r's value can't fit into short's range
 
         short t = (short) r;
 
