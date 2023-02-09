@@ -9,11 +9,11 @@ public class AritmeticOperators {
 
         System.out.println(50 / 6);
 
-        System.out.println(50 / 6.0);
+        System.out.println(50 / 6.0);  //Data type of the numerator and denominator matters in Java
 
-        System.out.println(50.0 / 6);
+        System.out.println(50.0 / 6);  //Data type of the numerator and denominator matters in Java
 
-        System.out.println(50d / 6);
+        System.out.println(50d / 6);   //Data type of the numerator and denominator matters in Java
 
         System.out.println( (int) (2.5 / 0.5) );
 
