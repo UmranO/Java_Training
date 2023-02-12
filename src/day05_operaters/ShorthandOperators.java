@@ -41,6 +41,45 @@ public class ShorthandOperators {
         balance -= 5000;
 
         System.out.println("balance = " + balance);
+        System.out.println("--------------------------------------");
+
+        double salary = 45000;
+
+        salary *= 2;  // salary = 45000 * 2
+
+        System.out.println(salary);
+
+        salary *= 3;
+
+        System.out.println(salary);
+
+        System.out.println("--------------------------------------");
+
+        double eth = 4 ;
+
+        eth *= 250;
+
+        System.out.println("eth = " + eth);
+
+        eth /= 2;       //find the half and assign it back to eth
+
+        System.out.println("eth = " + eth);
+
+        System.out.println("------------------------------------------");
+
+        System.out.println("salary = " + salary);
+
+        salary /= 2;
+
+        System.out.println(salary);
+
+        System.out.println("------------------------------------------");
+
+        int b = 39;
+
+        b %= 7;  // b = 39 % 7
+
+        System.out.println(b);
 
 
     }
