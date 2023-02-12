@@ -1,4 +1,4 @@
-package day05_operaters;
+package day05_operators;
 
 public class RelationalOperators2 {
 
