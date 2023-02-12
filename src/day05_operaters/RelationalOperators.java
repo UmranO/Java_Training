@@ -21,6 +21,23 @@ public class RelationalOperators {
 
         System.out.println("---------------------------------");
 
+        int age = 21;
+
+        boolean eligibleToBuyAlcohol =  age >= 21;
+
+        System.out.println(eligibleToBuyAlcohol);
+
+        boolean eligibleToVote =  age >= 18;
+
+        System.out.println(eligibleToVote);
+
+        System.out.println("-------------------------------------------");
+
+        System.out.println( 100 > 100); // false
+        System.out.println( 100 >= 100); // true
+        System.out.println(100 >= 85); // true
+
+
 
     }
 }
