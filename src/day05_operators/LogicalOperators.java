@@ -23,6 +23,24 @@ public class LogicalOperators {
 
         System.out.println(eligibleToVote);
 
+        System.out.println("-----------------------------------------------------");
+
+        country = "Mexico";
+
+        boolean nativeEnglishSpeaker =  country == "Canada" || country == "USA" || country == " UK" || country == "Australia";
+        //                                false             ||       false      ||   false          ||   true
+
+        System.out.println("nativeEnglishSpeaker = " + nativeEnglishSpeaker);
+
+        System.out.println("-----------------------------------------------------");
+
+        String answer = "maybe";
+
+        boolean validAnswer =  answer == "yes" || answer == "no";
+
+        System.out.println(validAnswer);
+
+
 
     }
 
