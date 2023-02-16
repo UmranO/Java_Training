@@ -18,8 +18,9 @@ public class EvenlyDivisible {
         /*
         boolean isDivisibleBy6 = number % 6 == 0;
             // if the remainder of the number divided by 6 is equal to zero, then it's evenly divisible by 6
-     //   boolean isDivisibleBy6 =  isDivisibleBy2 && isDivisibleBy3;
-                // if a number is evenly divisible by both 2 & 3, then the number is evenly divisible by 6
+
+        //boolean isDivisibleBy6 =  isDivisibleBy2 && isDivisibleBy3;
+            // if a number is evenly divisible by both 2 & 3, then the number is evenly divisible by 6
         */
 
         System.out.println(number + " is divisible by 2: " + isDivisibleBy2);
@@ -41,4 +42,7 @@ public class EvenlyDivisible {
                 65 is divisible by 3: false
                 65 is divisible by 5: true
             Evenly Divisible ==> remainder is zero
+
+            Expected solution check Individually the number is divisible by separetely not a number should be evenly
+            divisible by each
  */
