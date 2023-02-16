@@ -41,4 +41,5 @@ public class IfStatementsIntro {
     }
 }
 
-   // If no conditions it will always get executed
+// If no conditions it will always get executed
+// either create boolean expression 1st then if statement or use the boolean expresssion directly in the if statement
