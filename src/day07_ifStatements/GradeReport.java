@@ -15,7 +15,7 @@ public class GradeReport {
                                                       //that 's why not mentioned in the following cases
         else if(score>= 70){grade='C';}               //false: score < 70  false condition of this block will be
                                                       //automatically given to the follwing block in a multibranch if
-        else if(score>= 60){grade='D';}   //false: score < 60
+        else if(score>= 60){grade='D';}               //false: score < 60
 
         else{grade='F';}
 
@@ -28,8 +28,8 @@ public class GradeReport {
         String result1="Your grade is ";
 
         if (score1>=90){result1+='A';}
-        else if(score1>=80 && score1<90){result1+='B';}
-        else if(score1 >= 70 && score1<80){result1+='C';}
+        else if (score1 >= 80 && score1<90){result1+='B';}
+        else if (score1 >= 70 && score1<80){result1+='C';}
         else if (score1 >= 60 && score1<70){result1+='D';}
         else{result1+='F';}
 
