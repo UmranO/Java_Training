@@ -29,6 +29,23 @@ public class TernaryIntro3 {
 // 1st you have to give the precondition and its else block
 //Then inside this precondition you have to give the conditions that needs to be created under this if block.
 
+        System.out.println("----------------------------------------");
+
+        int n = 1;
+
+        String day=(n>=1 && n<=7)?                                //Precondition
+
+                (n==1)?"Mon" :(n==2)?"Tue" :(n==3)?"Wed" :(n==4)?"Thu" :(n==5)?"Fri" :(n==6)?"Sat" :"Sun"
+
+                   :"Invalid day";                                //else block of the Precondition
+
+        System.out.println(day);
+
+
+
+
+
+
 
     }
 }
