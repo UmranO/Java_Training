@@ -49,7 +49,14 @@ public class TernariesIntro2 {
 
         System.out.println(day);
 
+        System.out.println("------------------------------------------------");
 
+        int num = 10; // 1~12
 
+        String month= (num==1)? "Jan" :(num==2)? "Feb" :(num==3)? "Mar" :(num==4)? "Apr" :(num==5)? "May"
+                :(num==6)? "Jun":(num==7)? "Jul":(num==8)? "Aug":(num==9)? "Sep":(num==10)? "Oct"
+                :(num==11)? "Nov" :"Dec";
+
+        System.out.println(month);
     }
 }
