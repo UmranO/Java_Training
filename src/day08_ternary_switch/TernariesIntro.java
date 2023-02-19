@@ -14,12 +14,12 @@ public class TernariesIntro {
 
         System.out.println(result2);
 
-        System.out.println("-Ternary Version---------------------------------------------------");
+        System.out.println("-Ternary Version-------------------------------------");
 
         String result3=(score>=60)? "Passed" : "Failed";
         System.out.println(result3);
 
-        System.out.println("----------------------------------------------------");
+        System.out.println("------------------------------------------------------------------");
 
         int age = 34;
 
