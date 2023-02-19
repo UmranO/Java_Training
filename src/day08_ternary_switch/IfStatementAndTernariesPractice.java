@@ -17,5 +17,18 @@ public class IfStatementAndTernariesPractice {
         }
         System.out.println(resultGrade);
 
+
+//-----All expressed with ternaries
+        int value = 200;
+        String g=(value >= 0 && value <= 100)?
+
+                (value >= 90) ?"A" :(value >= 80)? "B" :(value >= 70)? "C" :(value >= 60)? "D":"F"
+
+                :"Invalid Score";
+
+        System.out.println(g);
+
+
+
     }
 }
