@@ -1,6 +1,6 @@
 package day08_ternary_switch;
 
-public class Months {
+public class SwitchStatementMonths {
     public static void main(String[] args){
 
         int nu = 14;
