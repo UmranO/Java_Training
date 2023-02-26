@@ -50,7 +50,7 @@ public class StringMethods1 {
 
         System.out.println(f +" : "+l);
 
-        System.out.println("--------------------------------------------------");
+        System.out.println("----equals()----------------------------------------");
 
         String name1 = "Umran";
         String name2 = new String("Umran");
@@ -73,7 +73,8 @@ public class StringMethods1 {
         System.out.println( r1.equals(r3) ); //true
         System.out.println( r2.equals(r3) ); // true
 
-        System.out.println("------------------------------------------------------");
+        System.out.println("----Scanner-input is not string literal, it will be creatyed by using new keword so always " +
+                                                                         "use equals()-------------------------------");
 
         Scanner input = new Scanner(System.in);
 
