@@ -73,7 +73,7 @@ public class StringMethods2 {
         System.out.println(domain);
 
         //----------------------------------------
-//M-----------------------------------------------
+//M--------------------------------
         String sentence6 = "I love Java programming";
 
         // String r1 = sentence6.substring(7, sentence6.length());
@@ -82,7 +82,7 @@ public class StringMethods2 {
 
         System.out.println(r1);
 
-//UO----------------------------------------------
+//UO-------------------------------
         sentence6 = "I love Java programming";                           // create a substring "Java programming"
 
         sentence6=sentence6.substring(sentence6.indexOf("Java programming"));
@@ -91,9 +91,16 @@ public class StringMethods2 {
 
         System.out.println("------------------------------------");
 
+        // create the substring "Monday" from sentence7. DO NOT count any index numbers
+
         String sentence7 = "Today is Sunday, Tomorrow is Monday";
 
+        String tomorrow  = sentence7.substring( sentence7.lastIndexOf(" ") + 1 );    //M
+        String tomorrow1 = sentence7.substring(sentence7.lastIndexOf("Monday"));               //UO
+        String tomorrow2 = sentence7.substring(sentence7.indexOf("Monday"));                       //UO
 
-
+        System.out.println(tomorrow);
+        System.out.println(tomorrow1);
+        System.out.println(tomorrow2);
     }
 }
