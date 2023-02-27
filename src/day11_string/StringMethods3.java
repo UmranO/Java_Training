@@ -42,6 +42,23 @@ public class StringMethods3 {
 
         //------------------------------------
         // yes , Yes, yES, YeS  ===> yes
+        String students = "Hasan Naran Sumeye Nataliia";
+
+        boolean hasAhmed = students.contains("Ahmed");                 //contains() can NOT ignore case sensitivity
+
+        System.out.println("hasAhmed = " + hasAhmed);
+
+
+        String sentence = "My favorite programming language is JAVA";
+
+        boolean hasJava = sentence.toLowerCase().contains("java");    //contains() can NOT ignore case sensitivity TO
+        //   boolean hasJava = sentence.equalsIgnoreCase("java");     //overcome this we can 1st you can create the
+                                                                      //temporary value of the sentence which contains
+        System.out.println("hasJava = " + hasJava);                   //the lower version of sentence with tolowerCase()
+
+        //----------------------------------------------------------
+
+
 
 
     }
