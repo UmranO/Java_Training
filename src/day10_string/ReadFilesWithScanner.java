@@ -23,7 +23,7 @@ public class ReadFilesWithScanner {
     }
 }
 /*
-Bu sekilde netLine()'dan once next() yapinca o ilk kelimeyi okuyor. Nextline()'da ilk kelimeden sonraki bosluktan
+Bu sekilde nextLine()'dan once next() yapinca o ilk kelimeyi okuyor. Nextline()'da ilk kelimeden sonraki bosluktan
 itibaren aliyor. Pespese iki Nextline() verince herbiri 1 satir aliyor
 System.out.println(scan.next());  //Everytime we call nextLine() it only takes 1 line
 System.out.println(scan.nextLine());
