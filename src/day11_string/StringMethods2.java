@@ -61,5 +61,39 @@ public class StringMethods2 {
         System.out.println(today);
 
         //----------------------------------------
+        String email = "CydeoSchoolJavaProgramming@yahoo.com";                     //What is the Domain of this email?
+        //email=email.substring(email.indexOf("@")+1,email.lastIndexOf('.'));        Domain is always in between @ and .
+                                                                                   //You should take the last . there
+                                                                                   //might be bunch of
+        int beginning = email.indexOf("@") + 1;
+        int ending = email.lastIndexOf('.');
+
+        String domain =  email.substring(beginning, ending);
+
+        System.out.println(domain);
+
+        //----------------------------------------
+//M-----------------------------------------------
+        String sentence6 = "I love Java programming";
+
+        // String r1 = sentence6.substring(7, sentence6.length());
+
+        String r1 = sentence6.substring(7);
+
+        System.out.println(r1);
+
+//UO----------------------------------------------
+        sentence6 = "I love Java programming";                           // create a substring "Java programming"
+
+        sentence6=sentence6.substring(sentence6.indexOf("Java programming"));
+
+        System.out.println(sentence6);
+
+        System.out.println("------------------------------------");
+
+        String sentence7 = "Today is Sunday, Tomorrow is Monday";
+
+
+
     }
 }
