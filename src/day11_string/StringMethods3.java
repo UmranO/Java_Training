@@ -75,6 +75,19 @@ public class StringMethods3 {
 
         System.out.println(t);
 
+//------------------------------------------------
+
+        String email = "CydeoSchool@gmail.com";
+
+        boolean isGmail = email.endsWith("gmail.com");
+
+        boolean isYahoo = email.endsWith("yahoo.com");
+
+        boolean isHotMail = email.endsWith("hotmail.com");
+
+        System.out.println("isGmail = " + isGmail);
+        System.out.println("isYahoo = " + isYahoo);
+        System.out.println("isHotMail = " + isHotMail);
 
 
 
