@@ -102,5 +102,23 @@ public class StringMethods2 {
         System.out.println(tomorrow);
         System.out.println(tomorrow1);
         System.out.println(tomorrow2);
+
+//----repeat()-------------------------------------------------------------------------------------------------
+System.out.println("------------------------------------------------------------------------------------------");
+
+        String str = "Python";
+
+        String result=str.repeat(10);                //=>Concatenate back to back
+        System.out.println(result);
+
+        result = (str +" ").repeat(10);              //=>puts the next repeating to the next line
+        System.out.println(result);                        //We don't want to add space to the variable itself
+        //but put space in bet. words being repeated so
+        //first we can do the grouping to achieve the
+        //concatenation result=(str + "\n")=>returns new String
+        //from this new string call repeat()
+        result = (str +"\n").repeat(10);             //if we want them in different lines
+        System.out.println(result);
+
     }
 }
