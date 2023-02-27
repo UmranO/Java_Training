@@ -58,6 +58,23 @@ public class StringMethods3 {
 
         //----------------------------------------------------------
 
+        String name = "Micheal";
+
+        boolean l =  name.startsWith("Da");
+
+        System.out.println(l);
+
+        String url = "www.cydeo.com";
+
+        boolean isValid = url.startsWith("www.");
+
+        System.out.println(isValid);
+
+
+        boolean t = url.endsWith(".com");
+
+        System.out.println(t);
+
 
 
 
