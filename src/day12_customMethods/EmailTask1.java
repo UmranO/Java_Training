@@ -30,7 +30,8 @@ public static void main(String[] args){
     if (input.contains ("_")){
         String fname=input.substring(0, input.indexOf("_"));
         String lname=input.substring(input.indexOf("_")+1,input.indexOf("@"));
-        input=lname+"_"+fname+input.substring((input.indexOf("@")));
+        input=lname+"_"+fname+input.substring((input.indexOf("@")));                    //ending index of substring will
+                                                                                        // always be excluded
     }
     System.out.println(input);
 
