@@ -19,10 +19,10 @@ public class TipCalculatorSwitch {
         input.nextLine();
 
         System.out.println("How was the service quality? (Excellent/Great/Good/Fair/Poor)");
-        String serQ = input.nextLine().toLowerCase();                      //Regardless of caseSensitivity to ignore
-        //Case sensitivity of the user entered or
+        String serQ = input.nextLine().toLowerCase();                    //Regardless of caseSensitivity to ignore
+                                                                         //Case sensitivity of the user entered or
         input.close();                                                   //later we can compare it with equalsIgnoreCase
-        //with our source code which has lowerCase only
+                                                                         //with our source code which has lowerCase only
 
 
         // we can use if statement, ternary or switch
