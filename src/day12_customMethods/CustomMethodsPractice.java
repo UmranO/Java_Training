@@ -61,7 +61,7 @@ public class CustomMethodsPractice {
         public static void initials(String firstName, String lastName){
 
             String initials=firstName.charAt(0)+"."+lastName.charAt(0);
-            System.out.println("Initials of your name: "+ initials);
+            System.out.println("Initials of your name is: "+ initials);
 
         }
 
