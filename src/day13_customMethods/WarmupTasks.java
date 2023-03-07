@@ -18,6 +18,7 @@ public class WarmupTasks {
 //        calculateSwitch(n1, n2, operator);
 
         ageGroupTernary(25);
+        eligibleToVote(21,true);
     }
 
     //----Warmup 1--------------------------------------------------------------------------------------
@@ -65,11 +66,18 @@ public class WarmupTasks {
 
 
 //----Warmup 3--------------------------------------------------------------------------------------
+
+    public static void eligibleToVote(int age, boolean isAmerican){
+
+        if(age >= 18 && isAmerican){
+            System.out.println("You are eligible to vote");
+        }else{
+            System.err.println("You are not eligible to vote");
+        }
+    }
+
+
 }
-
-
-
-
 
 /*
 Warmup task:
