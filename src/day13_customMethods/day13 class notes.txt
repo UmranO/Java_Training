@@ -12,7 +12,8 @@ Warmup task:
             num2 (double)
             mathOperator (char)
 
-	    The method should display the calculation result of those two numbers as long as the 3rd argument is a valid math operator, otherwise the method prints "Invalid Operator"
+	    The method should display the calculation result of those two numbers as long as the 3rd argument is a valid
+	    math operator, otherwise the method prints "Invalid Operator"
 
 	        Ex:
 	            calculate(10, 20, '+')
@@ -67,7 +68,7 @@ Methods: grouping code fargments  ===> creating function
 		Return-type: void, Any dataType
 
 					void: does not return any value
-					Any dataType: must return a vlaue
+					Any dataType: must return a value
 
 
 		MethodName: meaningful, descriptive
@@ -79,7 +80,7 @@ Methods: grouping code fargments  ===> creating function
 
 
 
-Return statement: used for exiting (terminating) the current mothod
+Return statement: used for exiting (terminating) the current method
 			we can also use it for returning value from return methods
 
 
