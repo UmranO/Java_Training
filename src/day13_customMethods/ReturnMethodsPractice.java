@@ -8,7 +8,7 @@ public class ReturnMethodsPractice {
         System.out.println("------------------");
         System.out.println(isEven(1));
         System.out.println(isEven1(1));
-        System.out.println(isEven2(1));
+        System.out.println(isEven2(10));
         System.out.println("------------------");
         System.out.println(maxN(7, 9));
         System.out.println(maxN1(7, 9));
@@ -24,27 +24,34 @@ public class ReturnMethodsPractice {
     }
 
     //M----OR----------------------
+
     public static boolean isOdd1(int nu10) {
         if (nu10 % 2 != 0) {
             return true;
-        }
+        }                       //else{  -we don't even need this else we can directly write return false;
         return false;}
+                                //}
     //M----OR----------------------
+
     public static boolean isOdd2(int num){
-       return (num % 2 != 0)? true : false;}
+        return (num % 2 != 0)? true : false;}
 
 //Create a method named isEven, that can return true if a number is an even number
 
     public static boolean isEven ( int n1){
-            return (n1 % 2 == 0) ? true : false;
+        return (n1 % 2 == 0) ? true : false;
         }
+
     //M----OR----------------------
+
      public static boolean isEven1(int number){
-        return !isOdd(number)? true :false;
+        return !isOdd(number)? true :false;                     //return value of another () can be used as an input
         }
+
     //M----OR----------------------
+
         public static boolean isEven2(int number1){
-        return (!isOdd(number1)) ;
+        return (!isOdd(number1)) ;                             //return value of another () can be used as an input
         }
 
 //Create a method named max, that can return the maximum number between two numbers
@@ -54,22 +61,26 @@ public class ReturnMethodsPractice {
         int max=(numb1>numb2)? numb1 : numb2;
         return max;
     }
+
     //M----OR----------------------
         public static int maxN1 ( int numb1, int numb2){
             return numb1 > numb2 ? numb1 : numb2;           //() is a must in if statement but in ternary it is optional
         }                                                   //(numb1 > numb2) ? numb1 : numb2; same as this
+
     //M----OR----------------------
     public static int max(int n1, int n2){
 
-        if(n1 > n2){
-            return  n1;
+        if(n1 > n2){                                        //if you have the same 2#s still 1 of them will be returned
+            return  n1;                                     //bec n>n2 will be false n2 will be returned. 
         }else{
             return n2;
         }
     }
 //Create a method named min, that can return the minimum number between two numbers
 //UM---------------------------
+
     public static int min(int n1, int n2){
+
         return (n1<n2)? n1 : n2;
     }
 
