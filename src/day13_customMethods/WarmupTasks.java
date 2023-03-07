@@ -7,23 +7,21 @@ public class WarmupTasks {
 
         calculateSwitch(1, 2, '!');
 
-        calculateSwitch(1,100,'-');
+        calculateSwitch(1, 100, '-');
 
-        Scanner input=new Scanner (System.in);
-        System.out.println("Enter your two numbers and a math operator:");
-        double  n1 = input.nextDouble(),
-                n2 = input.nextDouble();
-        char operator = input.next().charAt(0);
+//        Scanner input=new Scanner (System.in);
+//        System.out.println("Enter your two numbers and a math operator:");
+//        double  n1 = input.nextDouble(),
+//                n2 = input.nextDouble();
+//        char operator = input.next().charAt(0);
+//        input.close();
+//        calculateSwitch(n1, n2, operator);
 
-        calculateSwitch(n1, n2, operator);
-
-
-
-
+        ageGroupTernary(25);
     }
 
+    //----Warmup 1--------------------------------------------------------------------------------------
     public static void calculateSwitch(double num1, double num2, char mathOperator) {
-
 
         switch (mathOperator) {
 
@@ -47,9 +45,27 @@ public class WarmupTasks {
                 System.err.println("Invalid operator: " + mathOperator);
 
         }
+    }
 
 
-    }}
+//----Warmup 2--------------------------------------------------------------------------------------
+
+    public static void ageGroupTernary(int age){
+
+        if(age>=0 && age<=150){
+        System.out.println((age<21)? "Teenager" :(age>=21 && age<55)? "Adult": "Senior"); //value that the ternary
+                                                                                          //returns can be passed
+                                                                                          //in the print statement
+        }
+        else{
+            System.err.println("Invalid age "+age);
+        }
+    }
+
+
+
+//----Warmup 3--------------------------------------------------------------------------------------
+}
 
 
 
