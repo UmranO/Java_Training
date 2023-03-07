@@ -40,5 +40,6 @@ public class ReturnStatementPractice {
                 case 'F': result="Failed";
             }
             System.out.println(result);
+
         }
     }
