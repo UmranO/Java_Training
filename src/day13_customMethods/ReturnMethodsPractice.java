@@ -71,7 +71,7 @@ public class ReturnMethodsPractice {
     public static int max(int n1, int n2){
 
         if(n1 > n2){                                        //if you have the same 2#s still 1 of them will be returned
-            return  n1;                                     //bec n>n2 will be false n2 will be returned. 
+            return  n1;                                     //bec n>n2 will be false n2 will be returned.
         }else{
             return n2;
         }
