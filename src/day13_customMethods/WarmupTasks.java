@@ -1,9 +1,24 @@
 package day13_customMethods;
 
+import java.util.Scanner;
+
 public class WarmupTasks {
     public static void main(String[] args) {
 
         calculateSwitch(1, 2, '!');
+
+        calculateSwitch(1,100,'-');
+
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter your two numbers and a math operator:");
+        double  n1 = input.nextDouble(),
+                n2 = input.nextDouble();
+        char operator = input.next().charAt(0);
+
+        calculateSwitch(n1, n2, operator);
+
+
+
 
     }
 
