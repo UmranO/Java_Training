@@ -11,13 +11,15 @@ public class WarmupTasks_UO {
         System.out.println(sumOf2Numbers(in1, in2));
 
         int a=1, b=6;
+        System.out.println(sumOf3Numbers(sumOf2Numbers(in1, in2),a));
+
         System.out.println(sumOf4Numbers(sumOf2Numbers(in1, in2),a, b));
 
     }
 //Task1_U-------------------------------------------------------------------------------------------------------
     public static String combine(String str, String str1){
         String result=(str.charAt(str.length()-1)==str1.charAt(0))?         //char'lari == ile karsilastirabiliriz
-                str+""+str1.substring(1) :str+str1+"";
+                str+""+str1.substring(1) :str+str1;
         return result;
     }
 //Task1_M---------------------------------------------------------------------------
@@ -29,14 +31,19 @@ public class WarmupTasks_UO {
         return result;                                         //By adding "" we can convert any value (int, boolean...)
     }                                                          //to String value
 
-    //Task2_U-------------------------------------------------------------------------------------------------------
+//Task2a_U-------------------------------------------------------------------------------------------------------
     public static int sumOf2Numbers(int in1, int in2){
         return in1+in2;
     }
-//Task3_U-------------------------------------------------------------------------------------------------------
+//Task2b_U-------------------------------------------------------------------------------------------------------
         public static int sumOf4Numbers( int sumOf2Numbers, int a, int b){
         return sumOf2Numbers+a+b;
-        }
+    }
+//Task2c_U-------------------------------------------------------------------------------------------------------
+
+        public static int sumOf3Numbers( int sumOf2Numbers, int a) {
+        return sumOf2Numbers+a;
+    }
 
 }
 
