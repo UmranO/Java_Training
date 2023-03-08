@@ -20,6 +20,7 @@ public class WarmupTasks {
         System.out.println( sumOf3IntegerNumbers(10, 20, 30));
 
         System.out.println( sumOf4IntegerNumbers(10, 20, 30, 40));
+
     }
 //--Yukarisi main ()'lu---------------------------------------------------------------------------------------------
 
@@ -50,16 +51,16 @@ public class WarmupTasks {
 
     public static int sumOf3IntegerNumbers(int n1, int n2, int n3) {
         //   return  n1 + n2 + n3;
-        return sumOf2IntegerNumbers(n1, n2) + n3;
+        return sumOf2IntegerNumbers(n1, n2) + n3;                         // we can just call sum2 instead of 1st 2 #s
     }
 
 
     public static int sumOf4IntegerNumbers(int n1, int n2, int n3, int n4) {
         //  return n1 + n2 + n3 + n4;
-        //  return sumOf3IntegerNumbers(n1, n2, n3) + n4;
-        //  return sumOf2IntegerNumbers(n1, n2) + sumOf2IntegerNumbers(n3, n4);      //ayni method farkli variable yazmis
+        //  return sumOf3IntegerNumbers(n1, n2, n3) + n4;                              //method'un return ettigini value
+        //  return sumOf2IntegerNumbers(n1, n2) + sumOf2IntegerNumbers(n3, n4);        //olarak kullaniyoruz
         //  return sumOf2IntegerNumbers(sumOf3IntegerNumbers(n1, n2, n3)  ,   n4 );
-        return  sumOf3IntegerNumbers(   sumOf2IntegerNumbers(n1, n2)  ,  n3 , n4  ); //sumof2'yu bir value olarak +2 others
+        return  sumOf3IntegerNumbers(   sumOf2IntegerNumbers(n1, n2)  ,  n3 , n4  );   //sumof2'yu bir value olarak+2others
     }
 
 }
