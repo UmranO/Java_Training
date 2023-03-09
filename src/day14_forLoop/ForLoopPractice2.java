@@ -14,7 +14,12 @@ public class ForLoopPractice2 {
 
         }
         System.out.println(sum);
+        input.close();
 
+
+        // write a program that can ask the user enter to enter a number for five times,  print the maximum number
+
+        // write a program that can ask the user enter to enter a number for five times,  print the minimum number
 
     }
 }
