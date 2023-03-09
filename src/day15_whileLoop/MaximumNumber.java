@@ -33,6 +33,7 @@ public class MaximumNumber {
 //will definetely be greater than this value.
 //Burada ben bir input.nextInt()'i variable'a assign etmeden kullndigimda problem oldu. Assign et sonra if Statem.'a koy
 //else de gerek yok cunku zaten sadece daha buyukse assign edecek
-//Yukaridaki method ile we can finfd out the max num from a user entered # or any kind of a data structure.
+//Yukaridaki method ile we can find out the max num from a user entered # or any kind of a data structure.
+//This is one of the logic we can implement to find out the max #
 
 //1. Write a program that can ask the user to enter a number for 5 times and returns the maximum number
