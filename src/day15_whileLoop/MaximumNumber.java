@@ -3,8 +3,9 @@ package day15_whileLoop;
 import java.util.Scanner;
 
 public class MaximumNumber {
-
     public static void main(String[] args) {
+
+//Write a program that can ask the user to enter a number for 5 times and returns the maximum number
 
         Scanner input = new Scanner(System.in);   //if we create a Scanner object we can use it 5 times
 
@@ -36,4 +37,4 @@ public class MaximumNumber {
 //Yukaridaki method ile we can find out the max num from a user entered # or any kind of a data structure.
 //This is one of the logic we can implement to find out the max #
 
-//1. Write a program that can ask the user to enter a number for 5 times and returns the maximum number
+
