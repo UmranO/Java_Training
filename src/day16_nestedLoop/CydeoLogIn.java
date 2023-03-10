@@ -37,7 +37,20 @@ public class CydeoLogIn {
         }
 
     }
-}
+
+    //Below is a custom method and w can reuse it in the for loop 3 times instead of those other codes
+    //instead of the if condition
+    public static void cydeOlogin(String userName, String password){
+        if(userName.equals("Cydeo") && password.equals("WoodenSpoon")){
+            System.out.println("Logged in");
+        }else{
+            System.out.println("Invalid Credentials");
+        }
+
+        }
+
+    }
+
 /*
     Warmup tasks:
         1. Create a class named CydeoLogIn. you are writing a code for the log-in function of the Cydeo Application,
