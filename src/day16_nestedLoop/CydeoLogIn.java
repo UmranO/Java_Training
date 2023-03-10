@@ -16,7 +16,10 @@ public class CydeoLogIn {
 
         }else{                                                                   //otherwise
             for (int i = 0; i < 3; i++) {
-                System.err.println("Incorrect username or password, please re-enter");
+                if(i!=2){System.err.println("Incorrect username or password, please re-enter");
+
+                }else{ System.err.println("This is your last chance. Please re-enter your username & password");}
+
                 System.out.println("Enter your user name:");
                 u = input.next();
                 System.out.println("Enter your password");
