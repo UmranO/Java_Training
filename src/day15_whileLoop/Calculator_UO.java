@@ -33,5 +33,6 @@ public class Calculator_UO {
         }
         System.out.println(result);
 
+        input.close();
     }
 }
