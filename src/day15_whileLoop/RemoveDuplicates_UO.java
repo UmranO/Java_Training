@@ -8,7 +8,7 @@ public class RemoveDuplicates_UO {
 
         for (int i = 0; i < str.length(); i++) {                           //since w start from index=0 & used < no need
             if (result.contains(str.charAt(i)+"")) continue;               //subtract 1 from the length()
-            else result+=str.charAt(i)+"";                                 //i is representing the index number of the
+            else result+=str.charAt(i)+"";     //M else koymamis gereksiz    i is representing the index number of the
         }                                                                  //String
         System.out.println(result);
 
