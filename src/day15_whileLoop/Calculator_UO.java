@@ -18,8 +18,9 @@ public class Calculator_UO {
 
 
         while(!(operator=='+'||operator=='-'||operator=='/'||operator=='*'))
-        {System.err.println("Invalid operator! Enter an operator");}
-
+        {System.err.println("Invalid operator! Enter an operator");                  //while the operator is invalid
+        operator =input.next().charAt(0);    }                                       //should be able get the new input
+                                                                                     //& Repeat until valid
         double result=0;
 
         switch (operator){
