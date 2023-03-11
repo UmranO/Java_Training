@@ -22,6 +22,8 @@ public class OddOrEven {
                 System.err.println("Invalid answer! Would you like to enter another number?  Yes / No  ");
                 answer = input.next().toLowerCase();
             }
+
+
             if (answer.equals("no")) {
                 System.out.println("Thank you for attending"); break;
             }
@@ -33,3 +35,5 @@ public class OddOrEven {
 //Enter a number which is a bug. We should repeat "Would you like to enter another number?" over & over again
 //until user gives Yes or No. For this I need a loop and the condition should be while the answer is invalid
 //To give the invalid condition we give the valid condition in () & put ! in front of it while (!())
+//instead of while(true) in line 8 we could have written while(answer.equals("yes)) but in this case we should have
+//created  String answer="yes" before line 8 and then we wouldn't need the if statement in line 29 dedi M
