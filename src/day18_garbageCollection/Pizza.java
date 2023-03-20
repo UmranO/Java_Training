@@ -8,8 +8,8 @@ public class Pizza {
         double totalPrice = 0;
 
         switch (size){
-            case 'S':                                                                   //Pespese alternatifleri yazmis
-            case 's':
+            case 'S':                                                   //Pespese alternatifleri yazmis
+            case 's':                                                   //Creating another case block to apply OR Logic
                 totalPrice = 10 + 2 * (numberOfCheeseTopping + numberOfPepperoniTopping);
                 break;
 
@@ -40,8 +40,8 @@ public class Pizza {
 
 
 
-    public String toString() {
-        return "Pizza{" +
+    public String toString() {            //It is used to display the pizza object info when the pizza is passed in the
+        return "Pizza{" +                 //print statement-It can be modified according your needs
                 "size=" + size +
                 ", numberOfCheeseTopping=" + numberOfCheeseTopping +
                 ", numberOfPepperoniTopping=" + numberOfPepperoniTopping +
