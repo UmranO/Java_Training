@@ -1,6 +1,32 @@
 package day18_garbageCollection;
 
 public class BankAccount_UO {
+    public String accountHolder;
+    public long accountNumber;
+    public double balance;
+
+    public void setInfo(String accountHolder, long accountNumber, double balance){
+        this.accountHolder=accountHolder;
+        this.accountNumber=accountNumber;
+        this.balance=balance;
+    }
+
+    public String toString() {
+        return "BankAccount_UO{" +
+                "accountHolder='" + accountHolder + '\'' +
+                ", accountNumber=" + accountNumber +
+                ", balance=" + balance +
+                '}';
+    }
+    public void checkBalance(){
+        System.out.println(balance);
+    }
+    public double deposit(double amount){
+        return balance+=amount;
+    }
+    public double withdraw(double amount){
+        return balance-=amount;
+    }
 }
 /*
 2. Create a custom class named BankAccount:
