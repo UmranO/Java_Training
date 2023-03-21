@@ -29,7 +29,7 @@ public class TestPizzaObjects {
 
             Pizza small = new Pizza();
             small.setInfo('S', 2, 2);
-            total += small.calcCost();
+            total += small.calcCost();        //Every time a new pizza is created the cost will be added to total
 
             Pizza medium = new Pizza();
             medium.setInfo('M', 3, 4);
