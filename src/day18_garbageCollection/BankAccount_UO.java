@@ -8,7 +8,8 @@ public class BankAccount_UO {
     public void setInfo(String accountHolder, long accountNumber, double balance){
         this.accountHolder=accountHolder;
         this.accountNumber=accountNumber;
-        this.balance=balance;
+        this.balance=balance;              //Normal'de basta bunu set etmiyor cunku deposit/withdraw edince yapilmasi
+                                           //gerek diye
     }
 
     public String toString() {
