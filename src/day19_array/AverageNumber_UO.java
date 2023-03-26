@@ -6,13 +6,12 @@ public class AverageNumber_UO {
         Scanner input=new Scanner(System.in);                               //This new Scanner object will also be
         System.out.println("How many numbers do you want to enter?");       //allocated in the Heap
         int num=input.nextInt();                                            //This # will be the size of our Array
-        if (num==0){
-            System.out.println("Thank you");
+        if (num==0){                                                        //average hesaplarken buu sayiya bolecegiz
+            System.out.println("Thank you");                                //so it shouldn't be zero
             return;    }                                                    //return'u print statement'dan once koyma!
 
         int[] arr=new int[num];
         int sum=0;
-
         for(int i=0; i<num; i++) {                                         //i will also be the index # of the Array
             System.out.println("Enter number you want");
              int numU =
