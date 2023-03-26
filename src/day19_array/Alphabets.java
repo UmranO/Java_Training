@@ -1,7 +1,5 @@
 package day19_array;
-
 import java.util.Arrays;
-
 public class Alphabets {
 
     public static void main(String[] args) {
@@ -20,10 +18,21 @@ public class Alphabets {
         System.out.println(Arrays.toString(ascending));
         System.out.println(Arrays.toString(descending));
 
+        System.out.println("------------------------------------------------------");
+//How many characters are there that are supported in Java? How many single characters that we can store into the char?
+//What is the max # that we can assign to char? char's capacity is smtg like 65K. char it also has a range. Total # of
+//characters that are supported in Java-Not only the ASCII table all the characters:
+//To create a char Array that contains all the characters we can use a loop to store all the elements into a char Array
 
+        char[] characters = new char[65535];
 
-    }
-}
+        for (int i = 0; i < characters.length; i++) {
+            characters[i] = (char) i;                          //Since i here is the index value(int) we have to cast it
+        }                                                      //to char!
+
+        System.out.println(Arrays.toString(characters));       //When we print, it'll contain all the 65535 characters
+    }                                                          //This way we stored all the characters in an Array &
+}                                                              //then printed.
 
 /*
 
