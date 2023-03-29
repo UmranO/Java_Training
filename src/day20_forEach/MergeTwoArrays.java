@@ -1,5 +1,7 @@
 package day20_forEach;
 
+import utilities.ArraysUtility;
+
 import java.util.Arrays;
 
 public class MergeTwoArrays {
@@ -34,7 +36,14 @@ public class MergeTwoArrays {
 
         System.out.println(Arrays.toString(arr3));
 
-        System.out.println("--------------------------------------------------");
+        System.out.println("-Testing merge() for int[]s-------------------------------------------------");
+
+        int[] a1 = {10, 20, 30, 40, 50, 60};
+        int[] a2 = {70, 80, 90};
+
+        int[] a3 = ArraysUtility.merge(a1, a2);
+
+        System.out.println( Arrays.toString(a3));
 
 
     }
