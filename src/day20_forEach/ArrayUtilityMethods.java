@@ -26,6 +26,25 @@ public class ArrayUtilityMethods {
         boolean r2 = Arrays.equals(ch1, ch2);
 
         System.out.println(r2);
+        String[] s1 = {"A", "B", "C"};
+        String[] s2 = {"A", "C", "B"};
+
+        System.out.println(Arrays.equals(s1, s2));
+
+        System.out.println("---------------------------------------");
+
+        int[] nums = {100, 80, 90, 75, 88, 99, 0, 5, 4, 1000, 500};
+
+        System.out.println(Arrays.toString(nums));
+
+        Arrays.sort(nums);
+
+        System.out.println(Arrays.toString(nums));
+        System.out.println("Minimum number: " + nums[0]);                  //sorts in the Ascending Order so 1st element
+        System.out.println("Maximum number: " + nums[nums.length-1] );     //is the min and last elem. is the largest
+
+
+        System.out.println("---------------------------------------");
 
 
 
