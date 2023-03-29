@@ -45,6 +45,23 @@ public class MergeTwoArrays {
 
         System.out.println( Arrays.toString(a3));
 
+        System.out.println("-Testing merge() for double[]s-------------------------------------------------");
+
+        double[] b1 = {10.5, 5.5, 3.5, 6.5, 8.5};
+        double[] b2 = {20.5, 15.5, 13.5};
+
+        double[] b3 = ArraysUtility.merge(b1, b2);
+
+        System.out.println(Arrays.toString(b3));
+
+        System.out.println("-Testing merge() for char[]s-------------------------------------------------");
+
+        char[] ch1 = {'A', 'b', 'c', 'D', 'e'};
+        char[] ch2 = {'X', 'Y', 'Z'};
+
+        char[] ch3 = ArraysUtility.merge(ch1, ch2);
+
+        System.out.println(Arrays.toString(ch3));
 
     }
 }
