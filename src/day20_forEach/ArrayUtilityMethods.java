@@ -66,7 +66,13 @@ public class ArrayUtilityMethods {
 
         System.out.println("---------------------------------------");
 
+        int[] array = {10, 20, 30, 40, 50, 60, 70};
 
+        int[] array2 = Arrays.copyOf(array, 10);
+
+        System.out.println(Arrays.toString(array2));
+
+        System.out.println("---------------------------------------");
 
 
     }
