@@ -2,7 +2,7 @@ package utilities;
 
 public class StringUtility {
 
-//----reverse() to reverse a given String-------------------------------------------------------------------------------
+//----Reverse() to reverse a given String-------------------------------------------------------------------------------
     public static String reverse(String str){
         String reverse = "";                              //to contain all the characters of the given string in
                                                           //reversed order
@@ -13,6 +13,10 @@ public class StringUtility {
         return reverse;                                   //the given String in reversed order. Then we returned it
     }                                                     //from the method so that we can use it later
 
+
+//----Frequency(String sentence, String word)---------------------------------------------------------------------------
+//----Frequency(String str, char ch)------------------------------------------------------------------------------------
+//----RemoveDuplicates(String str)--------------------------------------------------------------------------------------
 }
 
 
