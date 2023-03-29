@@ -80,8 +80,17 @@ public class ArraysUtility {
         }
         return reverse;
     }
+//----Reverse()--double Array-------------------------------------------------------------------------------------------
 
+    public static double[] reverse(double[] array){
 
+        double[] reverse = new double[array.length];
+
+        for (int i = array.length - 1, j=0; i >= 0; i--) {
+            reverse[j++]= array[i];
+        }
+        return reverse;
+    }
 
 }
 
