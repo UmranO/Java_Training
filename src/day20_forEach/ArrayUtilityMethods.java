@@ -46,6 +46,15 @@ public class ArrayUtilityMethods {
 
         System.out.println("---------------------------------------");
 
+        String[] b1 = {"C", "A", "B"};
+        String[] b2 = {"B", "C", "A"};
+
+        Arrays.sort(b1);                //b1 = {A, B, C}
+        Arrays.sort(b2);                //b2 = {A, B, C}
+
+        System.out.println( Arrays.equals(b1, b2) );
+
+        System.out.println("---------------------------------------");
 
 
 
