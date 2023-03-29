@@ -53,7 +53,7 @@ public class ArraysUtility {
         return arr3;
     }
 
-//----Merge()--2 String Arrays--------------------------------------------------------------------------------------------
+//----Merge()--2 String Arrays------------------------------------------------------------------------------------------
 
     public static String[] merge(String[] arr1, String[] arr2){
 
@@ -68,8 +68,20 @@ public class ArraysUtility {
             arr3[k] = arr2[i];
         }
         return arr3;
-
     }
+//----Reverse()--int Array----------------------------------------------------------------------------------------------
+
+    public static int[] reverse(int[] array){
+
+        int[] reverse = new int[array.length];
+
+        for (int i = array.length - 1, j=0; i >= 0; i--) {
+            reverse[j++]= array[i];
+        }
+        return reverse;
+    }
+
+
 
 }
 
