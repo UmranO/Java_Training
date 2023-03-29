@@ -12,5 +12,25 @@ public class ArrayUtilityMethods {
         System.out.println(result);
 
         System.out.println("---------------------------------------");
+
+        int[] a1 = {1, 2, 3, 4, 5};
+        int[] a2 = {1, 2, 3, 4, 5};
+
+        boolean r1 = Arrays.equals(a1, a2);
+
+        System.out.println(r1);
+
+        char[] ch1 = {'A', 'B', 'C'};
+        char[] ch2 = {'A', 'C', 'B'};
+
+        boolean r2 = Arrays.equals(ch1, ch2);
+
+        System.out.println(r2);
+
+
+
+
+
+
     }
 }
