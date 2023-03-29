@@ -56,6 +56,15 @@ public class ArrayUtilityMethods {
 
         System.out.println("---------------------------------------");
 
+        String[] students = {"Yaxier", "Madiyar", "Ali", "Abidullah", "Alena"};
+
+        System.out.println(Arrays.toString(students));
+
+        Arrays.sort(students);
+
+        System.out.println(Arrays.toString(students));
+
+        System.out.println("---------------------------------------");
 
 
 
