@@ -34,7 +34,7 @@ System.out.println("------------------------------------------------------------
 
 System.out.println("-----------------------------------------------------------------------------------------------");
 //----M Way-------------------------------------------------------------------------------------------------------
-        String sentence = "Today is a great day";                            //Expected outcome:Java love I
+        String sentence = "Today is a great day";                            //Expected outcome:day great a is Today
                                                                              //Calling reverse() from our ArraysUtility
         String[] arr =  ArraysUtility.reverse( sentence.split(" ") );  //[Java, love I]-1st split then reverse
 
