@@ -91,7 +91,7 @@ public class ArraysUtility {
         }
         return reverse;
     }
-//----Reverse()--char Array-------------------------------------------------------------------------------------------
+//----Reverse()--char Array---------------------------------------------------------------------------------------------
 
     public static char[] reverse(char[] array){
 
@@ -102,7 +102,17 @@ public class ArraysUtility {
         }
         return reverse;
     }
+//----Reverse()--String Array---------------------------------------------------------------------------------------------
 
+    public static String[] reverse(String[] array){
+
+        String[] reverse = new String[array.length];
+
+        for (int i = array.length - 1, j=0; i >= 0; i--) {
+            reverse[j++]= array[i];
+        }
+        return reverse;
+    }
 
 }
 
