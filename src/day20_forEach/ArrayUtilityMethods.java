@@ -90,5 +90,20 @@ public class ArrayUtilityMethods {
 
         System.out.println("----------------------------------------");
 
+        char[] ch = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+        //  index:    0    1    2    3    4    5    6
+
+        char[] result1 = Arrays.copyOf(ch, 20 );                    //(array to be copied, new length)
+
+        System.out.println(Arrays.toString(result1));
+
+        char[] result2 = Arrays.copyOfRange(ch, 2, 5);              ////(array to be copied, from, to indexes)
+                                                                             // excludes ending index
+        System.out.println(Arrays.toString(result2));
+
+        char[] result3 = Arrays.copyOfRange(ch, 2, ch.length);         //from index 2 to the last one included
+
+        System.out.println(Arrays.toString(result3));
+
     }
 }
