@@ -68,12 +68,27 @@ public class ArrayUtilityMethods {
 
         int[] array = {10, 20, 30, 40, 50, 60, 70};
 
-        int[] array2 = Arrays.copyOf(array, 10);
+        int[] array2 = Arrays.copyOf(array, 10);          //If the new size is greater than the original array
+                                                                    //it will fill the rest with default values
+        System.out.println(Arrays.toString(array2));                //If the new length i ssmaller than the orig. array
+                                                                    //it will copy it until the specified length.
+        System.out.println("---------------------------------------"); //eg if new Length is 4 then it will copy till 4
+                                                                       //index 4 not included. outcome:[10,20,30,40]
 
-        System.out.println(Arrays.toString(array2));
+        //When we try to merge the below 2 Arrays into 1
 
-        System.out.println("---------------------------------------");
+        int[] n1 = {1,2,3,4,5};
+        int[] n2 = {6, 7, 8, 9, 10, 11, 12};
 
+        int[] n3 = Arrays.copyOf(n1, n1.length + n2.length );
+
+        for (int i = 0, j = n1.length; i < n2.length; i++, j++) {
+            n3[j]= n2[i];
+        }
+
+        System.out.println(Arrays.toString(n3));
+
+        System.out.println("----------------------------------------");
 
     }
 }
