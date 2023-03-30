@@ -57,5 +57,16 @@ public class ForEachLoopPractice {
         System.out.println(Arrays.toString(a3));
 
         System.out.println("-------------------------------------------");
+
+        //Print the initial of the students by iterating the String[]
+
+        String[] names = {"Mohammad Karimi", "Vasyl Dobrianski", "Gadir Ibrahimov", "Abidullah Rahimi"};
+
+        for (String each : names) {
+            System.out.println(each.charAt(0) +"."+each.charAt( each.lastIndexOf(" ") +1) );
+        }                                                              //Last Name starts at index after the last " "
+
+
+
     }
 }
