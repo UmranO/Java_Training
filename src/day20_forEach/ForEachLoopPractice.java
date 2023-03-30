@@ -44,11 +44,11 @@ public class ForEachLoopPractice {
 
         int[] a3 = new int[a1.length + a2.length];
 
-        int k = 0;
+        int k = 0;                                  //will be used for index #s of the 3rd array
 
         for (int each : a1) {
-            a3[k++]= each;
-        }
+            a3[k++]= each;                          //k should be post incremented every time the loop is executed
+        }                                           //bec it should start from 0
 
         for (int each : a2) {
             a3[k++]=each;
