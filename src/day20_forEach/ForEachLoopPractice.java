@@ -1,9 +1,6 @@
 package day20_forEach;
-
 import java.util.Arrays;
-
 public class ForEachLoopPractice {
-
 
     public static void main(String[] args) {
 
