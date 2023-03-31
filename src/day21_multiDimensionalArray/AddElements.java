@@ -18,16 +18,16 @@ public class AddElements {
         int[] numbers = { 100, 90, 80, 70, 60};
 
         System.out.println(Arrays.toString(numbers));
-
-        numbers = ArraysUtility.addElement(numbers, 50);
+                                                                              //we can assign the new array to our old
+        numbers = ArraysUtility.addElement(numbers, 50);              //array'svariable we can assign it back
 
         System.out.println(Arrays.toString(numbers));
 
         System.out.println("----Test addElement() for double---------------------------------------");
         double[] nums = {1.5, 2.5, 3.5, 4.5};
 
-        nums = ArraysUtility.addElement(nums, 5.5);
-
+        nums = ArraysUtility.addElement(nums, 5.5);                  //Everytime you call this addElement() it
+                                                                             //will continue to create new Array object
         nums = ArraysUtility.addElement(nums, 6.5);
 
         nums = ArraysUtility.addElement(nums, 7.5);
