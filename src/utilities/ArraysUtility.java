@@ -150,10 +150,10 @@ public class ArraysUtility {
     public static boolean contains(double[] array, double element) {
         for (double each : array) {
             if (each == element) {
-                return true;                                          //it will return true if we have it in the Array
-            }                                                         //Bu if dogru degilse zaten calismayacak so
-        }                                                             //we can return false then
-        return false;
+                return true;                //If they are equal we can exit the method by returning true
+            }                               //Bu if dogru degilse zaten calismayacak so we can return false then
+        }                                   //But if this loop is executed & this if condition was never true
+        return false;                       //then this loop will never be executed so at the end we should return false
     }
 
 //------Contains()--char Array------------------------------------------------------------------------------------------
@@ -179,6 +179,13 @@ public class ArraysUtility {
     }
 
 }
+  /*
+    // array = { 10, 20, 30, 40} , 2  ===> {10, 20, 40}
+    public static int[] remove(int[] array, int index){
+    }
+    public static int[] removeDup(int[] array){
+    }
+*/
 
 
 
