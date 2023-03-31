@@ -147,27 +147,36 @@ public class ArraysUtility {
 
 //------Contains()--int Array-------------------------------------------------------------------------------------------
 
-    public static boolean contains(double[] array, double element){
+    public static boolean contains(double[] array, double element) {
         for (double each : array) {
-            if(each == element){
+            if (each == element) {
                 return true;                                          //it will return true if we have it in the Array
             }                                                         //Bu if dogru degilse zaten calismayacak so
         }                                                             //we can return false then
         return false;
     }
+
 //------Contains()--char Array------------------------------------------------------------------------------------------
 
-    public static boolean contains(char[] array, char element){
+    public static boolean contains(char[] array, char element) {
         for (char each : array) {
-            if(each == element){
+            if (each == element) {
                 return true;
             }
         }
-
         return false;
     }
 
+    //------Contains()--String Array----------------------------------------------------------------------------------------
 
+    public static boolean contains(String[] array, String element){
+        for (String each : array) {
+            if(each.equals( element )){
+                return true;
+            }
+        }
+        return false;
+    }
 
 }
 
