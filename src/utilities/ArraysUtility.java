@@ -115,7 +115,8 @@ public class ArraysUtility {
         return reverse;
     }
 
-    //----AddElement()--int Array-------------------------------------------------------------------------------------------
+//----AddElement()--int Array-------------------------------------------------------------------------------------------
+
     public static int[] addElement(int[] array, int element) {
         int[] new_array = Arrays.copyOf(array, array.length + 1);
         new_array[new_array.length - 1] = element;
@@ -152,6 +153,17 @@ public class ArraysUtility {
                 return true;                                          //it will return true if we have it in the Array
             }                                                         //Bu if dogru degilse zaten calismayacak so
         }                                                             //we can return false then
+        return false;
+    }
+//------Contains()--char Array------------------------------------------------------------------------------------------
+
+    public static boolean contains(char[] array, char element){
+        for (char each : array) {
+            if(each == element){
+                return true;
+            }
+        }
+
         return false;
     }
 
