@@ -13,6 +13,17 @@ public class AddElements {
 
         System.out.println(Arrays.toString(new_array));
 
+        System.out.println("------------------------------------------");
+
+        int[] numbers = { 100, 90, 80, 70, 60};
+
+        System.out.println(Arrays.toString(numbers));
+
+        numbers = ArraysUtility.addElement(numbers, 50);
+
+        System.out.println(Arrays.toString(numbers));
+
+
 
     }
 
