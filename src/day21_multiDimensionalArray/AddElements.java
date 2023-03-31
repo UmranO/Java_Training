@@ -23,6 +23,21 @@ public class AddElements {
 
         System.out.println(Arrays.toString(numbers));
 
+        System.out.println("------------------------------------------");
+
+        double[] nums = {1.5, 2.5, 3.5, 4.5};
+
+        nums = ArraysUtility.addElement(nums, 5.5);
+
+        nums = ArraysUtility.addElement(nums, 6.5);
+
+        nums = ArraysUtility.addElement(nums, 7.5);
+
+        System.out.println(Arrays.toString(nums));
+
+
+
+
 
 
     }
