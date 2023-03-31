@@ -35,6 +35,17 @@ public class AddElements {
 
         System.out.println(Arrays.toString(nums));
 
+        System.out.println("------------------------------------------");
+
+        String[] students = {"Yasin", "Sumeye", "Ermek"};
+
+        students = ArraysUtility.addElement(students, "Umran");
+
+        students = ArraysUtility.addElement(students, "Abidullah");
+
+        students = ArraysUtility.addElement(students, "Muhtar");
+
+        System.out.println(Arrays.toString(students));
 
 
 
