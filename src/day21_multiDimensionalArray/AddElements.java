@@ -13,7 +13,7 @@ public class AddElements {
 
         System.out.println(Arrays.toString(new_array));
 
-        System.out.println("------------------------------------------");
+        System.out.println("----Test addElement() for int------------------------------------------");
 
         int[] numbers = { 100, 90, 80, 70, 60};
 
@@ -23,8 +23,7 @@ public class AddElements {
 
         System.out.println(Arrays.toString(numbers));
 
-        System.out.println("------------------------------------------");
-
+        System.out.println("----Test addElement() for double---------------------------------------");
         double[] nums = {1.5, 2.5, 3.5, 4.5};
 
         nums = ArraysUtility.addElement(nums, 5.5);
@@ -35,7 +34,7 @@ public class AddElements {
 
         System.out.println(Arrays.toString(nums));
 
-        System.out.println("------------------------------------------");
+        System.out.println("----Test addElement() for String---------------------------------------");
 
         String[] students = {"Yasin", "Sumeye", "Ermek"};
 
@@ -46,10 +45,6 @@ public class AddElements {
         students = ArraysUtility.addElement(students, "Muhtar");
 
         System.out.println(Arrays.toString(students));
-
-
-
-
 
     }
 
