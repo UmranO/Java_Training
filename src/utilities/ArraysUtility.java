@@ -191,6 +191,13 @@ public class ArraysUtility {
     }
 
 }
+/*
+    // array = { 10, 20, 30, 40} , 2  ===> {10, 20, 40}
+    public static int[] remove(int[] array, int index){
+    }
+    public static int[] removeDup(int[] array){
+    }
+*/
 
 
 
