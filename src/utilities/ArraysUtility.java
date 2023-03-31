@@ -146,6 +146,18 @@ public class ArraysUtility {
     }
 
 //------Contains()--int Array-------------------------------------------------------------------------------------------
+                                   //{1,2,3,4},      1
+    public static boolean contains(int[] array, int element){
+
+        for (int each : array) {
+            if(each == element){
+                return true;
+            }
+        }
+        return false;
+    }
+
+//------Contains()--double Array----------------------------------------------------------------------------------------
 
     public static boolean contains(double[] array, double element) {
         for (double each : array) {
@@ -179,13 +191,6 @@ public class ArraysUtility {
     }
 
 }
-  /*
-    // array = { 10, 20, 30, 40} , 2  ===> {10, 20, 40}
-    public static int[] remove(int[] array, int index){
-    }
-    public static int[] removeDup(int[] array){
-    }
-*/
 
 
 
