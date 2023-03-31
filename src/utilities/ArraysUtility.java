@@ -102,7 +102,7 @@ public class ArraysUtility {
         }
         return reverse;
     }
-//----Reverse()--String Array---------------------------------------------------------------------------------------------
+//----Reverse()--String Array-------------------------------------------------------------------------------------------
 
     public static String[] reverse(String[] array){
 
@@ -113,6 +113,21 @@ public class ArraysUtility {
         }
         return reverse;
     }
+//----AddElement()--int Array-------------------------------------------------------------------------------------------
+    public static int[] addElement(int[] array, int element){
+        int[] new_array = Arrays.copyOf(array, array.length + 1);
+        new_array[new_array.length-1] = element;
+        return new_array;
+    }
+//------AddElement()--double Array--------------------------------------------------------------------------------------
+
+    public static double[] addElement(double[] array, double element){
+        double[] new_array = Arrays.copyOf(array, array.length + 1);
+        new_array[new_array.length-1] = element;
+        return new_array;
+    }
+
+
 
 }
 
