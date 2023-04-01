@@ -189,15 +189,17 @@ public class ArraysUtility {
         }
         return false;
     }
+    public static int[] removeElementByIndex(int[] array, int index){   //array = { 10, 20, 30, 40} , 2 ==> {10, 20, 40}
+        int[] newArray=new int[array.length-1];
 
+        for (int i = 0; i < newArray.length; i++) {
+            if(i<index){newArray[i]=array[i];}
+            else {newArray[i]=array[i+1];}
+        }
+        return newArray;
+    }
 }
-/*
-    // array = { 10, 20, 30, 40} , 2  ===> {10, 20, 40}
-    public static int[] remove(int[] array, int index){
-    }
-    public static int[] removeDup(int[] array){
-    }
-*/
+
 
 
 
