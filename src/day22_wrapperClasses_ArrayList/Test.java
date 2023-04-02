@@ -2,6 +2,8 @@ package day22_wrapperClasses_ArrayList;
 
 import utilities.ArraysUtility;
 
+import java.util.Arrays;
+
 public class Test {
     public static void main(String[] args){
         int[] numbers = {10, 20, 30, 40, 50, 60, 70, 90};
@@ -16,5 +18,11 @@ public class Test {
 
         System.out.println(ArraysUtility.contains(students,"Khashayar"));
 
+        System.out.println((Arrays.toString(ArraysUtility.removeElementByIndex(numbers, 02))));
+
+        System.out.println("--------------------------------------------");
+
+        int[] numbers1 = {10,90,10,10,30,30,40,40,10,50,70,70,70,70,90};
+        System.out.println(Arrays.toString(ArraysUtility.removeDup(numbers1)));
     }
 }
