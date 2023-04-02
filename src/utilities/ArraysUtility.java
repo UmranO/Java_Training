@@ -145,12 +145,12 @@ public class ArraysUtility {
         return new_array;
     }
 
-//------Contains()--int Array-------------------------------------------------------------------------------------------
-                                   //{1,2,3,4},      1
-    public static boolean contains(int[] array, int element){
+    //------Contains()--int Array-------------------------------------------------------------------------------------------
+    //{1,2,3,4},      1
+    public static boolean contains(int[] array, int element) {
 
         for (int each : array) {
-            if(each == element){
+            if (each == element) {
                 return true;
             }
         }
@@ -181,25 +181,54 @@ public class ArraysUtility {
 
     //------Contains()--String Array----------------------------------------------------------------------------------------
 
-    public static boolean contains(String[] array, String element){
+    public static boolean contains(String[] array, String element) {
         for (String each : array) {
-            if(each.equals( element )){
+            if (each.equals(element)) {
                 return true;
             }
         }
         return false;
     }
-    public static int[] removeElementByIndex(int[] array, int index){   //array = { 10, 20, 30, 40} , 2 ==> {10, 20, 40}
-        int[] newArray=new int[array.length-1];
 
-        for (int i = 0; i < newArray.length; i++) {
-            if(i<index){newArray[i]=array[i];}
-            else {newArray[i]=array[i+1];}
+    public static int[] removeElementByIndex(int[] array, int index) {   //array = { 10, 20, 30, 40} , 2 ==> {10, 20, 40}
+        int[] newArray = new int[array.length - 1];
+
+        for (int i = 0; i < newArray.length; i++) {        //<=Burada dikkat edilmesi gereken length olarak  yeni Array
+            if (i < index) {
+                newArray[i] = array[i];
+            } else {
+                newArray[i] = array[i + 1];
+            }
         }
         return newArray;
     }
-}
 
+    public static int[] removeDup(int[] array) {  //use contains and add  //array = {5, 5, 30, 40} , 2 ==> {5, 30, 40}
+        int[] newArray = new int[array.length];   //add kullanmadim emin de degilim ama calisiyor gibi
+      //  Arrays.sort(array);                       //sort etmeden de calisti
+        int k = 0;                                //duplicate'lari cikardiktan sonraki array'in index'i
+        int count = 0;                            //duplicate'ari cikardiktan sonra olusan default zero'lari saymak icin
+
+        for (int i = 0; i < array.length; i++) {             //outer loop's elements to be compared to inner loop which
+            for (int j = 0; j < array.length; j++) {         //is the same array
+                if (!contains(newArray,array[i])){newArray[k++]=array[i];}else {continue;}  //Eger new Array'de yoksa
+                }                                                                   //assign ediyoruz default 0'lari
+            } for (int each: newArray) {                                            //sayiyoruz.
+            if (each==0){count++;}
+        }
+            System.out.println(count);
+        int[] finalArray=Arrays.copyOf(newArray,newArray.length-count);  //Bunlar en sonda olacagiicin o kadar
+                                                                                   //kismi (count) cikarip yeni length'i
+                                                                                   //olusturuyoruz.
+        return finalArray;
+        }
+    }
+
+/*
+
+    public static int[] removeDup(int[] array){   //use contains and add  //array = {5, 5, 30, 40} , 2 ==> {5, 30, 40}
+
+*/
 
 
 
