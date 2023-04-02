@@ -189,6 +189,7 @@ public class ArraysUtility {
         }
         return false;
     }
+//Asagisi sadece benim yaptiklarim. Sonra bunlari, double, char ve String icin tekrarla
 
     public static int[] removeElementByIndex(int[] array, int index) {   //array = { 10, 20, 30, 40} , 2 ==> {10, 20, 40}
         int[] newArray = new int[array.length - 1];
@@ -224,11 +225,8 @@ public class ArraysUtility {
         }
     }
 
-/*
 
-    public static int[] removeDup(int[] array){   //use contains and add  //array = {5, 5, 30, 40} , 2 ==> {5, 30, 40}
 
-*/
 
 
 
