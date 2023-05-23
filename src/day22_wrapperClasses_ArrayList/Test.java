@@ -1,7 +1,5 @@
 package day22_wrapperClasses_ArrayList;
-
 import utilities.ArraysUtility;
-
 import java.util.Arrays;
 
 public class Test {
@@ -14,15 +12,21 @@ public class Test {
 
         System.out.println("--------------------------------------------");
 
-        String[] students = {"Sumeye", "Hamza", "Marika"};
+        String[] students = {"Sumeye", "Hamza", "Marika", "Marika"};
 
         System.out.println(ArraysUtility.contains(students,"Khashayar"));
 
-        System.out.println((Arrays.toString(ArraysUtility.removeElementByIndex(numbers, 02))));
+        //Asagisi benim yapip dogrulugundan emin olmadigim method'larin testi. Calisiyor gibi. Sonra duplicate'i M'nin
+        //istedigi gibi tekrar yapmaya calis.
+
+        System.out.println((Arrays.toString(ArraysUtility.removeElementByIndex(numbers, 2))));
 
         System.out.println("--------------------------------------------");
 
         int[] numbers1 = {10,90,10,10,30,30,40,40,10,50,70,70,70,70,90};
+
         System.out.println(Arrays.toString(ArraysUtility.removeDup(numbers1)));
+
+
     }
 }
