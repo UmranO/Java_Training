@@ -189,9 +189,12 @@ public class ArraysUtility {
         }
         return false;
     }
-//Asagisi sadece benim yaptiklarim. Sonra bunlari, double, char ve String icin tekrarla
+//Asagisi sadece benim yaptiklarim. M yapmamis odev vermis sadece. Kontrol edemedim.
+//Sonra bunlari, double, char ve String icin tekrarla-Bunlari istedigi yer day 22 dak:52:06-remove'da bu utility'de
+//create ettigimiz contains ve add method'larini String'de kullandigimiz Stratejiyi kullanmamizi istemis
 
-    public static int[] removeElementByIndex(int[] array, int index) {   //array = { 10, 20, 30, 40} , 2 ==> {10, 20, 40}
+
+    public static int[] removeElementByIndex(int[] array, int index) {  //array = { 10, 20, 30, 40} , 2 ==> {10, 20, 40}
         int[] newArray = new int[array.length - 1];
 
         for (int i = 0; i < newArray.length; i++) {        //<=Burada dikkat edilmesi gereken length olarak  yeni Array
@@ -206,7 +209,7 @@ public class ArraysUtility {
 
     public static int[] removeDup(int[] array) {  //use contains and add  //array = {5, 5, 30, 40} , 2 ==> {5, 30, 40}
         int[] newArray = new int[array.length];   //add kullanmadim emin de degilim ama calisiyor gibi
-      //  Arrays.sort(array);                       //sort etmeden de calisti
+      //  Arrays.sort(array);                     //sort etmeden de calisti
         int k = 0;                                //duplicate'lari cikardiktan sonraki array'in index'i
         int count = 0;                            //duplicate'ari cikardiktan sonra olusan default zero'lari saymak icin
 
