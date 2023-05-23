@@ -31,9 +31,9 @@ public class WrapperClassMethods {
 
         System.out.println("------------------------------------------");
 
-        String x = "false";
-
-        boolean r1 = Boolean.parseBoolean(x);
+        String x = "false";                     //Both the parse & the valueOf ()s are caseInsensitive-kontrol ettim
+                                                //Since boolean is either true or false String can't be anything other
+        boolean r1 = Boolean.parseBoolean(x);   //than true or false
 
         Boolean r2 = Boolean.valueOf(x);
 
@@ -67,15 +67,16 @@ public class WrapperClassMethods {
 
         System.out.println("------------------------------------------------");
 
-        String string = "a1b2c3d4e5";
-
+        String string = "a1b2c3d4e5";                //From the String we have to get every single digit and when we get
+                                                     //the digit as a character we have to convert it to the number.
+                                                     //After they are converted to number we can find their sum.
         int sum = 0;
-
-        for (char each : string.toCharArray()) {
-
-            if(Character.isDigit(each)){
-                sum += Integer.parseInt(""+each);
-            }
+                                                     //*For String we can not use for each loop. In order to use for
+        for (char each : string.toCharArray()) {     //each loop we have to have a Data Structure.From the String given
+                                                     //we call the toCharArray() so that we have an Array which contains
+            if(Character.isDigit(each)){             //each character of the String including all the digits, all the
+                sum += Integer.parseInt(""+each); //letters...So now we can iterate this Array with for each loop.
+            }                                        //This is how you can Apply for each loop to a String.
 
         }
 
