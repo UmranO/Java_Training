@@ -53,12 +53,10 @@ System.out.println("------------------------------------------------------------
         String lastStudent = studentsList.get( studentsList.size() -1  ); //last student from the studentsList
         System.out.println(lastStudent);
 
-//----------size() - directly adding to the end------------------------------------------------------------------------
+//----------size() - returns the number of elements------------------------------------------------------------------------
 System.out.println("-------------------------------------------------------------------------------------------------");
 
 System.out.println(studentsList.size());
-
-
 
     }
 }
