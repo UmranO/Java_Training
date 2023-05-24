@@ -1,39 +1,28 @@
 package day23_arrayList;
 import java.util.ArrayList;
-public class UniqueElements {
+
+public class UniqueElements {      //Benim 1stUnique ile Unique Class'im karismis. So onceki commitler'deki Class name
+                                   //aslinda FirstUnique olmaliydi. Commit message dogru
+
     public static void main(String[] args){
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(3);
-        list.add(4);
-        list.add(5);
-        list.add(5);
-        list.add(6);
-        System.out.println(list);
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Vasyl"); // 0
+        names.add("Vasyl"); // 1
+        names.add("Sumeye"); //2
+        names.add("Sumeye");
+        names.add("Ali");
+        names.add("Sumeye");
+        names.add("Shukir");
+        names.add("Marika");
+        names.add("Marika");
 
-        for (Integer element : list) {         // 1
-
-            int frequency = 0;
-            for (Integer each : list) {
-                if(each == element){
-                    frequency++;
-                }
+        for (String each : names) {                                 //To display the unique names from an ArrayList<>
+            if(names.indexOf(each) == names.lastIndexOf(each)){     //we need to access to each elem. of the ArrayList
+                System.out.println(each);                           //If the position of this name 1st seen==position
+                                                                    //that name last seen it means that name is unique
+                // break;                             if the reqirement is to display the 1st unique we can use break;
             }
-            if(frequency == 1){
-                System.out.println(element);
-                break;                            // exiting the loop, in order to return the first unique element only
-            }
-        }
+    }
     }
 }
-/*
-3. Write a program that can return the first unique elements from an arraylist
-Ex:
-        ArrayList = {1, 1, 2, 3, 3, 4, 5, 5, 6}   For the ArrayList we can Not use the Literal to give all the elements
-        at once,but we can use addAll() to add all the elements at once! Any operation that we want to do with ArrayList
-        we have to use the methods.
-        output:2
- */
+//Display the unique names from an ArrayList<>
