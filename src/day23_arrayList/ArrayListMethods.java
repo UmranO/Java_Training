@@ -84,5 +84,23 @@ System.out.println("------------------------------------------------------------
 System.out.println("-------------------------------------------------------------------------------------------------");
         System.out.println( names.lastIndexOf("Vasyl") );            //Console:1
         System.out.println( names.lastIndexOf("Sumeye") );           //Console:5   Sondan bakiyor ama index bastan
+
+//----------contains() - returns true or false
+//----------checking a specified element is present in the ArrayList or not & return type:boolean-----------------------
+        System.out.println("-----------------------------------------------------------------------------------------");
+
+        boolean hasMuhtar=names.contains("Muhtar");    //=>false
+        System.out.println("hasMuhtar = " + hasMuhtar);
+
+        boolean hasAli=names.contains("Ali");          //=>false
+        System.out.println("hasAli = " + hasAli);
+
+//----------equals() - return type:boolean--returns true or false
+//----------checking if 2 ArrayLists have the same elements and if those elements are in the same order ----------------
+System.out.println("-------------------------------------------------------------------------------------------------");
+
+        ArrayList<Integer> list1=new ArrayList<>();
+        ArrayList<Integer> list2=new ArrayList<>();
+
     }
 }
