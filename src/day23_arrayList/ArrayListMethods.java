@@ -100,7 +100,62 @@ System.out.println("------------------------------------------------------------
 System.out.println("-------------------------------------------------------------------------------------------------");
 
         ArrayList<Integer> list1=new ArrayList<>();
-        ArrayList<Integer> list2=new ArrayList<>();
+        ArrayList<Integer> list2=list1;                 //Only 1 ArrayList object is created in the Heap memory and this
+                                                        //object is being shared by 2 referance variables: list1 & list2
+       list1.add(10);                                   //These ref.variables are in the stack and both calling the same
+                                                        //ArrayList object. So when we add 10 to one it is also added to
+        System.out.println(list1==list2);               //the other. That's why =>true BUT
+                                                        //below 2 objects are created in 2 diff.locations in Heap Memory
+            //------------------------------
+
+       ArrayList<Integer> l1=new ArrayList<>();
+       ArrayList<Integer> l2=new ArrayList<>();
+
+       l1.add(10);                                      //Since different objects when we add 10 to one it won't be
+                                                        //added to the second ArrayList object
+        System.out.println(l1==l2);                     //=>false & the second ArrayList is empty
+        System.out.println(l2);                         //=>[]   (Empty ArrayList)
+
+       l2.add(10);
+       //Even though they are not the same objects we might want to check 1)if they have the same elements & 2)if those
+       //elements are in the same order. Than we can use the equals method:
+
+        System.out.println(l1.equals(l2));              //=>true
+
+        System.out.println("----------------------------------------------------------");
+
+        ArrayList<Integer> n1 = new ArrayList<>();
+        n1.add(10);
+        n1.add(20);
+        n1.add(30);
+                                                      //n1 & n2 have the same elements but their order is different.
+                                                      //So the equals() will return false to n1.equals(n2)
+        ArrayList<Integer> n2 = new ArrayList<>();
+        n2.add(30);
+        n2.add(10);
+        n2.add(20);
+
+        System.out.println("n1 = " + n1);
+        System.out.println("n2 = " + n2);
+
+        System.out.println(n1.equals(n2));
+
+//----------isEmpty() - return type:boolean--returns true or false
+//----------checking if the list is empty (does or does not have any elements) -----------------------------------------
+System.out.println("-------------------------------------------------------------------------------------------------");
+
+        System.out.println(n1.isEmpty());           //=>false
+        System.out.println(n2.isEmpty());           //=>false
+
+//----------clear() - return type:boolean--returns true or false
+//----------remove everything from the ArrayList, ArrayList will not have elements anymore ----------------
+        System.out.println("----------------------------------------------------------------------------------------");
+        n1.clear();
+        n2.clear();
+
+        System.out.println(n1.isEmpty());          //after the clear() they both will have 0 elements so n1.isEmpty()
+        System.out.println(n2.isEmpty());          //will return true. =>true
+
 
     }
 }
