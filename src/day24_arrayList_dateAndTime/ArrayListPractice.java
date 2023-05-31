@@ -21,19 +21,28 @@ public class ArrayListPractice {
         employees.get(3).setInfo("Bella", 29, 'F', "Java Developer", 95000, "A04");
         employees.get(4).setInfo("Jimmy", 54, 'M', "Data Analyst", 105000, "A05");
 
+//We need to set the informations of every single Employee objects & we need to set them separately. So we need to call
+//setInfo(). To set the 1st Employee object we need to get the 1st Employee object from this ArrayList. To get the
+//elements from the ArrayList we need to use get() & this get() will return that element that you have at a specified
+//index. So at the index 0 in this ArrayList we have Employee object. (Not a String or Integer..) So this get() returns
+//Employee object. Since it is returning Employee object from the object we can its instance()-here setInfo()
+//Since 5 diff. elements we need to set them separetely 5 times, each time we can give different data for name, age,
+//gender, jTitle, salary & id.
+//To complete task we need to reach every element of the ArrayList
+
 System.out.println("--------------------------------------------------------------------------------------------------");
 System.out.println("1.1 Write a program that can display the name and job title of each employee");
 
-        for (Employee each : employees) {
-            System.out.println(each.name + "\t:\t" + each.jobTitle);
+        for (Employee each : employees) {        //variable each referencing to each Employee object of the ArrayList
+            System.out.println(each.name + "\t:\t" + each.jobTitle);    //to reach to each element we need to use a loop
         }
 
 System.out.println("--------------------------------------------------------------------------------------------------");
 System.out.println("1.2 Write a program that can display the names of Java Developers");
 
         for (Employee each : employees) {
-            if(each.jobTitle.equals("Java Developer")){ // if the job title of the employee is Java Developer
-                System.out.println(each.name);  // prints the name of the employee
+            if(each.jobTitle.equals("Java Developer")){           //if the job title of the employee is Java Developer
+                System.out.println(each.name);                    //prints the name of the employee
             }
         }
 
