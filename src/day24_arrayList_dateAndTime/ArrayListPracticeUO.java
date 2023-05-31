@@ -1,7 +1,7 @@
 package day24_arrayList_dateAndTime;
-import day17_customClass.Employee;
+import day17_customClass.Employee;                //since Employee Class is from another package we need to import it
 
-import java.util.ArrayList;
+import java.util.ArrayList;                       //since these Classes are from another package we need to import them
 import java.util.Arrays;
 import java.util.Collections;
 
