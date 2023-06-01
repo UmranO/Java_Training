@@ -13,13 +13,15 @@ public class RemoveElements {
         System.out.println(list);               //We can't use regular remove() while iterating a Collection bec index#s
                                                 //will be shifted & the result will be wrong! So we should use removeIf
 
-        System.out.println("-----------------------");
+        System.out.println("--------------------------------------------------");
+
         ArrayList<String> names = new ArrayList<>();
         names.addAll( Arrays.asList("Java", "Python", "C#", "Java", "Ruby", "JavaScript", "C++", "C") );
 
         names.removeIf(p-> p.startsWith("J"));
         System.out.println(names);
 
+        System.out.println("--------------------------------------------------");
 
 
 //----UO Way------------------------------------------------------------------------------------------------------------        list.removeAll(Arrays.asList(1,2,3));  //In removeAll() you have to specify all the elements that are less than
