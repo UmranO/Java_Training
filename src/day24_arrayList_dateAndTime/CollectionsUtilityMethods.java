@@ -39,12 +39,31 @@ System.out.println("----frequency()---------------------------------------------
 
 System.out.println("-----------------------------------");
 
-        //Find the total # of "Java"
+//Find the total # of "Java"
+
         ArrayList<String> words = new ArrayList<>();
         words.addAll(Arrays.asList("Java", "Java", "Java", "C#", "C#", "Ruby", "Swift", "Swift", "Java"));
 
-        int frequency1=Collections.frequency(words,"Java");
-        System.out.println(frequency1);
+        int countJava = Collections.frequency(words, "Java");
+
+        System.out.println(countJava);
+
+System.out.println("-----------------------------------");
+
+//Find the unique elements from the ArrayList
+// frequency() returns the frequency of 1 element
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.addAll(Arrays.asList(10, 20, 20, 30, 40, 40, 50, 50, 50, 50, 50, 60, 60, 50, 50, 50));
+
+//if we want the frequency of all the elements to find which of them are unique so we'll use the frequency() in the loop
+//it can be repeated for every single element
+
+        for(Integer each:numbers){                             //we'll get each element with foreach loop
+            if (Collections.frequency(numbers,each)==1){       //we can find out the frequency of each element with the
+                System.out.println(each);                      //help of frequency() from Collections Utility Class
+                                                               //& if frequency==1 then it means it's unique so print
+            }                                                  //if we didn't have frequency() we should have use another
+        }                                                      //loop to find the frequency of each element
 
     }
 }
