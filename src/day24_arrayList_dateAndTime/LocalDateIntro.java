@@ -89,11 +89,15 @@ System.out.println("-----------------------------------------------");
 System.out.println("-------------------------------------------------------------------------------------------------");
 LocalDate birthday1=LocalDate.of(1994,7,7);
 LocalDate birthday2=LocalDate.of(1995,6,7);
+LocalDate birthday3=LocalDate.of(1995,6,7);
 
-//----isEquals()----returns the year of that LocalDate object-----------------------------------------------------------
+//----isEquals()----LocalDate objects have the same date.--------------------------------------------------------------
 //To check if the below 2 people were born on the same day
         boolean isSameDay=birthday1.equals(birthday2);
-        System.out.println(isSameDay);
+        System.out.println(isSameDay);                                                       //false
+
+        boolean isSameDay1=birthday2.equals(birthday3);
+        System.out.println(isSameDay1);                                                      //true
 
 
     }
