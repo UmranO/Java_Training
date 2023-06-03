@@ -94,11 +94,29 @@ LocalDate birthday3=LocalDate.of(1995,6,7);
 //----isEquals()----LocalDate objects have the same date.--------------------------------------------------------------
 //To check if the below 2 people were born on the same day
         boolean isSameDay=birthday1.equals(birthday2);
-        System.out.println(isSameDay);                                                       //false
+        System.out.println(isSameDay);                                                                //false
 
         boolean isSameDay1=birthday2.equals(birthday3);
-        System.out.println(isSameDay1);                                                      //true
+        System.out.println(isSameDay1);                                                               //true
 
+System.out.println("-------------------------------------------------------------------------------------------------");
+        LocalDate grad_date = LocalDate.of(2023, 1, 1);
+ //To check if the grad_date is today:
+        boolean isToday=LocalDate.now().equals(grad_date);
+            System.out.println(isToday);                                                               //false
+
+//-isBefore()compares & checks if the object that we called this () from is before another LocalDate object(the 1 in the())
+//Logic sirasi dogru
+        boolean isBefore= grad_date.isBefore(LocalDate.of(2022,12,31));         //false
+            System.out.println(isBefore);
+
+//-isAfter()compares & checks if the object that we called this () from is after another LocalDate object(the 1 in the())
+//Logic sirasi dogru
+        boolean isAfter=grad_date.isAfter(LocalDate.of(2022,12,31));             //true
+            System.out.println(isAfter);
+
+//---isLeapYear- is used to verify if a year is a Leap year-------------------------------------------------------------
+            System.out.println(LocalDate.of(2022,6,16));                        //false-feb 28 days
 
     }
 }
