@@ -59,10 +59,42 @@ System.out.println("------------------------------------------------------------
         femaleDogs.removeIf(p->p.gender=='M');       //In order to keep the female dogs we need to remove the male dogs
         System.out.println(femaleDogs);
 
-        System.out.println("----------------------------------------------------------------------------------");
+System.out.println("----------------------------------------------------------------------------------");
+
+// 1.4 Create an ArrayList named maleDogs, and add all the dog objects with the gender of 'M' the dogs Array to
+//maleDogs ArrayList
+
+        ArrayList<Dog> maleDogs=new ArrayList<>(Arrays.asList(dogs));
+        maleDogs.removeIf(p->p.gender=='F');       //In order to keep the male dogs we need to remove the female dogs
+        System.out.println(maleDogs);
 
 
+System.out.println("----------------------------------------------------------------------------------");
+        Dog[] dogs2 = {new Dog(), new Dog(), new Dog(), new Dog(), new Dog(), new Dog()};
+        dogs2[0].setInfo("Max", "Husky", 'M', 4, "Medium", "Gray");
+        dogs2[1].setInfo("Chloe", "Golden Retriever", 'F', 8, "Large", "Gold");
+        dogs2[2].setInfo("Molly", "Beagle", 'F', 5, "Small", "White");
+        dogs2[3].setInfo("Oliver", "Bulldog", 'M', 2, "Small", "Black");
+        dogs2[4].setInfo("Bella", "Bichon Frise", 'F', 3, "Small", "White");
+        dogs2[5].setInfo("Loki", "Chow Chow", 'M', 7, "Medium", "Gold");
 
+//Remove all the small dogs from the above Array---Since Array size is fixed we can't remove an element from Array
+//We can only convert the Array to ArrayList then remove the small ones and convert that Arraylist to a new Array
+
+        System.out.println(Arrays.toString(dogs2));
+        System.out.println("--------------------------------------------------------");
+
+        ArrayList<Dog> list2=new ArrayList<>(Arrays.asList(dogs2));         //Converted Array-dogs2 to ArrayList-list2
+        list2.removeIf(p->p.size.equalsIgnoreCase("Small"));    //Removed the small dogs
+
+        dogs2=list2.toArray(new Dog[0]);                //While converting the ArrayList to Array we need to instantiate
+                                                        //the size and everything of this Array that we want to get.
+                                                        //Since we want to get Dog[] & when we instantiate the size
+                                                        //we either give 0 as size or the the size of the ArrayList
+
+      //dogs2 = list.toArray(new Dog[list.size()]);       The other way of giving the size of the new Array
+
+        System.out.println(Arrays.toString(dogs2));
     }
 }
 /*
