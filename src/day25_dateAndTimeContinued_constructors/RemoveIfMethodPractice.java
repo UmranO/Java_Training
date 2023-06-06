@@ -52,6 +52,15 @@ public class RemoveIfMethodPractice {
         System.out.println(yDogs);
 
 System.out.println("----------------------------------------------------------------------------------");
+// 1.3 Create an ArrayList named femaleDogs, and add all the dog objects with the gender of 'F' the dogsArray to
+//femaleDogs arrayList
+
+        ArrayList<Dog> femaleDogs=new ArrayList<>(Arrays.asList(dogs));
+        femaleDogs.removeIf(p->p.gender=='M');       //In order to keep the female dogs we need to remove the male dogs
+        System.out.println(femaleDogs);
+
+        System.out.println("----------------------------------------------------------------------------------");
+
 
 
     }
