@@ -9,7 +9,7 @@ public class LogIn {
 
         String u, p;
         int attempt = 3;                                                    //This can be added to limit the #of attemps
-                                                                            //for loop is better for this - demo purpose
+        //for loop is better for this - demo purpose
         do{
             System.out.println("Enter your user name:");                    //These statements in do block will be
             u = input.next();                                               //checked before checking the condition
@@ -24,7 +24,7 @@ public class LogIn {
             }
 
         }while( !(u.equals("Cydeo") && p.equals("WoodenSpoon")) );           //while the credentials are invalid
-                                                                             //DO BLOCK WILL CONTINUE TO BE EXECUTED
+        //DO BLOCK WILL CONTINUE TO BE EXECUTED
 
 
 
