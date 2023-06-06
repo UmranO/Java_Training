@@ -33,6 +33,26 @@ public class RemoveIfMethodPractice {
         System.out.println(sDogs);
  System.out.println("----------------------------------------------------------------------------------");
 
+//1.2 Create an ArrayList named youngDogs, and add all the dog objects with the age of 4 or less from the dogs
+        //Array to youngDogs arrayList
+
+        ArrayList <Dog> youngDogs=new ArrayList<>(Arrays.asList(dogs));
+        youngDogs.removeIf(p->p.age>4);                   //variable p is representing each Dog object of the ArrayList
+        System.out.println(youngDogs);                    //So through this variable we can call age, colr..everything
+                                                          //about the Dog
+
+        youngDogs.forEach(p-> System.out.println(p.name));
+
+
+ //The solution with loop:
+        ArrayList<Dog> yDogs=new ArrayList<>();
+        for (Dog each : dogs) {
+            if(each.age<=4){yDogs.add(each);}
+        }
+        System.out.println(yDogs);
+
+System.out.println("----------------------------------------------------------------------------------");
+
 
     }
 }
