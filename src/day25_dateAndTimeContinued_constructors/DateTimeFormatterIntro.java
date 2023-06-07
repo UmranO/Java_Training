@@ -67,9 +67,12 @@ System.out.println("------------------------------------------------------------
 
         System.out.println("---------------------------------");
         DateTimeFormatter dtfT = DateTimeFormatter.ofPattern("EEEE,  h:mm a, MMM/dd/y");   //Tuesday,  1:00 PM, Nov/24/2020
-
+                                                                                           //it gets the day name itself
         LocalDateTime ends = LocalDateTime.of(2020,11,24,13,0);
         System.out.println(ends.format(dtfT));
+
+        LocalDateTime bugun = LocalDateTime.now();
+        System.out.println(bugun.format(dtfT));
 
     }
 }
