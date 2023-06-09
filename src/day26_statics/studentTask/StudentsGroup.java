@@ -40,8 +40,8 @@ public class StudentsGroup {
         return "StudentsGroup{" +
                 "groupName='" + groupName + '\'' +
                 ", groupId=" + groupId +
-                ", number of students=" + students.size() +
-                '}';
+                ", number of students=" + students.size() +    //modified the toString()-instead of printing all the
+                '}';                                           //Students I want to print the # of Students.
     }
 
 }
