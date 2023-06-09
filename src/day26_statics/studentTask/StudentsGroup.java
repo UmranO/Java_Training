@@ -1,5 +1,6 @@
 package day26_statics.studentTask;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class StudentsGroup {
 
@@ -27,6 +28,12 @@ public class StudentsGroup {
         //Student student = new Student(name, age, gender, id);          -unnecessary, we can create the object as below
         students.add( new Student(name, age, gender, id) );
     }
+
+//--addAllStudents(Student[] students)-----takes Array of Student info and adds it to the ArrayList of Students
+
+    public void addStudent(Student[] students){
+    this.students.addAll(Arrays.asList(students));}           //since instance variable has the same name with the local
+                                                              //variable this keyword is used
 
 //--removeStudent(String id)-----removes the Student object with the specified id from the ArrayList-students-----------
 
