@@ -27,7 +27,7 @@ public class Car {
         this.color=color;
     }
 
-    @Override
+
     public String toString() {
         return "Car{" +
                 "make='" + make + '\'' +
