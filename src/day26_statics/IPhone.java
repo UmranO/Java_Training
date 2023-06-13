@@ -18,6 +18,11 @@ public class IPhone {
     public static boolean isExpensiveToFix = true;
 
 
+    public IPhone(String model,String color,double price ){
+        this.model=model;
+        this.color=color;
+        this.price=price;
+    }
 
 }
 /*
