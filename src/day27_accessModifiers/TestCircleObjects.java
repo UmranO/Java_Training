@@ -16,6 +16,8 @@ public class TestCircleObjects {
 
         System.out.println(Circle.pi);                      //proper way to call a static is from te Class name
 
+        //System.out.println(Circle.radius)                 //We can not call an instance from a Class name
+
 
     }
 }
