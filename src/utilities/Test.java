@@ -11,6 +11,15 @@ public class Test {
         Data.method3();
         Data.method4();
 
+                                                       //Besides the statics we can also access the instances as well
+        Data obj = new Data();
+
+        System.out.println(obj.a);
+        System.out.println(obj.b);
+        System.out.println(obj.c);
+
+        obj.method1();
+        obj.method2();
 
     }
 }
