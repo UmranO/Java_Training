@@ -18,4 +18,5 @@ public class Data {
         System.out.println("Method 4");
     }
 }
-//Suppose we need to use some of the above members in other Classes/packages
+//Suppose we need to use some of the above members in other Classes/packages eg we can use utility package to test the
+//differences btw regular import and static import
