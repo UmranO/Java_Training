@@ -24,7 +24,28 @@ public class IPhone {
         this.price=price;
     }
 
+     /*
+    public static void printPhoneInfo(){                //static only accepts statics-this will give an error bec
+        System.out.println("Model: " + model);          //model & color are instance
+        System.out.println("Color: " + color);
+    }
+    */
+
+
+    public void printPhoneInfo() {                     // instance methods accepts both static and none static
+        System.out.println("Brand: " + brand);         //this is an instance
+        System.out.println("Model: " + model);
+        System.out.println("Color: " + color);
+        System.out.println("Price: " + price);
+    }
+
+    public static void printOperatingSystem(){
+        System.out.println("Operating System: " + OS);
+    }
+
 }
+
+
 /*
 Attributes:
     brand, model, color, price, OS, madeIn, hasBattery, isTouchScreen, isExpensiveToFix
