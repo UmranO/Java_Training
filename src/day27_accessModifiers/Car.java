@@ -16,6 +16,13 @@ public class Car {                                                  //outer Clas
             System.out.println(wheels);                           //either static variable of the outer Class
 
         }
+    }
+    public static class StaticInnerClass{                         //Static inner Class
+
+        public void method(){
+          //System.out.println(make);                            //static only accepts static NOT instance
+            System.out.println(wheels);                          //static accepts static
+        }
 
     }
 }
