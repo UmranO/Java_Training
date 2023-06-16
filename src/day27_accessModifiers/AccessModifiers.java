@@ -1,7 +1,22 @@
 package day27_accessModifiers;
 
-public class AccessModifiers {                                      //Bunu JavaShort icin yaptim Sinifta yapilmadi
+public class AccessModifiers {
 
+public static int publicDate=200;
+
+
+public static void main(String[] args){
+
+    System.out.println(publicDate);                     //public data can be accessed in the same class
+                                                        //same package test:Test different package test:utilities/Test
+
+
+
+}
+
+
+
+//Asagisi JavaShort icin yaptim Sinifta yapilmadi. Tested in Test3ForAccessModifiers Class under Utilities
 //----Variables--------------------------------------------------------------------------------------------------------
 
     private static int n1=100;          //private modifier

@@ -9,7 +9,9 @@ public class Test {
         System.out.println(StaticInitializationBlock.b);
         System.out.println(StaticInitializationBlock.c);
 
+//----Asagisi Test for AccessModifiers Class For same package ---------------------------------------------------------
 
+        System.out.println(AccessModifiers.publicDate);
 
 
 
