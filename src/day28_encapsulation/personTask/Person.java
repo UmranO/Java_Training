@@ -11,31 +11,31 @@ public class Person {
     public static boolean isHuman, hasNose;
     public static int numberOfWings, numberOfHeads;
 
-    public Person(String name) { // Allows us to create Person object just by setting the name of the person
+    public Person(String name) { //Allows us to create Person object just by setting the name of the person
         this.name = name;
     }
 
-    public Person(String name, int age) { // Allows us to create Person object just by setting the name & age of the person
+    public Person(String name, int age) { //Allows us to create Person object just by setting the name & age of the person
         this(name);
         this.age = age;
     }
 
-    public Person(String name, String language) { // Allows us to create Person object just by setting the name & language of the person
+    public Person(String name, String language) { //Allows us to create Person object just by setting the name & language of the person
         this(name);
         this.language = language;
     }
 
-    public Person(String name, char gender) {  // Allows us to create Person object just by setting the name & gender of the person
+    public Person(String name, char gender) {  //Allows us to create Person object just by setting the name & gender of the person
         this(name);
         this.gender = gender;
     }
 
-    public Person(String name, int age, char gender) {  // Allows us to create Person object just by setting the name , age and gender of the person
+    public Person(String name, int age, char gender) {  //Allows us to create Person object just by setting the name , age and gender of the person
         this(name, age);
         this.gender = gender;
     }
 
-    public Person(String name, int age, char gender, String language) { // Allows us to create Person object just by setting the name, age, gender and language of the person
+    public Person(String name, int age, char gender, String language) { //Allows us to create Person object just by setting the name, age, gender and language of the person
         this(name, age, gender);
         this.language = language;
     }
