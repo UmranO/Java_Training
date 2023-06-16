@@ -68,7 +68,7 @@ public class Person {
                 ", age=" + age +
                 ", gender=" + gender +
                 ", language='" + language + '\'' +
-                ", planet='" + planet + '\'' +
+                ", planet='" + planet + '\'' +                                      //static can be added to instance ()
                 '}';
     }
 
