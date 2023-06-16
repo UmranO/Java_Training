@@ -4,17 +4,6 @@ import day27_accessModifiers.AccessModifiers;    //To use AccessModifier Class's
 public class Test3ForAccessModifiers {
     public static void main(String[] args) {
 
-
-
-
-
-
-
-
-
-
-
-
 //Bu kisimi JavaShort icin yaptim (Sinifta yapilmadi)--Kendi yaptigim AccessModifiers Class'in other package testi
 //----Variables--------------------------------------------------------------------------------------------------------
         //System.out.println(AccessModifiers.n1);    Even the AccessModifiers Class imported since private we can Not
