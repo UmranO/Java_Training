@@ -18,7 +18,9 @@ public class Test {
 
         System.out.println("Test Completed");
 
+        System.out.println(student.getName());
         student.setName("Ali9");                       //"Invalid name: Ali9"
+
 
         System.out.println("Test completed");         //If No problem it should complete codes above and print this
     }
