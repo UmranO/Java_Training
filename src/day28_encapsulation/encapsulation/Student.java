@@ -1,9 +1,13 @@
 package day28_encapsulation.encapsulation;
 
+import java.util.Locale;
+
 public class Student {
 
   //  public int age;
     private int age;
+    private String name;
+
 
   //getter is READ ONLY
     public int getAge(){
@@ -31,5 +35,28 @@ public class Student {
     this.age=age;                                 //stop there.status code 1 means the program terminated with a problem
 
     }
+
+    public String getName(){
+      return name;
+    }
+
+    public void setName(String name){
+
+      boolean hasDigit=false;
+
+      for(char each:name.toCharArray()){
+           if (Character.isDigit(each)){
+              hasDigit=true;
+              break;
+       }
+        if(hasDigit=true){
+          System.err.println("Invalid name "+name);
+          System.exit(1);}
+     }
+
+      this.name=name;
+    }
+
+
 }
 
