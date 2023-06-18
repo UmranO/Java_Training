@@ -66,6 +66,15 @@ public class Employee {
         setJobTitle(jobTitle);                                                  //instead of this.name=name; we call the
         setSalary(salary);                                                      //setters in the constructor
     }
+//----------------------------------------------------------------------------------------------------------------------
 
 
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
