@@ -8,28 +8,27 @@ public class Student {
     private String schoolName;
 
     public Student(String name, int age, char gender, char grade, String schoolName) {
-        setName(name);
-        setAge(age);
+        setName(name);                                          //Instead of setting the instance variables we are
+        setAge(age);                                            //calling the setters so that we ca apply our conditions
         setGender(gender);
         setGrade(grade);
         setSchoolName(schoolName);
     }
 
 
-    public String getName(){ // READ ONLY
-        /*
-        if(name == null){
+    public String getName(){                                      // READ ONLY
+        /*                                                        // Since insatance var.-name is private the only way to
+        if(name == null){                                         // read it through the getter.
             name = "Unknown";
         }
-
          */
         return name;
     }
 
-    public void setName(String name){ // WRITE ONLY
-        /*
-        if(name.isEmpty()){
-            System.err.println("Invalid student name");
+    public void setName(String name){                             // WRITE ONLY
+        /*                                                        // Since insatance var.-name is private if you need to
+        if(name.isEmpty()){                                       // set this outside the class the only way is to go
+            System.err.println("Invalid student name");           // through the setter
            // return;
             System.exit(1);
         }
@@ -43,8 +42,8 @@ public class Student {
 
     public void setAge(int age) {
 
-        if(age < 0){
-            System.err.println("Age can not be negative");
+        if(age < 0){                                          //Placed this condition on top of the other bec. if this
+            System.err.println("Age can not be negative");    //true we don't even need to cjheckl the other one.
             System.exit(1);
         }
 
