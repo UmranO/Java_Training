@@ -1,9 +1,12 @@
 package day29_inheritance.animalTask;
 
 public class Animal {                                        //is the Parent class of Dog, Cat, Tiger
-    public String name,breed, size, color;
-    public char gender;
-    public int age;
+    private String name;
+    private String breed;
+    private char gender;
+    private int age;
+    private String size;
+    private String color;
 
     public static boolean isAnimal;                         //eger static variable'in value'su 1 stepde verilemiyorsa
                                                             //static block'da initialize edilmeli. Bunun icinde
