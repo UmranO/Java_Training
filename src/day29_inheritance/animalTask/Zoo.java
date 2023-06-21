@@ -17,6 +17,53 @@ public class Zoo {
         System.out.println(cat);
         System.out.println(tiger);
 
+        System.out.println("---------------------------------------------------");
+        //Common methods of the Classes but each of the below ()s are coming from their related classes.
+
+        dog.eat();
+        dog.sleep();
+        dog.drink();
+
+        cat.eat();
+        cat.drink();
+        cat.sleep();
+
+        tiger.eat();
+        tiger.drink();
+        tiger.sleep();
+
+        System.out.println("---------------------------------------------------");
+        //Unique methods of the Classes
+        dog.bark();
+        //  cat.bark();
+        //  tiger.bark();
+
+
+        cat.meow();
+        //   dog.meow();                                    Compile error bec. we don't hve this() in the Dog Class
+        //   tiger.meow();                                  it's unique to the Cat Class.
+
+        tiger.hunt();
+        //  dog.hunt();
+        //  cat.hunt();
+
+        System.out.println("---------------------------------------------------");
+/*
+        System.out.println(dog.name);
+        System.out.println(dog.color);
+
+        dog.gender = 'K';
+        dog.age = -100;
+*/
+
+        System.out.println(dog.getName());
+        System.out.println(dog.getColor());
+
+        dog.setGender('F');
+        dog.setAge(8);
+
+        System.out.println(dog);
+
     }
 
 }
