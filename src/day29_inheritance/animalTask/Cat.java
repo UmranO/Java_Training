@@ -1,14 +1,14 @@
 package day29_inheritance.animalTask;
 
 
-    public class Cat extends Animal { // Cat Is An animal
+    public class Cat extends Animal {                            // Cat Is An animal
 
         public void meow() {
-            System.out.println(name + " is meowing");
+            System.out.println(getName() + " is meowing");
         }
 
         public void scratch() {
-            System.out.println(name + " is scratching");
+            System.out.println(getName() + " is scratching");
         }
 
     }
