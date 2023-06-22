@@ -1,7 +1,8 @@
 package day30_inheritance.phoneTask;
 
-public class Iphone extends Phone{
+public class IPhone extends Phone {                                                // Iphone Is A Phone
 
+    public static boolean hasApplePay = true;
     /*
     Tum iphone'larin brand'i Apple oldugu icin bunu user'a sormaya gerek yok.
     oldugu icin sper'in constructor'ini cagirdigimizda kendimiz direkt verebiliriz. Cunku IPhone'un constructor'inda
@@ -12,18 +13,18 @@ public class Iphone extends Phone{
 
     A:
     public Iphone(String brand, String model, String size, String color, double price) {
-  */public Iphone( String model, String size, String color, double price) {
+  */
+    public IPhone( String model, String size, String color, double price) {
         super("Apple", model, size, color, price);
     }
 
     public  void faceTime(long phoneNumber){
-      System.out.println( getModel() +" is face timing with " +phoneNumber );
+        System.out.println( getModel() +" is face timing with " +phoneNumber );
     }
 
     public void faceTime(String email){
-      System.out.println( getModel() +" is face timing with " + email );
+        System.out.println( getModel() +" is face timing with " + email );
     }
-
 }
 
 /*
