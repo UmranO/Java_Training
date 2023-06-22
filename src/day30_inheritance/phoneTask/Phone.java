@@ -55,7 +55,7 @@ public class Phone{
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(String color) {                            //In case list changes we can give the new Array
         String[] colors = {"Black", "White", "Silver", "Gold", "Pink", "Blue", "Red", "Gray"};
         if( Arrays.asList(colors).contains(color) ) {
             this.color = color;
@@ -74,9 +74,9 @@ public class Phone{
         System.out.println(getModel()+" is texting to "+phoneNumber);
     }
 
-    public String toString() {
-        return  getClass().getSimpleName() + "{" +
-                "brand='" + brand + '\'' +
+    public String toString() {                                 //When this toString() is inherited to the child classes
+        return  getClass().getSimpleName() + "{" +             //it will get class's name & it'll concate it with the
+                "brand='" + brand + '\'' +                     //rest of the text
                 ", model='" + model + '\'' +
                 ", size='" + size + '\'' +
                 ", color='" + color + '\'' +
