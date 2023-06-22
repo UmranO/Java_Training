@@ -7,7 +7,7 @@ Topics: OOP Inheritance
 packag name: day30_inheritance
 
 Warmup tasks:
-	1. Create a named Phone:
+	1. Create a Class named Phone:
 				Variables:
 					brand, model, size, price, color
 
