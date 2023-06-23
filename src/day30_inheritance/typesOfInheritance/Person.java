@@ -58,7 +58,7 @@ public class Person {
     }
 
     public void drink(String drink){
-        System.out.println(name+" si drinking "+drink);
+        System.out.println(name+" is drinking "+drink);
     }
 
 
