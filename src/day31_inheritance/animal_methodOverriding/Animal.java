@@ -69,8 +69,8 @@ public class Animal {
         System.out.println(name+" is drinking water");
     }
 //----common methods with different implementations---------------------------------------------------------------------
-    public void eat(){
-        System.out.println(name+" is eating");
+    public void eat(){                                              //We gave some generic implementations which will be
+        System.out.println(name+" is eating");                      //overriden in the sub class
     }
 
     public void sleep(){
