@@ -23,6 +23,11 @@ public class TestShapeObjects {
         rec1.draw();
 
         System.out.println("-------------------------------------------------------");
+        Triangle tri1=new Triangle(10.0,4);
+        System.out.println(tri1);
+        System.out.println(tri1.area());
+        System.out.println(tri1.perimeter());
+        tri1.draw();
 
 
     }
