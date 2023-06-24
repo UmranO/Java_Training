@@ -1,12 +1,13 @@
 package day31_inheritance.animal_methodOverriding;
 
 public class Animal {
-
+//----instance variables------------------------------------------------------------------------------------------------
     private String name, breed;
     private char gender;
     private int age;
     private String size, color;
 
+//----constructor variables---------------------------------------------------------------------------------------------
     public Animal(String name, String breed, char gender, int age, String size, String color) {
         setName(name);
         setBreed(breed);
@@ -15,8 +16,7 @@ public class Animal {
         setSize(size);
         setColor(color);
     }
-
-
+//----getters & setters-------------------------------------------------------------------------------------------------
     public String getName() {
         return name;
     }
@@ -64,11 +64,11 @@ public class Animal {
     public void setColor(String color) {
         this.color = color;
     }
-
+//----common methods----------------------------------------------------------------------------------------------------
     public void drink(){
         System.out.println(name+" is drinking water");
     }
-
+//----common methods with different implementations---------------------------------------------------------------------
     public void eat(){
         System.out.println(name+" is eating");
     }
@@ -76,7 +76,7 @@ public class Animal {
     public void sleep(){
         System.out.println(name +" sleeps 8 hours");
     }
-
+//----toString method---------------------------------------------------------------------------------------------------
     public String toString() {
         return getClass().getSimpleName() +"{" +
                 "name='" + name + '\'' +
@@ -87,6 +87,5 @@ public class Animal {
                 ", color='" + color + '\'' +
                 '}';
     }
-
 
 }
