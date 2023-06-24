@@ -16,7 +16,7 @@ public class TestShapeObjects {
 
         System.out.println("-------------------------------------------------------");
 
-        Rectangle rec1=new Rectangle(3.0,5.0);
+        Rectangle rec1=new Rectangle(5,3);
         System.out.println(rec1);
         System.out.println(rec1.area());
         System.out.println(rec1.perimeter());
