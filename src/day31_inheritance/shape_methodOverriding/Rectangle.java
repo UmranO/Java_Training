@@ -8,9 +8,10 @@ public class Rectangle extends Shape{
     public double getWidth(){
         return width;
     }
-    public void setWidth(double length){
-        this.length=length;
+    public void setWidth(double width){
+        this.width=width;
     }
+
     public double getLength(){
         return length;
     }
@@ -36,4 +37,15 @@ public class Rectangle extends Shape{
         System.out.println("* * * * * * * * ");
     }
 
-}
+    @Override
+    public String toString() {
+            return getClass().getSimpleName()+"{" +
+                    "name='" + getName() + '\'' +
+                    ", width='" + width + '\'' +
+                    ", length='" + length + '\'' +
+                    ", area='" + area() + '\'' +
+                    ", perimeter='" + perimeter() + '\'' +
+                    '}';
+        }
+    }
+
