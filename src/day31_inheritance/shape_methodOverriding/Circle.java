@@ -30,7 +30,11 @@ public class Circle extends Shape {
     @Override
     public void draw() {
         super.draw();
-        // code fragments that can draw a circle
+        System.out.println("\t\t*   *");
+        System.out.println("\t *\t\t   *");
+        System.out.println("\t*\t\t\t*");
+        System.out.println("\t *\t\t   *");
+        System.out.println("\t\t*   *");
     }
 
 
