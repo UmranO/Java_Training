@@ -20,10 +20,23 @@ public class Lion extends Animal {
 //    public void eat() {
 //        super.eat();                          This is calling the parent class's eat() it will give the same output
 //   }                                          so we need to override to have the Lion's implementation
+
     @Override
     public void eat() {
         System.out.println("Lion "+getName()+" is eating deer");
     }
 
+
+    public void roar(){
+        System.out.println("Lion "+getName()+" is roaring");
+    }
+
+
+    @Override
+    public String toString() {
+        return  super.toString().replace("}", "") +
+                ", African lion='" + isAfricanLion + '\'' +
+                '}';
+    }
 
 }
