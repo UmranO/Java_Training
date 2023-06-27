@@ -2,7 +2,7 @@ package day32_finalKeyword.personTask;
 
 import java.time.LocalDate;
 
-public class Student extends Person {
+public final class Student extends Person {
 
     private char grade;
 
