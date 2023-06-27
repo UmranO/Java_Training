@@ -40,7 +40,7 @@ public class Employee extends Person{                       //Since it may be a 
                 ", gender=" + getGender() +
                 ", age=" + getAge() +
                 ", dateOfBirth=" +getDateOfBirth() +
-                "jobTitle='" + jobTitle + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
                 ", salary=" + salary +
                 '}';
     }
