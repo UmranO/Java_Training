@@ -23,8 +23,8 @@ import java.time.LocalDate;
             }
             this.gender = gender;
             this.dateOfBirth = dateOfBirth;
-            this.age = LocalDate.now().getYear() - dateOfBirth.getYear();
-
+            this.age = LocalDate.now().getYear() - dateOfBirth.getYear();       //if we know the DOB then we don't have
+                                                                                //to ask for the age.
         }
 
         public String getName() {
