@@ -1,6 +1,6 @@
 package day31_inheritance.shape_methodOverriding;
 
-public class Square extends Shape {
+public final class Square extends Shape {
 
     private double side;
 
