@@ -20,6 +20,13 @@ public class TestEmployeeObjects {
         System.out.println(driver);
 
         System.out.println("-----------------------------------------------------------");
+                                                //since the abstract method work is overriden in the subclasses we have
+                                                //we have different implementations for the subclasses' objects.
+
+        teacher.work();                         //James is teaching
+        developer.work();                       //Lucy is coding in Java
+        tester.work();                          //Emily is testing
+        driver.work();                          //Aaron is driving.
 
 
 
