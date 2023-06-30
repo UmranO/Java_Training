@@ -53,12 +53,12 @@ public abstract class Car {                                                     
 //----common methods----------------------------------------------------------------------------------------------------
 
     //----final method-------------
-    public final void stop(){                                                   //final() can't be overriden in subclass
+    protected final void stop(){                                                   //final() can't be overriden in subclass
         System.out.println("Press the brake.");
     }
     //----abstract method-------------
-    public abstract void start();                                               //abstract() has to be overriden in sub
-                                                                                //classes depending on the needs of subc.
+    protected abstract void start();                                           //abstract() has to be overriden in sub
+                                                                               //classes depending on the needs of subc.
 
 //----toString method---------------------------------------------------------------------------------------------------                                                                               //----abstract method-------------
 
