@@ -12,14 +12,13 @@ package day34_abstraction.animalTask;
         }
 
         @Override
-        public void swim(){
-            System.out.println(getGender()+" and "+getSize()+" dolphins swim faster.");
+        public void play(){
+           System.out.println("It is always fun to play with "+getColor()+ " dolphins");
         }
 
         @Override
-        public void play(){
-           System.out.println("It is always fun to play with "+getColor()+ " dolphins");
-
+        public void swim(){
+            System.out.println(getGender()+" and "+getSize()+" dolphins swim faster.");
         }
 
 
