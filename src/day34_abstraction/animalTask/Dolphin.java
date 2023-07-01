@@ -18,7 +18,7 @@ package day34_abstraction.animalTask;
 
         @Override
         public void play(){
-           System.out.println("It is alwyas fun to play with "+getColor()+ " dolphins");
+           System.out.println("It is always fun to play with "+getColor()+ " dolphins");
 
         }
 
