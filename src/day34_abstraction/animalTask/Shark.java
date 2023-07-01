@@ -1,6 +1,6 @@
 package day34_abstraction.animalTask;
 
-public class Shark extends Animal implements WildAnimal{
+public class Shark extends Animal implements WildAnimal, Swimmable{
     public Shark(String name, String breed, char gender, int age, String size, String color) {
         super(name, breed, gender, age, size, color);
     }
@@ -13,5 +13,8 @@ public class Shark extends Animal implements WildAnimal{
     @Override
     public void hunt(){
         System.out.println(getBreed()+" of Shark hunts specially medium size of fish");
+    }
+    public void swim(){
+        System.out.println(getAge() +" shark is swimming.");
     }
 }
