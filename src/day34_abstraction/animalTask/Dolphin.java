@@ -10,4 +10,17 @@ package day34_abstraction.animalTask;
         public void eat() {
             System.out.println("Dolphin "+getName()+" is eating fish");
         }
+
+        @Override
+        public void swim(){
+            System.out.println(getGender()+" and "+getSize()+" dolphins swim faster.");
+        }
+
+        @Override
+        public void play(){
+           System.out.println("It is alwyas fun to play with "+getColor()+ " dolphins");
+
+        }
+
+
 }
