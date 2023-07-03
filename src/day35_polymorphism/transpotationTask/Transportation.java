@@ -1,12 +1,13 @@
 package day35_polymorphism.transpotationTask;
 
 public abstract class Transportation {
-
+//----instance variables------------------------------------------------------------------------------------------------
     private final String make, model;
     private String color;
     private final int year;
     private double price;
 
+//----constructor-------------------------------------------------------------------------------------------------------
     public Transportation(String make, String model, String color, int year, double price) {
         this.make = make;
         this.model = model;
@@ -14,7 +15,7 @@ public abstract class Transportation {
         this.year = year;
         setPrice(price);
     }
-
+//----getters & setters-------------------------------------------------------------------------------------------------
     public String getMake() {
         return make;
     }
@@ -43,17 +44,18 @@ public abstract class Transportation {
         this.price = price;
     }
 
-
+//----abstract methods--------------------------------------------------------------------------------------------------
     public abstract void transportPeople();
 
     public abstract void start();
 
-
+//----instance methods--------------------------------------------------------------------------------------------------
 
     public void stop(){
         System.out.println("Shut off the engine");
     }
 
+//----toString()--------------------------------------------------------------------------------------------------------
     public String toString() {
         return getClass().getSimpleName()+"{" +
                 "make='" + make + '\'' +
