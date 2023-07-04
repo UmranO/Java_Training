@@ -26,5 +26,16 @@ public class PolymorphismIntro {
         //Animal animal = new Tesla("Model Y", "Blue", 2022, 60000);                      =>Since there isn't "IS A"
                                                                                           //relationship between Animal
                                                                                           //and Tesla
+
+        Animal animal = new Dog("Max", "Husky", 'M', 4, "Small", "White");
+        animal.eat();                                                                     //Parent type decides what we
+        animal.drink();                                                                   //can call in Polymorphism.
+        animal.sleep();                                                                   //These are the ()s of Animal
+
+        //animal.play();                                                                  We can't call the object type
+        //animal.bark();                                                                  's methods in in Polymorphism.
+
+
+
     }
 }
