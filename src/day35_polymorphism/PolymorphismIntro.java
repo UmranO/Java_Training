@@ -7,6 +7,8 @@ import day34_abstraction.carTask.Car;
 import day34_abstraction.carTask.Honda;
 import day34_abstraction.carTask.Tesla;
 
+import java.util.Arrays;
+
 public class PolymorphismIntro {
     public static void main(String[] args) {
 
@@ -67,6 +69,19 @@ public class PolymorphismIntro {
 
         Tester tester = new Tester("Emily", 35, 'F', "E1", "Manual Tester", 80000);
 
+                                                                                 //Object is the parent of all classes
+        Object[] objects = {str, n, r, d, circle, honda, audi, tesla, teacher, developer, driver, tester};
+
+        System.out.println(Arrays.toString(objects));
+
+        Object[] employees = {teacher, developer, driver, tester};
+
+                                                                              //It's better to give specific Type rather
+                                                                              //than Object as the ref.Type. so that we
+                                                                              //can use the features of that category
+
+        Employee obj = new Driver("Aaron", 48, 'M', "D1", "Truck Driver", 90000);
+        obj.work();
 
 
     }
