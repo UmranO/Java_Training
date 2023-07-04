@@ -1,6 +1,10 @@
 package day35_polymorphism;
 import day34_abstraction.animalTask.*;
 import day34_abstraction.carTask.Tesla;
+import day31_inheritance.shape_methodOverriding.Circle;
+import day34_abstraction.carTask.Audi;
+import day34_abstraction.carTask.Car;
+import day34_abstraction.carTask.Honda;
 
 public class PolymorphismIntro {
     public static void main(String[] args) {
@@ -35,6 +39,22 @@ public class PolymorphismIntro {
         //animal.play();                                                                  We can't call the object type
         //animal.bark();                                                                  's methods in in Polymorphism.
 
+
+        System.out.println("---------------------------------------------------");
+
+        String str = "Java";
+
+        Integer n = 100;
+
+        Boolean r = false;
+
+        Double d = 10.5;
+
+        Circle circle = new Circle(4);
+
+        Honda honda = new Honda("Pilot", "Black", 2019, 35000);
+
+        Audi audi = new Audi("Q6", "Silver", 2020, 36000);
 
 
     }
