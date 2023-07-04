@@ -1,5 +1,7 @@
 package day35_polymorphism;
 import day34_abstraction.animalTask.*;
+import day34_abstraction.carTask.Tesla;
+
 public class PolymorphismIntro {
     public static void main(String[] args) {
 
@@ -15,5 +17,14 @@ public class PolymorphismIntro {
         Shark shark = null;
         Duck duck = null;
 
+                                                      //To give a class or interface as the referance Type there should
+                                                      //be a "Is A Relationship" betw. the Ref.Type & the object Type
+
+        Animal[] animals = {dog, cat, tiger, lion, eagle, parrot, dolphin, shark, duck};  //No C.error bec. all those
+                                                                                          //objects are Animal
+
+        //Animal animal = new Tesla("Model Y", "Blue", 2022, 60000);                      =>Since there isn't "IS A"
+                                                                                          //relationship between Animal
+                                                                                          //and Tesla
     }
 }
