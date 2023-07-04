@@ -1,10 +1,11 @@
 package day35_polymorphism;
-import day34_abstraction.animalTask.*;
-import day34_abstraction.carTask.Tesla;
 import day31_inheritance.shape_methodOverriding.Circle;
+import day33_abstraction.employeeTask.*;
+import day34_abstraction.animalTask.*;
 import day34_abstraction.carTask.Audi;
 import day34_abstraction.carTask.Car;
 import day34_abstraction.carTask.Honda;
+import day34_abstraction.carTask.Tesla;
 
 public class PolymorphismIntro {
     public static void main(String[] args) {
@@ -55,6 +56,17 @@ public class PolymorphismIntro {
         Honda honda = new Honda("Pilot", "Black", 2019, 35000);
 
         Audi audi = new Audi("Q6", "Silver", 2020, 36000);
+
+        Tesla tesla = new Tesla("Model Y", "Blue", 2022, 60000);
+
+        Teacher teacher = new Teacher("James", 45,  'M', "B1", "Math Teacher", 75000);
+
+        Developer developer = new Developer("Lucy", 30, 'F', "C1", "Java Developer", 95000, "Java");
+
+        Driver driver = new Driver("Aaron", 48, 'M', "D1", "Truck Driver", 90000);
+
+        Tester tester = new Tester("Emily", 35, 'F', "E1", "Manual Tester", 80000);
+
 
 
     }
