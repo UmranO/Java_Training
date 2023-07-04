@@ -1,5 +1,7 @@
 package day35_polymorphism;
 import day34_abstraction.animalTask.*;
+import day35_polymorphism.transpotationTask.*;
+
 
 public class PolymorphismPractice {
     public static void main(String[] args){
@@ -23,6 +25,19 @@ public class PolymorphismPractice {
         // obj1.sleep();
         obj1.fly();
         System.out.println(obj1.canFly);
+        Lion lion = null;
+
+        Parrot parrot = null;
+        Shark shark = null;
+        Dolphin dolphin = null;
+        Eagle eagle = null;
+        Duck duck = null;
+        Dog dog = null;
+        Cat cat = null;
+        CydeoCar cydeoCar = null;
+
+        Flyable[] birds = { parrot, eagle, duck};
+
 
     }
 
