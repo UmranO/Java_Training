@@ -1,7 +1,7 @@
 package day34_abstraction.animalTask;
 
 public interface Flyable {
-    boolean canPlay=true;
+    boolean canFly=true;
 
     void fly();
 
