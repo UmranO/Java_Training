@@ -4,7 +4,6 @@ import day33_abstraction.employeeTask.*;
 
 public class PolymorphismPractice3_UO {
 
-    public class PolymorphismPractice3 {
         public static void main(String[] args) {
 
             Employee[] employees = {
@@ -80,4 +79,3 @@ public class PolymorphismPractice3_UO {
         6. Display the names of employees who are not developers
  */
 
-}
