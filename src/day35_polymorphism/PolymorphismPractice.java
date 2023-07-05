@@ -52,8 +52,16 @@ public class PolymorphismPractice {
         boolean isTesla=car instanceof Tesla;
         boolean isAudi=car instanceof Audi;
 
-        System.out.println(isTesla);                                            //true
-        System.out.println(isAudi);                                             //false
+        System.out.println("isTesla = " + isTesla);                             //true
+        System.out.println("isAudi = " + isAudi);                               //false
+
+        boolean isElectricCar= car instanceof Electric;
+        boolean hasAutoPark= car instanceof AutoPark;
+        boolean hasAutoPilot=car instanceof AutoPilot;
+
+        System.out.println("isElectricCar = " + isElectricCar);                //true
+        System.out.println("hasAutoPark = " + hasAutoPark);                    //true
+        System.out.println("hasAutoPilot = " + hasAutoPilot);                  //true
 
 
     }
