@@ -30,6 +30,26 @@ public class PolymorphismPractice3 {
         for (Employee each : employees) {
             System.out.println(each.getName() + " : " + each.getJobTitle());
         }
+        System.out.println("-----------------------------------------------------");
+
+        int  countDeveloper  = 0,
+                countTester  = 0,
+                countDriver  = 0,
+                countTeacher = 0;
+
+        for (Employee each : employees) {
+
+            if(each instanceof Developer){          // if the employee is Developer
+                countDeveloper++;
+            }else if(each instanceof Tester){       // if the employee is Tester
+                countTester++;
+            }else if(each instanceof Teacher){      // if the employee is Teacher
+                countTeacher++;
+            }else{
+                countDriver++;
+            }
+
+        }
 
 
     }
