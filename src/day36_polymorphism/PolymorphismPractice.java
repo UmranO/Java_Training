@@ -38,25 +38,31 @@ public class PolymorphismPractice {
 
         System.out.println("---------------------------------------------------------");
 
-//  2. How many Iphones in the array of phones?
+//  2 & 3 How many Iphones/Samsung in the array of phones?
         int countIphone = 0;
         int countSamsung = 0;
 
         for (Phone each : phones) {
 
-            if(each instanceof IPhone){ // if the phone is Iphone
+            if(each instanceof IPhone){                                           // if the phone is Iphone
                 countIphone++;
             }
 
-            if(each instanceof Samsung){ // if the phone is samsung
+            if(each instanceof Samsung){                                          // if the phone is samsung
                 countSamsung++;
             }
+        }
+        System.out.println(countIphone);
+        System.out.println(countSamsung);
 
+        System.out.println("---------------------------------------------------------");
+
+//	4. Display the models of Iphones and Samsung that has the price of 700 or greater
+        for (Phone each : phones) {
+            if(each instanceof IPhone && each.getPrice()>=700 || each instanceof Samsung && each.getPrice()>=700){
+                System.out.println(each.getModel());}
         }
 
-//	3. How many Samsungs in the array of phones?
-
-//	4. Display the models of Iphones and samsung that has the price of 700 or greater
     }
 }
 /*
