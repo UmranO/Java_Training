@@ -58,10 +58,28 @@ public class PolymorphismPractice {
         System.out.println("---------------------------------------------------------");
 
 //	4. Display the models of Iphones and Samsung that has the price of 700 or greater
+//----M Way-------------------------------------------------------------------------------------------------------------
         for (Phone each : phones) {
+            if( each instanceof IPhone || each instanceof Samsung){ // if the phone is Iphone or samsung
+                if(each.getPrice() >= 700){
+                    System.out.println(each.getModel());
+                }
+            }
+        }
+        System.out.println("----------------------------------------------------------------------------------------");
+//----UO Way-------------------------------------------------------------------------------------------------------------
+      for (Phone each : phones) {
             if(each instanceof IPhone && each.getPrice()>=700 || each instanceof Samsung && each.getPrice()>=700){
                 System.out.println(each.getModel());}
         }
+
+      /* Object Class's equals()
+       @Override
+       public boolean equals(Object obj) {
+        return super.equals(obj);
+      }
+       // ==,  .equals()
+       */
 
     }
 }
