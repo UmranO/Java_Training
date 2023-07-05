@@ -51,14 +51,17 @@ public class PolymorphismPractice3 {
 
         }
         System.out.println("countDeveloper = " + countDeveloper);
-        System.out.println("countTester = " + countTester);
-        System.out.println("countDriver = " + countDriver);
-        System.out.println("countTeacher = " + countTeacher);
+        System.out.println("countTester    = " + countTester);
+        System.out.println("countDriver    = " + countDriver);
+        System.out.println("countTeacher   = " + countTeacher);
 
         System.out.println("--------------------------------------------------------");
 
-
-
+        for (Employee each : employees) {
+            if( !(each instanceof Developer) ){
+                System.out.println(each.getName());
+            }
+        }
 
     }
 }
