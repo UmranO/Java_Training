@@ -38,6 +38,23 @@ public class PolymorphismPractice {
 
         Flyable[] birds = { parrot, eagle, duck};
 
+        Swimmable[] fishes = {dolphin, shark, duck};
+
+        Playable[] friendlyAnimals = {dog, cat, duck};
+
+
+        boolean isAnimal = dog instanceof Animal;                                //variable name+instanceof+Class name
+        System.out.println(isAnimal);
+
+        System.out.println("------------------------------------------------");
+
+        Car car = new Tesla("Tesla", "Model Y", "White", 2020, 55000);
+        boolean isTesla=car instanceof Tesla;
+        boolean isAudi=car instanceof Audi;
+
+        System.out.println(isTesla);                                            //true
+        System.out.println(isAudi);                                             //false
+
 
     }
 
