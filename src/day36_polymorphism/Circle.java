@@ -23,6 +23,9 @@ public class Circle {
             return 2 * radius * PI;
         }
 
+//--UOS-Her yarattigimiz custom class'da Object Class'in metodlarini bu custom class icin uyarliyoruz.eg toString,equals
+
+//--toString()---UOS-eg burada shortcut'tan generate ettigin bile orjinalinden farkli-----------------------------------
         @Override
         public String toString() {
             return "Circle{" +
@@ -32,10 +35,28 @@ public class Circle {
                     '}';
         }
 
+//--equals()---Burada instance variable'larini set ettigimiz circle'la argument olarak verilen circle'u compare ediyoruz
+// .equals()
+
+        @Override
+        public boolean equals(Object obj) {
+
+            if( !(obj instanceof Circle) ){                  //if the specified object is not circle, then we should not
+                System.err.println("Invalid Object");        //compare them
+                System.exit(1);
+            }
+
+            if( this.radius ==  ( (Circle)obj ).radius ){   //if the current circle's radius is equal to the given
+                return true;                                //circle's radius, then two circles are equal
+            }
+
+            return false;                                   //Burada argument'in cicle oldugunu biliyoruz ama radius'lari
+        }                                                   //esit olmadigi icin equal degiller diyoruz.
 
 
 
-        /* toString'i anlamak icin
+
+/* toString'i anlamak icin
 
 ShortCut'tan Override edilmis hali:
 
