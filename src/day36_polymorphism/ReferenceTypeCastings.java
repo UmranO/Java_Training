@@ -4,6 +4,9 @@ import day29_inheritance.animalTask.Animal;
 import day29_inheritance.animalTask.Dog;
 import day30_inheritance.phoneTask.Nokia;
 import day30_inheritance.phoneTask.Phone;
+import day33_abstraction.employeeTask.Developer;
+import day33_abstraction.employeeTask.Driver;
+import day33_abstraction.employeeTask.Employee;
 
 public class ReferenceTypeCastings {
     public static void main(String[] args) {
@@ -33,11 +36,11 @@ public class ReferenceTypeCastings {
                                                 //between dog and cat
 
         System.out.println("-------------------------------------------------------------");
-        //object type is Nokia But
-        //parent type is Phone
+                                                                                       //object type is Nokia But
+                                                                                       //parent type is Phone
         Phone phone = new Nokia("XR20", "Small", "Blue", 350);  //Parent referencing the child
-        //there is Upcasting If Upcasting
-        //there is also Polymorphism
+                                                                                       //there is Upcasting If Upcasting
+                                                                                       //there is also Polymorphism
 //----Common methods of the Phone class so we can call it from phone----------------------------------------------------
 
         phone.call(911);
@@ -51,10 +54,21 @@ public class ReferenceTypeCastings {
         //phone's object is Nokia --It will be a ClassCastException since no "IS A" relationship btw Nokia & IPhone
         //Nokia object can't be converted to the IPhone.
 
+        System.out.println("-------------------------------------------------------------");
 
+        Employee employee = new Developer("Lucy", 30, 'F', "C1", "Java Developer", 95000, "Java");
 
+//----Common methods of the Employee class so we can call it from employee----------------------------------------------
 
+        employee.work();
 
+//----Unique variable of the Developer class so we can't call it from employee without downcasting it Developer---------
+
+        ((Developer) employee).getProgrammingLanguage();                                    //=>Java
+
+        System.out.println("-------------------------------------------------------------");
+
+       //Driver driver=(Driver) employee;                                                   ClassCastException
 
     }
 }
