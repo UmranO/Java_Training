@@ -2,7 +2,6 @@ package day36_polymorphism;
 
 import day29_inheritance.animalTask.Animal;
 import day29_inheritance.animalTask.Dog;
-import day30_inheritance.phoneTask.IPhone;
 import day30_inheritance.phoneTask.Nokia;
 import day30_inheritance.phoneTask.Phone;
 
@@ -32,6 +31,25 @@ public class ReferenceTypeCastings {
 
         //  ( (Cat)animal1).scratch();          //Dog can't be converted to Cat, bec. there is not "IS A" relationship
                                                 //between dog and cat
+
+        System.out.println("-------------------------------------------------------------");
+        //object type is Nokia But
+        //parent type is Phone
+        Phone phone = new Nokia("XR20", "Small", "Blue", 350);  //Parent referencing the child
+        //there is Upcasting If Upcasting
+        //there is also Polymorphism
+//----Common methods of the Phone class so we can call it from phone----------------------------------------------------
+
+        phone.call(911);
+        phone.text(123456);
+
+//----Unique method of the Nokia class so we can't call it from phone without downcasting it Nokia----------------------
+
+        ((Nokia) phone).selfDefense();
+
+        //((IPhone)phone).faceTime(163456L); We can't call this faceTime() which belongs to the IPhone from phone bec.
+        //phone's object is Nokia --It will be a ClassCastException since no "IS A" relationship btw Nokia & IPhone
+        //Nokia object can't be converted to the IPhone.
 
 
 
