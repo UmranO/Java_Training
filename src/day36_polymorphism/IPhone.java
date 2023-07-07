@@ -82,4 +82,32 @@ public class IPhone {
                 ", price=" + price +
                 '}';
     }
+//----equals()--M Way---------------------------------------------------------------------------------------------------
+    @Override
+    public boolean equals(Object obj){                     //Be careful Reference Type is parent type(Object)
+        if(obj instanceof IPhone){                         //if the given object is IPhone
+            if (model.equals(((IPhone)obj).model)){        //if the model of the IPhone is equal to given IPhone's model
+                if (color.equals(((IPhone) obj).color)){   //if the color of the IPhone is equal to given IPhone's color
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
+//----equals()--UO Way--------------------------------------------------------------------------------------------------
+//    public boolean equals(Object obj){
+//        if(!(obj  instanceof IPhone)){
+//            System.err.println("It is not an IPhone object");
+//            System.exit(1);
+//        }
+//        if((model.equals(((IPhone)obj).model))&&((color.equals(((IPhone)obj).color)))){
+//            return true;
+//        }
+//        return false;
+//    }
+
+
+
 }
