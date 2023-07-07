@@ -6,11 +6,14 @@ public class Circle {
         public final static double PI = 3.14;
 
         public Circle(double radius) {
+
             setRadius(radius);
         }
+
         public double getRadius() {
             return radius;
         }
+
         public void setRadius(double radius) {
             this.radius = radius;
         }
@@ -31,7 +34,7 @@ public class Circle {
             return "Circle{" +
                     "radius=" + radius +
                     ", area=" + area() +
-                    ", perimeter=" + area() +
+                    ", perimeter=" + perimeter() +
                     '}';
         }
 
