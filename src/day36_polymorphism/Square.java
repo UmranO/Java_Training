@@ -15,6 +15,7 @@ public boolean equals(Object obj) {
         System.exit(1);
     }
 
+
     if(side ==  ( (Square)obj ).side ){
         return true;
     }
