@@ -29,7 +29,7 @@ public class TestEqualMethod {
 
         Square s1=new Square(5.0);
         Square s2=new Square(5.0);
-        System.err.println(s1.equals(circle1));
+        System.out.println(s1.equals(s2));
 
     }
 }
