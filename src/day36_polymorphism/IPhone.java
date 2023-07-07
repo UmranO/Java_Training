@@ -43,7 +43,7 @@ public class IPhone {
     }
 
     public void setPrice(double price) {
-        if( price <= 0){
+        if (price <= 0) {
             System.err.println("Invalid price: " + price);
             System.exit(1);
         }
@@ -56,25 +56,26 @@ public class IPhone {
 
     public void setColor(String color) {
         String[] colors = {"Black", "White", "Silver", "Gold", "Pink", "Blue", "Red", "Gray"};
-        if( Arrays.asList(colors).contains(color) ) {
+        if (Arrays.asList(colors).contains(color)) {
             this.color = color;
-        }else{
-            System.err.println("Invalid color: "+color+"\n color of the can only be : "+ Arrays.toString(colors));
+        } else {
+            System.err.println("Invalid color: " + color + "\n color of the can only be : " + Arrays.toString(colors));
             System.exit(1);
         }
-
     }
 
-    public void call(long phoneNumber){
-        System.out.println(getModel()+" is calling "+phoneNumber);
+    public void call(long phoneNumber) {
+        System.out.println(getModel() + " is calling " + phoneNumber);
     }
 
-    public void text(long phoneNumber){
-        System.out.println(getModel()+" is texting to "+phoneNumber);
+
+    public void text(long phoneNumber) {
+        System.out.println(getModel() + " is texting to " + phoneNumber);
     }
+
 
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", size='" + size + '\'' +
@@ -82,7 +83,25 @@ public class IPhone {
                 ", price=" + price +
                 '}';
     }
-//----equals()--M Way---------------------------------------------------------------------------------------------------
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if( !(obj instanceof IPhone)){                                   //if the given object is not Iphone
+            System.err.println("Invalid object, Object must be Iphone");
+            System.exit(1);
+        }
+        if( model.equals(  ( (IPhone)obj ).model ) ){                    //if the model of the Iphone is equal to the
+                                                                         //given Iphone's model
+            if(color.equals( ( (IPhone)obj ).color  )   ){               //if the color of the Iphone is equal to the
+                                                                         //given iphone's color
+                return true;        }                                    //hem model hem renk ayni ise return true
+        }
+
+        return false;                                                    //hem model hem renk ayni degilse return false
+    }
+    /*
+//----equals()--M's ilk Way--Bunda farekli parametre olarak farkli object verirsek programi terminate etmiyor-----------
     @Override
     public boolean equals(Object obj){                     //Be careful Reference Type is parent type(Object)
         if(obj instanceof IPhone){                         //if the given object is IPhone
@@ -96,18 +115,30 @@ public class IPhone {
     }
 
 
-//----equals()--UO Way--------------------------------------------------------------------------------------------------
-//    public boolean equals(Object obj){
-//        if(!(obj  instanceof IPhone)){
-//            System.err.println("It is not an IPhone object");
-//            System.exit(1);
-//        }
-//        if((model.equals(((IPhone)obj).model))&&((color.equals(((IPhone)obj).color)))){
-//            return true;
-//        }
-//        return false;
-//    }
 
+----equals()--UO Way--------------------------------------------------------------------------------------------------
+    public boolean equals(Object obj){
+        if(!(obj  instanceof IPhone)){
+            System.err.println("It is not an IPhone object");
+            System.exit(1);
+        }
+        if((model.equals(((IPhone)obj).model))&&((color.equals(((IPhone)obj).color)))){
+            return true;
+        }
+        return false;
+    }
+//----equals()--UO 2nd Way----------------------------------------------------------------------------------------------
+public boolean equals(Object obj) {
+    if (obj instanceof IPhone) {                                                           //PreCondition
+        if ((model.equals(((IPhone) obj).model)) && color.equals(((IPhone) obj).color)) {  //Checking the additional
+            return true;                                                                   //Hepsi dogru ise
+        }
+    } else {System.err.println("Invalid object");  System.exit(1);}                  //Precondition not met
 
-
+    return false;                                                   //Precondition dogru ama digerleri dogru degilse
 }
+*/
+}
+
+
+
