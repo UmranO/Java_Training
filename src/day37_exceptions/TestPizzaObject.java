@@ -11,12 +11,20 @@ public class TestPizzaObject {
         System.out.println(pizza1.equals(pizza2));            //=>true             //checks if they are equal objects
 
 //----If we pass different objects--------------------------------------------------------------------------------------
-
+/*
         //String object:
-        System.out.println(pizza1.equals("Pizza"));          //=>Invalid object: String
+        System.out.println(pizza1.equals("Pizza"));           //=>Invalid object: String
         //boolean
         System.out.println(pizza1.equals(true));              //=>Invalid object: true
         //integer
-        System.out.println(pizza1.equals(100));              //=>Invalid object: 100
+        System.out.println(pizza1.equals(100));               //=>Invalid object: 100
+*/
+        System.out.println("--------------------------------------------------------------------------");
+
+        Object obj = new Pizza('S', 4, 3); //upcasting
+
+        boolean r = obj.equals(pizza2);                       //=>true
+        System.out.println(r);
+
     }
 }
