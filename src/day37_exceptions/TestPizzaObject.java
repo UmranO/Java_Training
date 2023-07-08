@@ -1,5 +1,7 @@
 package day37_exceptions;
 
+import day36_polymorphism.Circle;
+
 public class TestPizzaObject {
     public static void main(String[] args) {                   //2 different Pizza objects are allocated in the Heap now
 
@@ -12,11 +14,11 @@ public class TestPizzaObject {
 
 //----If we pass different objects--------------------------------------------------------------------------------------
 /*
-        //String object:
+        String object:
         System.out.println(pizza1.equals("Pizza"));           //=>Invalid object: String
-        //boolean
+        boolean
         System.out.println(pizza1.equals(true));              //=>Invalid object: true
-        //integer
+        integer
         System.out.println(pizza1.equals(100));               //=>Invalid object: 100
 */
         System.out.println("--------------------------------------------------------------------------");
@@ -25,6 +27,17 @@ public class TestPizzaObject {
 
         boolean r = obj.equals(pizza2);                       //=>true
         System.out.println(r);
+
+        double total=((Pizza)obj).calcCost();                //Have to downcast it to object type to call the unique()s
+                                                             //of Pizza class-We have to have "Is A Rel" bet.the classes
+                                                             //to be able to do downcasting otherwise ClassCastException
+        System.out.println(total);
+
+        //double area = ( (Circle)obj ).area();               //=>ClassCastException No rel bet Circle & Pizza classes
+
+        //System.out.println(area);
+
+        System.out.println("Test Completed");
 
     }
 }
