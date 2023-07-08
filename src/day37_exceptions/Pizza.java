@@ -83,8 +83,8 @@ public class Pizza {
                                                                   //we downcast & assign it to a variable so that
         Pizza pizza = (Pizza)obj;                                 //we can directly use it without downcasting each time
 
-        if(size ==   pizza.getSize()   ){                                          //The assumption is that 2 pizzas are
-            if( numberOfPepperoniTopping == pizza.getNumberOfPepperoniTopping()){  //equal if size & # of PTop.are ==
+        if(size ==   pizza.size   ){                                          //The assumption is that 2 pizzas are
+            if( numberOfPepperoniTopping == pizza.numberOfPepperoniTopping){  //equal if size & # of PTop.are ==
                 return true;
             }
         }
