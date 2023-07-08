@@ -72,6 +72,27 @@ public class Pizza {
     }
 
 
+
+    @Override
+    public boolean equals(Object obj) {                            //Polymorphism bec Object is used as reference
+
+        if( !(obj instanceof Pizza )){ // if the specified object is not pizza
+            System.err.println("Invalid object: "+obj);
+            System.exit(1);
+        }
+                                                                  //we downcast & assign it to a variable so that
+        Pizza pizza = (Pizza)obj;                                 //we can directly use it without downcasting each time
+
+        if(size ==   pizza.getSize()   ){                                          //The assumption is that 2 pizzas are
+            if( numberOfPepperoniTopping == pizza.getNumberOfPepperoniTopping()){  //equal if size & # of PTop.are ==
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
 }
 /*
 1. Create a class named Pizza
