@@ -1,5 +1,7 @@
 package day37_exceptions;
 
+import java.io.FileInputStream;
+
 public class ExceptionsIntro {
     public static void main(String[] args) {
 
@@ -27,6 +29,11 @@ public class ExceptionsIntro {
         }
 
         System.out.println("---------------------------------");
-        
+
+      //  FileInputStream file = new FileInputStream("");              //Checked Exception
+
+        //  Thread.sleep(3000); // Checked exception
+
+
     }
 }
