@@ -8,7 +8,7 @@ System.out.println("----Unchecked Exception (RunTime)---------------------------
 
         try {
 
-            System.out.println(9 / 0); // Arithmetic Exception
+            System.out.println(9 / 0);                        // Arithmetic Exception
 
             System.out.println("Try block");
 
@@ -45,7 +45,7 @@ System.out.println("----Unchecked Exception (RunTime)---------------------------
         }catch (InterruptedException e){
             System.out.println("Catch Block");
         }
-        System.out.println("Program3 ended");
+        System.out.println("Program3 ended");              //It prints 5 seconds later than it prints Try Block
 
     }
 }
