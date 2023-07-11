@@ -34,6 +34,18 @@ System.out.println("----Unchecked Exception (RunTime)---------------------------
         }
         System.out.println("Program2 ended");
 
+        System.out.println("----Checked Exception (CompileTime)--------------------------------------------------------------");
+
+        System.out.println("Program3 started");
+
+        try {
+            Thread.sleep(5000);
+            System.out.println("Try Block");
+
+        }catch (InterruptedException e){
+            System.out.println("Catch Block");
+        }
+        System.out.println("Program3 ended");
 
     }
 }
