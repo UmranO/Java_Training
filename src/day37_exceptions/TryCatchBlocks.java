@@ -8,14 +8,14 @@ System.out.println("----Unchecked Exception (RunTime)---------------------------
 
         try {
 
-            System.out.println(9 / 0);                        // Arithmetic Exception
+            System.out.println(9 / 0);                        //will result in Arithmetic Exception-so we put the code
+                                                              //potential exception in the try block
+            System.out.println("Try block");                  //try block can 't be an independent block
 
-            System.out.println("Try block");
-
-        } catch (ArithmeticException e) {
-
-            System.out.println("Catch Block");
-
+        } catch (ArithmeticException e) {                     //So we give the catch block as well.When we create the
+                                                              //catch block we need to pass a parameter so that the
+            System.out.println("Catch Block");                //in case of an excep.the excep.object can be passed to
+                                                              //the catch block.
         }
         System.out.println("Program1 ended");
 
@@ -24,7 +24,7 @@ System.out.println("----Unchecked Exception (RunTime)---------------------------
         System.out.println("Program2 started");
 
         String str = null;
-                                                              //NullPointerException
+                                                              //It will result in NullPointerException
         try {                                                 //We put the code fragment with the potential exception
             System.out.println(str.toLowerCase());            //source in the try block. If it is solved exception will
             System.out.println("Try Block");                  //be gone and no need for the catch block but if not
