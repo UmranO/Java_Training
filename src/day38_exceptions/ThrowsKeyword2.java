@@ -2,8 +2,8 @@ package day38_exceptions;
 
 public class ThrowsKeyword2 {
 
-    public static void main(String[] args){
-
+    public static void main(String[] args) throws InterruptedException {
+    method1();
 
     }
     /*
@@ -18,9 +18,15 @@ public class ThrowsKeyword2 {
         Thread.sleep(5000);                                        //isn't called a lot like the main() above then
                                                                          //throws kywrd is a good solution but if it is
     }                                                                    //smtg like a utility() which is frequently
-}                                                                        //called then to solve the issue permanatly
+                                                                         //called then to solve the issue permanently
                                                                          //with a try catch would be wiser so that the
                                                                          //callers don't need to deal with it.
 
+    public static void method1() throws InterruptedException {
+        System.out.println("Hello World");
+        pauseFor5Seconds();
+        System.out.println("Hello Cydeo");
 
+    }
 
+}
