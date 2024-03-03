@@ -7,11 +7,14 @@ public class Library {
                                                         //to handle it with try catch blocks which gets rid of the error
                                                         //permanently instead of ignoring with throws keyword since the
                                                         // caller of the method still needs to handle the error.
+
         try {
             Thread.sleep( (long)(seconds * 1000L) );
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(e);              //Verilen seceneklerdentry catch secince bu satiri otomatik
+                                                        //olarak getirdi
         }
+
 
     }
 
