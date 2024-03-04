@@ -1,5 +1,6 @@
 package day38_exceptions;
 
+import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -32,6 +33,17 @@ public class ThrowKeyword {
         // System.out.println("Hello World");                that line31 will give an exception so line 32 becomes
                                                              //unreachable
 
+        //We can also throw checked exceptions BUT mantikli degil since it requires immediate handling.
 
+        //throw new FileNotFoundException(""); So ifg we decide to handle it with try catch:
+
+        try {
+            throw new FileNotFoundException("");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("-----------------------------------------------------------");
+        }
     }
-}
+
