@@ -1,9 +1,7 @@
 package day38_exceptions;
-
 import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
 
 public class ThrowKeyword {
 
@@ -44,6 +42,19 @@ public class ThrowKeyword {
         }
 
         System.out.println("-----------------------------------------------------------");
-        }
+
+        RuntimeException exception=new RuntimeException ();    //To be able to throw an exception you should either an
+                                                               //object or a reference variable that's referencing that
+        //throw exception;                                      that Exception object which is equivalent of giving the
+                                                               //object. But usually we use the variable if we'll use
+        //throw new RuntimeException("");                      //the exception object more than once if not just use
+                                                               //exception object.
+
+
+
+        //throw new Person("Jimmy", 51,'M');                     we can't use throw OR throws kword
+                                                               //with any class which doesn't have any is A relationship
+                                                               //which is not an exception with Throwable.
+    }
     }
 
