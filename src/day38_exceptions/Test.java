@@ -1,6 +1,5 @@
 package day38_exceptions;
 import utilities.Library;
-
 import java.time.LocalTime;
 
 
@@ -28,10 +27,15 @@ public class Test {
 
         System.out.println("--------------------------------------------------------------------------");
 
-        if(LocalTime.now().equals(LocalTime.of(4,0))){     //Application of our unchecked Exception called
+        if(LocalTime.now().equals(LocalTime.of(2,0))){      //Application of our unchecked Exception called
             throw new BreakTimeException();                             //BreakTimeException
         }
+        // throw new RuntimeException("Something went wrong");
 
+
+           throw new BreakTimeException("Time to go home");
+
+        // throw new BreakTimeException();
     }
 
 }
