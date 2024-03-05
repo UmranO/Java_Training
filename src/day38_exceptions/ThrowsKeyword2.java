@@ -2,8 +2,8 @@ package day38_exceptions;
 
 public class ThrowsKeyword2 {
 
-    public static void main(String[] args) throws InterruptedException {
-    method1();
+    public static void main(String[] args) throws InterruptedException {    //top1 so it has to use throws or try catch
+    method1();                                                              //bec. it called method1(0 which has excep.
 
     }
     /*
@@ -22,11 +22,11 @@ public class ThrowsKeyword2 {
                                                                          //with a try catch would be wiser so that the
                                                                          //callers don't need to deal with it.
 
-    public static void method1() throws InterruptedException {
-        System.out.println("Hello World");
-        pauseFor5Seconds();
-        System.out.println("Hello Cydeo");
-
+    public static void method1() throws InterruptedException {           //when method1() calls pauseFor5Seconds() which
+        System.out.println("Hello World");                               //has an except. which is not handled now needs
+        pauseFor5Seconds();                                              //either handle or ignore it. Here we chose to
+        System.out.println("Hello Cydeo");                               //ignore it with throws when main() calls
+                                                                         //this method1() now main() has the excep.(top1)
     }
 
 }
