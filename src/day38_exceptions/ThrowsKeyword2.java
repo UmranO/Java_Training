@@ -27,6 +27,6 @@ public class ThrowsKeyword2 {
         pauseFor5Seconds();                                              //either handle or ignore it. Here we chose to
         System.out.println("Hello Cydeo");                               //ignore it with throws when main() calls
                                                                          //this method1() now main() has the excep.(top1)
-    }
-
-}
+    }                                                                    //the() that used throws gets rid of the excep.
+                                                                         //by ignoring it but the caller has to deal with it
+}                                                                        //if throws is used exit code is 0
