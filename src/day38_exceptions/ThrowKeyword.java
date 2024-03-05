@@ -33,7 +33,7 @@ public class ThrowKeyword {
 
         //We can also throw checked exceptions BUT mantikli degil since it requires immediate handling.
 
-        //throw new FileNotFoundException(""); So ifg we decide to handle it with try catch:
+        //throw new FileNotFoundException(""); So if we decide to handle it with try catch:
 
         try {
             throw new FileNotFoundException("");
@@ -54,7 +54,7 @@ public class ThrowKeyword {
 
         //throw new Person("Jimmy", 51,'M');                     we can't use throw OR throws kword
                                                                //with any class which doesn't have any is A relationship
-                                                               //which is not an exception with Throwable.
+                                                               //with Throwable (which is not an exception)
     }
     }
 
