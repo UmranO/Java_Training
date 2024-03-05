@@ -18,6 +18,8 @@ public class CustomExceptions {                          //There can be only 1 p
         } catch (CustomCheckedException e) {
             e.printStackTrace();
         }
+        System.out.println("---------------------------------------------------");
 
+        throw new CustomUncheckedException();         //It's an unchecked exception it doesn't has to be handled immedi.
     }
 }
