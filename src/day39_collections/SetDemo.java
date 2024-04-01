@@ -29,7 +29,7 @@ public class SetDemo {
         System.out.println(list);
 
         System.out.println("LinkedHashSet----------------------------------------------------------------------------");
-        Set<Integer> set2 = new LinkedHashSet<>();  // keeps insertion order, accepts null key
+        Set<Integer> set2 = new LinkedHashSet<>();                 //Keeps insertion order, accepts null key
         set2.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set2.addAll(Arrays.asList(10, 200, 300, 40, 90));
         set2.addAll(Arrays.asList(10, 200, 300, 40, 90));
@@ -37,5 +37,20 @@ public class SetDemo {
         set2.addAll(Arrays.asList(null, null, null, null, null));
 
         System.out.println(set2);
+
+        System.out.println("TreeSet----------------------------------------------------------------------------------");
+
+        String str = null;
+       //System.out.println(str.toLowerCase());
+
+        Set<Integer> set3 = new TreeSet<>();                     //Keeps sorted order, does not accept duplicate
+        set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        set3.addAll(Arrays.asList(10, 200, 300, 40, 90));
+       //set3.addAll(Arrays.asList(null, null, null, null, null));  --> NullPointerException
+
+        System.out.println(set3);
+
     }
 }
