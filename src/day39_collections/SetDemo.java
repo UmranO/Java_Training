@@ -15,8 +15,9 @@ public class SetDemo {
         System.out.println(set1);
 
         System.out.println("-----------------------------------------------------------------------------------------");
-//But if it were a List it would accept the duplicate elements & also would maintain the insertion order & would also
-//accept more than 1 null elements
+
+        //But if it were a List it would accept the duplicate elements & also would maintain the insertion order &
+        //would also accept more than 1 null elements
         List<Integer> list=new ArrayList<>();
         list.addAll(Arrays.asList(10, 200, 300, 40, 90));           //accepts duplicates,has index,keeps insertion order
         list.addAll(Arrays.asList(10, 200, 300, 40, 90));
@@ -25,6 +26,8 @@ public class SetDemo {
         list.addAll(Arrays.asList(null, null, null, null, null));
 
         System.out.println(list);
+
+        System.out.println("-----------------------------------------------------------------------------------------");
 
     }
 }
