@@ -4,6 +4,7 @@ import java.util.*;
 
 public class SetDemo {
     public static void main(String[] args){
+        System.out.println("HashSet----------------------------------------------------------------------------------");
 
         Set<Integer> set1 = new HashSet<>();                          //order is random, accepts null key
         set1.addAll(Arrays.asList(10, 200, 300, 40, 90));             //if we continue to add same elements it won't
@@ -14,7 +15,7 @@ public class SetDemo {
 
         System.out.println(set1);
 
-        System.out.println("-----------------------------------------------------------------------------------------");
+        System.out.println("List-------------------------------------------------------------------------------------");
 
         //But if it were a List it would accept the duplicate elements & also would maintain the insertion order &
         //would also accept more than 1 null elements
@@ -27,7 +28,14 @@ public class SetDemo {
 
         System.out.println(list);
 
-        System.out.println("-----------------------------------------------------------------------------------------");
+        System.out.println("LinkedHashSet----------------------------------------------------------------------------");
+        Set<Integer> set2 = new LinkedHashSet<>();  // keeps insertion order, accepts null key
+        set2.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        set2.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        set2.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        set2.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        set2.addAll(Arrays.asList(null, null, null, null, null));
 
+        System.out.println(set2);
     }
 }
