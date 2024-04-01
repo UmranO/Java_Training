@@ -1,4 +1,22 @@
 package day39_collections;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class SetDemo {
+    public static void main(String[] args){
+
+        Set<Integer> set1 = new HashSet<>();                          //order is random, accepts null key
+        set1.addAll(Arrays.asList(10, 200, 300, 40, 90));             //if we continue to add same elements it won't
+        set1.addAll(Arrays.asList(10, 200, 300, 40, 90));             //accept it
+        set1.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        set1.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        set1.addAll(Arrays.asList(null, null, null, null, null));    //even though accepts null key can only have 1 null
+
+        System.out.println(set1);
+
+
+
+    }
 }
