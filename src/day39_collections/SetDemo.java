@@ -68,7 +68,11 @@ public class SetDemo {
             System.out.println(each);                 but we can't retrieve it with get()
         }
 */
-        
+        System.out.println( new ArrayList<>(result).get(1) );  //If we want to get a specific element we can create an
+                                                               //ArrayList or any other List give the elements of the
+                                                               //set in the ArrayList's constructor and get the element
+                                                               //in the required index #
+
 
 
 
