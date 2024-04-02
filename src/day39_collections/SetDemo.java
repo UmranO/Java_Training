@@ -52,5 +52,20 @@ public class SetDemo {
 
         System.out.println(set3);
 
+        System.out.println("Removing the duplicates by converting Array to Set---------------------------------------");
+
+        String[] words = {"Java", "Java", "Java", "Python", "Python", "C#", "C++", "Ruby", "C#", "C#"};
+
+        Set<String> result = new LinkedHashSet<>();
+        result.addAll( Arrays.asList(words) );       //Added the elements of Array(words) as List since it only accepts
+        System.out.println(result);                  //Collection type. This way we got rid of the duplicate elements.
+
+
+
+
+
+
+
+
     }
 }
