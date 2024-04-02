@@ -73,7 +73,11 @@ public class SetDemo {
                                                                //set in the ArrayList's constructor and get the element
                                                                //in the required index #
 
+        System.out.println("If we want to get rid of the duplicates in an Array or Data Structure first we can convert" +
+                        "it to Set then change back to Array again");
 
+        List<Integer> numbers = new ArrayList<>();
+        numbers.addAll(Arrays.asList(10, 10, 10, 20, 20, 30, 30, 30, 40, 40, 40, 50, 50, 50,5, 5, 5, 1, 1, 1, 2, 2,2));
 
 
     }
