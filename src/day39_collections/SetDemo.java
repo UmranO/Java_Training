@@ -61,9 +61,14 @@ public class SetDemo {
         System.out.println(result);                  //Collection type. This way we got rid of the duplicate elements.
 
 
+   /*  System.out.println(result.get(1));              In the set we don't have index # and get()
 
 
-
+        for (String each : result) {                  Like all the Data Structures we can use for each loop for Sets too
+            System.out.println(each);                 but we can't retrieve it with get()
+        }
+*/
+        
 
 
 
