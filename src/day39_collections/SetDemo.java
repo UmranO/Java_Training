@@ -73,11 +73,21 @@ public class SetDemo {
                                                                //set in the ArrayList's constructor and get the element
                                                                //in the required index #
 
+        System.out.println("-----------------------------------------------------------------------------------------");
         System.out.println("If we want to get rid of the duplicates in an Array or Data Structure first we can convert" +
-                        "it to Set then change back to Array again");
+                           "it to Set then change back to Array again");
 
+        words = result.toArray(new String[0]);                 //converting Set to Array & assign it back to the Array's
+                                                               //variable
+        System.out.println("Words Array : " + Arrays.toString(words));   //toArray() is a () of Collection so can be
+                                                                         //used for converting Set to Array too.
+        System.out.println("-----------------------------------------------------------------------------------------");
         List<Integer> numbers = new ArrayList<>();
         numbers.addAll(Arrays.asList(10, 10, 10, 20, 20, 30, 30, 30, 40, 40, 40, 50, 50, 50,5, 5, 5, 1, 1, 1, 2, 2,2));
+
+        Set<Integer> n=new TreeSet<>(numbers);                //List to Set--This way we got rid of the duplicates +
+        System.out.println(n);                                //Sorted the elements in Ascending order.
+
 
 
     }
