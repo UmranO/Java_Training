@@ -58,7 +58,9 @@ System.out.println("--LinkedList as a Queue-------------------------------------
 
     queue3.poll();
         System.out.println(queue3);
-
+        System.out.println(((LinkedList)queue3).get(4));  //To be Able to call get() of List first we should downcast it
+                                                          //to LinkedList(since now it's a Queue referenced LinkedList)
+                                                          //after downcasting is completed then we can call the get()
 System.out.println("-----------------------------------------------------------------------------------------");
 
         List<Integer> list = new LinkedList<>();            //LinkedList is both a Queue and a List.
