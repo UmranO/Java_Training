@@ -13,9 +13,20 @@ System.out.println("--PriorityQueue---------------------------------------------
   //queue1.addAll(Arrays.asList(null,null,null));    //doesn't accept null.--.Results in NullPointer Exception
 
     System.out.println(queue1);
+    queue1.poll();
+    System.out.println(queue1);
+    queue1.poll();
+    queue1.poll();
+    queue1.poll();
+    System.out.println(queue1);
+
+System.out.println("--ArrayDeque-------------------------------------------------------------------------------------");
+    Queue <Integer> queue2 = new ArrayDeque<>();     //insertion order is preserved
+    queue2.addAll(Arrays.asList(10,200,300,40,90));
 
 
-    Queue <Integer> queue2 = new ArrayDeque<>();
+
+
 
     Queue <Integer> queue3 = new LinkedList<>();
 
