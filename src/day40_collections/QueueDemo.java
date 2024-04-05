@@ -14,12 +14,14 @@ System.out.println("--PriorityQueue---------------------------------------------
   //queue1.addAll(Arrays.asList(null,null,null));    //doesn't accept null.-->Results in NullPointer Exception
        System.out.println(queue1);
 
-    queue1.poll();
+    queue1.poll();                                   //==>FIFO
     System.out.println(queue1);
     queue1.poll();
     queue1.poll();
     queue1.poll();
         System.out.println(queue1);
+
+    //  System.out.println(queue1.get(4));           Can't use get(), bec. we don't have get() & index #s in Queue
 
 System.out.println("--ArrayDeque-------------------------------------------------------------------------------------");
     Queue <Integer> queue2 = new ArrayDeque<>();     //insertion order is preserved
@@ -30,24 +32,34 @@ System.out.println("--ArrayDeque------------------------------------------------
   //queue2.addAll(Arrays.asList(null,null,null));    //doesn't accept null.-->Results in NullPointer Exception
         System.out.println(queue2);
 
-        queue2.poll();
+    queue2.poll();
         System.out.println(queue2);                 //at this point we have 9 elements in the ArrayDeque & if we call
                                                     //the poll() 9 times then the ArrayDeque will be empty
-        queue2.poll();
-        queue2.poll();
-        queue2.poll();
-        queue2.poll();
-        queue2.poll();
-        queue2.poll();
-        queue2.poll();
-        queue2.poll();
-        queue2.poll();
-        System.out.println(queue2);                 //Results in empty Queue []
+    queue2.poll();
+    queue2.poll();
+    queue2.poll();
+    queue2.poll();
+    queue2.poll();
+    queue2.poll();
+    queue2.poll();
+    queue2.poll();
+    queue2.poll();
+        System.out.println(queue2);                      //Results in empty Queue []
+
+    //  System.out.println(queue2.get(3));               Can't use get(), bec. we don't have get() & index #s in Queue
 
 System.out.println("--LinkedList as a Queue--------------------------------------------------------------------------");
-    Queue <Integer> queue3 = new LinkedList<>();
+    Queue <Integer> queue3 = new LinkedList<>();          // insertion order,has index
 
-        System.out.println("-----------------------------------------------------------------------------------------");
+    queue3.addAll(Arrays.asList(10,200,300,40,90));
+    queue3.addAll(Arrays.asList(10,200,300,40,90));
+    queue3.addAll(Arrays.asList(null, null, null));       //accepts null
+        System.out.println(queue3);
+
+    queue3.poll();
+        System.out.println(queue3);
+
+System.out.println("-----------------------------------------------------------------------------------------");
 
         List<Integer> list = new LinkedList<>();            //LinkedList is both a Queue and a List.
 
