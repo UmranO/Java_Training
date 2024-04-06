@@ -64,9 +64,21 @@ System.out.println("--LinkedList as a Queue-------------------------------------
 System.out.println("-----------------------------------------------------------------------------------------");
 
         List<Integer> list = new LinkedList<>();            //LinkedList is both a Queue and a List.
+        list.addAll(Arrays.asList(10,200,300,40,90));
 
+        System.out.println(list.get(1));                    //It's possible to call the get() which is present in the
+                                                            //List reference type
+        System.out.println(list);
 
+        // list.poll();                                       It's NOT possible to call the get() which is NOT present
+                                                            //in the List reference type
+        ((LinkedList)list).poll();                          //So if we want to use it we need to cast it (UO: though
+                                                            //this is not the best practice )
+        System.out.println(list);                           //At this point after poll()1st element is removed from list
 
+        ((Stack) list).pop();                               //LIFO  ==>results in ClassCastException
+
+        System.out.println(list);
     }
 
 }
