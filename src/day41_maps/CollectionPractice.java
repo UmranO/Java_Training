@@ -1,8 +1,5 @@
 package day41_maps;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Set;
+import java.util.*;
 
 public class CollectionPractice {
     public static void main(String[] args) {
@@ -42,6 +39,11 @@ System.out.println("--List of Lists---------------------------------------------
 System.out.println("--List of Sets--------------------------------------------------------------------------");
 
         List<Set<Integer>> listOfSets = new ArrayList<>();
+
+        listOfSets.add(new LinkedHashSet<>());  // 0
+        listOfSets.add(new LinkedHashSet<>());  // 1
+        listOfSets.add(new LinkedHashSet<>());  // 2
+        listOfSets.add(new LinkedHashSet<>());  // 3
 
 
     }
