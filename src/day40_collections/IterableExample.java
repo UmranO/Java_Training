@@ -77,6 +77,14 @@ System.out.println("--In the loop we should use either Iterator's remove() OR re
 
         System.out.println(list4);
 
+System.out.println("--In the loop we should use either Iterator's remove() OR removeIf() -Asagida-------------------");
+
+        List<Integer> list5 = new LinkedList<>();
+        list5.addAll(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7));
+
+        list5.removeIf( p -> p < 5);                       //usually a letter variable name is used. p instead of each
+
+        System.out.println(list5);
 
     }
 }
