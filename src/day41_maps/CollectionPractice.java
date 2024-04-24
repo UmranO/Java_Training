@@ -80,6 +80,7 @@ System.out.println("--List of Arrays--------------------------------------------
 
         //List<List<Employee>> teams=new ArrayList<>();
 
-
-}
+System.out.println("--List of Multidimensional Arrays---------------------------------------------------------------");
+        List<int[][]> l =new ArrayList<>();
+  }
 }
