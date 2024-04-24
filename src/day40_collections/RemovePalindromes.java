@@ -43,5 +43,12 @@ System.out.println("--Remove the palindromes with removeIf + our custom reverse(
         System.out.println(names2);                                        //StringUtility Class in utilities package
 
 
+System.out.println("--Remove the palindromes with removeIf + built in StringBuilder's reverse() -------------");
+        List<String> names3 = new ArrayList<>();
+        names3.addAll(Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak", "reviver",
+                "racecar", "madam")
+        );
+        names3.removeIf( p -> new StringBuilder(p).reverse().toString().equalsIgnoreCase(p) );
+        System.out.println(names3);
     }
 }
