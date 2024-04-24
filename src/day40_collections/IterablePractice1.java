@@ -14,7 +14,12 @@ public class IterablePractice1 {
 
         System.out.println("-----------------------------------");
 
+        List<String> names = new ArrayList<>();
+        names.addAll(Arrays.asList(
+                "Ahmed", "ahmed", "aHmEd", "John", "Ercon", "Daniel", "Mustafa", "Mohammed", "Ahmed", "ahmed", "Yuliia", "Chris"
+        ));
 
+        //Remove all the names Ahmed (Case Insensitive)
 
 
     }
