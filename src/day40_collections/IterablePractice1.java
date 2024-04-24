@@ -12,7 +12,7 @@ public class IterablePractice1 {
         System.out.println( iterator.hasNext() );                  //true
         System.out.println(iterator.next());                       //10
 
-        System.out.println("-----------------------------------");
+System.out.println("-----------------------------------------------------------------------------------------");
 
         List<String> names = new ArrayList<>();
         names.addAll(Arrays.asList(
@@ -21,7 +21,17 @@ public class IterablePractice1 {
 
         //Remove all the names Ahmed (Case Insensitive)
 
+System.out.println("--Removal with iterator------------------------------------------------------------------");
 
+        Iterator<String> it = names.iterator();
+
+        while(it.hasNext()){
+            String each = it.next();
+            if(each.equalsIgnoreCase("ahmed")){
+                it.remove();
+            }
+        }
+        System.out.println(names);
     }
     }
 
