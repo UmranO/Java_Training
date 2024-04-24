@@ -51,7 +51,12 @@ System.out.println("--List of Sets----------------------------------------------
 
         listOfSets.get(0).addAll(Arrays.asList(10, 5, 20));     //=>[[10, 5, 20], [], [], []]
         listOfSets.get(0).addAll(Arrays.asList(10, 5, 20));     //=>[[10, 5, 20], [], [], []] Sets don't accept duplicates
-        System.out.println(listOfSets);
+
+        listOfSets.get(1).addAll(Arrays.asList(30, 15, 30));    //adding elements to the set at index # 1
+        listOfSets.get(2).addAll(Arrays.asList(300, 150, 40));  //adding elements to the set at index # 2
+        listOfSets.get(3).addAll(Arrays.asList(30000, 1, 5));   //adding elements to the set at index # 3
+
+        System.out.println(listOfSets);                         //=>[[10, 5, 20], [30, 15], [300, 150, 40], [30000, 1, 5]]
 
 
     }
