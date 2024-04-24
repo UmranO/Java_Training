@@ -16,6 +16,17 @@ public class CollectionPractice {
                                                              //Array. We can have multidimentional Arrays but can't
                                                              //have multidimentional Collection types. BUT we can have
                                                              //List of Lists, List of Sets...
+        //lists.addAll(Arrays.asList(list1, list2));         //Like in all the ArrayLists we can use addAll() to add the lists
+
+        lists.add(list1);
+        lists.add(list2);
+
+        System.out.println(lists);                           //=> [[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11]]
+
+        //How can we get the Element 10 from lists:
+
+        System.out.println(lists.get(1).get(3));
+
 
 
     }
