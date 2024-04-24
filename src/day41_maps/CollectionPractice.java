@@ -71,7 +71,9 @@ System.out.println("--List of Arrays--------------------------------------------
         System.out.println("-----------------------------------");
         System.out.println(Arrays.toString(listOfArrays.get(0)) + "  "+Arrays.toString(listOfArrays.get(1)));
                                                              //=>[1, 2, 3, 4]  [5, 6, 7, 8, 9, 10] (Ben yaptim M'de yok)
+        listOfArrays.get(0)[2] = 35;                         //index 0'daki Array'in 2'inci elemanini 35 olarak degistiriyoruz.
 
+        System.out.println(Arrays.toString(listOfArrays.get(0)));   //==> [1, 2, 35, 4]    instead of 3 now we have 35
     }
 
 }
