@@ -67,6 +67,10 @@ System.out.println("--List of Arrays--------------------------------------------
         listOfArrays.add(arr1);
         listOfArrays.add(arr2);
 
+       // System.out.println(listOfArrays);                   =>[[I@43a25848, [I@3ac3fd8b]
+        System.out.println("-----------------------------------");
+        System.out.println(Arrays.toString(listOfArrays.get(0)) + "  "+Arrays.toString(listOfArrays.get(1)));
+                                                             //=>[1, 2, 3, 4]  [5, 6, 7, 8, 9, 10] (Ben yaptim M'de yok)
 
     }
 
