@@ -40,5 +40,35 @@ System.out.println("--In the loop we should use Iterator's remove()-------------
                                                         //Iterator object not from the Collection object
         System.out.println(list2);
 
+System.out.println("--It's also possible to use for loop instead of while loop to use Iterator's remove()------------");
+
+        List<Integer> list3 = new ArrayList<>();
+        list3.addAll(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7));
+
+        for (Iterator<Integer> i = list3.iterator(); i.hasNext();  ) {  //in the for loop we need
+                                                                        //(initialization; condition; update) {
+                                                                        //     code to be executed}
+                                                                        //Iterator<Integer> i= list3.iterator();
+                                                                //initializes an iterator for the list3 collection
+                                                                //instead of a counter variable used for iteration.
+                                                                //i.hasNext(); is used to checks if there are more
+                                                                //elements in the collection to iterate over instead of
+                //a regular condition (eg i < 10). It is evaluated before each iteration. If the condition evaluates to
+                //true, the loop continues; if it evaluates to false, the loop terminates.
+                //Since Iterator<Integer> i= list3.iterator(); trasverse through the elements & i.hasNext() checks the
+                //availibility next element and stops when there isn't any we don't need to ++ or -- a counter
+            Integer each = i.next();                            //we get the next element and assigbn it to each
+
+            if(each < 5){
+                i.remove();                                     //if in line with the filtering condition we remove each
+            }
+
+        }
+
+        System.out.println(list3);
+
+
+
+
     }
 }
