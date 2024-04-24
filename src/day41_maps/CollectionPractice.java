@@ -12,6 +12,11 @@ public class CollectionPractice {
         List<Integer> list2 = new ArrayList<>();
         list2.addAll(Arrays.asList(7, 8, 9, 10, 11));
 
+        List<List<Integer>> lists = new ArrayList<>();       //Term multidimentional is NOT used in Collection like
+                                                             //Array. We can have multidimentional Arrays but can't
+                                                             //have multidimentional Collection types. BUT we can have
+                                                             //List of Lists, List of Sets...
+
 
     }
 }
