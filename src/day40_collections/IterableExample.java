@@ -24,7 +24,7 @@ System.out.println("--Collection's remove() by index #--------------------------
 
         System.out.println(list);
 
-System.out.println("--In the loop we should use Iterator's remove()--------------------------------------------------");
+System.out.println("--In the loop we should use either Iterator's remove()-------------------------------------------");
 
         List<Integer> list2 = new ArrayList<>();
         list2.addAll(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7));
@@ -67,7 +67,15 @@ System.out.println("--It's also possible to use for loop instead of while loop t
 
         System.out.println(list3);
 
+System.out.println("--In the loop we should use either Iterator's remove() OR removeIf() -Asagida-------------------");
 
+        List<Integer> list4 = new ArrayList<>();
+        list4.addAll(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7));
+
+        list4.removeIf( each -> each < 5);                   //Much easier & shorter way of removing an element while
+                                                             //iterating compared to iterator()s
+
+        System.out.println(list4);
 
 
     }
