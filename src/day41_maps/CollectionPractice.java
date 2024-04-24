@@ -45,6 +45,14 @@ System.out.println("--List of Sets----------------------------------------------
         listOfSets.add(new LinkedHashSet<>());  // 2
         listOfSets.add(new LinkedHashSet<>());  // 3
 
+        System.out.println(listOfSets);                          //=>  [[], [], [], []]
+
+        // {10, 5, 20}
+
+        listOfSets.get(0).addAll(Arrays.asList(10, 5, 20));     //=>[[10, 5, 20], [], [], []]
+        listOfSets.get(0).addAll(Arrays.asList(10, 5, 20));     //=>[[10, 5, 20], [], [], []] Sets don't accept duplicates
+        System.out.println(listOfSets);
+
 
     }
 
