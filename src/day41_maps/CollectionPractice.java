@@ -58,6 +58,15 @@ System.out.println("--List of Sets----------------------------------------------
 
         System.out.println(listOfSets);                         //=>[[10, 5, 20], [30, 15], [300, 150, 40], [30000, 1, 5]]
 
+System.out.println("--List of Arrays--------------------------------------------------------------------------");
+
+        int[] arr1 = {1, 2, 3, 4};
+        int[] arr2 = {5, 6, 7, 8, 9, 10};
+
+        List<int[]> listOfArrays = new ArrayList<>();
+        listOfArrays.add(arr1);
+        listOfArrays.add(arr2);
+
 
     }
 
