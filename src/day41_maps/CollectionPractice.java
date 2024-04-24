@@ -2,6 +2,7 @@ package day41_maps;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Set;
 
 public class CollectionPractice {
     public static void main(String[] args) {
@@ -12,11 +13,13 @@ public class CollectionPractice {
         List<Integer> list2 = new ArrayList<>();
         list2.addAll(Arrays.asList(7, 8, 9, 10, 11));
 
-        List<List<Integer>> lists = new ArrayList<>();       //Term multidimentional is NOT used in Collection like
-        //Array. We can have multidimentional Arrays but can't
-        //have multidimentional Collection types. BUT we can have
-        //List of Lists, List of Sets...
-        //lists.addAll(Arrays.asList(list1, list2));         //Like in all the ArrayLists we can use addAll() to add the lists
+System.out.println("--List of Lists--------------------------------------------------------------------------");
+
+        List<List<Integer>> lists = new ArrayList<>();         //Term multidimensional is NOT used in Collection like
+                                                               //Array. We can have multidimentional Arrays but can't
+                                                               //have multidimentional Collection types. BUT we can have
+                                                               //List of Lists, List of Sets...
+        //lists.addAll(Arrays.asList(list1, list2));     Like in all the ArrayLists we can use addAll() to add the lists
 
         lists.add(list1);
         lists.add(list2);
@@ -28,13 +31,19 @@ public class CollectionPractice {
         System.out.println(lists.get(1).get(3));             //1st we should get the list that 10 is in from lists, then
                                                              //we should get that element from that list (list2)
 
-        //To print out each element of the lists:            We need nested for each loop to get each element
+        //To print out each element of the lists:              We need nested for each loop to get each element
 
         for (List<Integer> eachList : lists) {
             for (Integer eachElement : eachList) {
                 System.out.println(eachElement);
             }
         }
+
+System.out.println("--List of Sets--------------------------------------------------------------------------");
+
+        List<Set<Integer>> listOfSets = new ArrayList<>();
+
+
     }
 
 }
