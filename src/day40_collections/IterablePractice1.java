@@ -23,7 +23,7 @@ System.out.println("------------------------------------------------------------
 
 System.out.println("--Removal with iterator------------------------------------------------------------------");
 
-        Iterator<String> it = names.iterator();
+        Iterator<String> it = names.iterator();                         //Alternatifi tek satirda removeIf() ile yapmak
 
         while(it.hasNext()){
             String each = it.next();
@@ -45,6 +45,13 @@ List<String> names2 = new ArrayList<>();
                                                                             //call ediyoruz.
         System.out.println(names2);
 
+
+System.out.println("------------------------------------------------------------------------------------------------");
+
+        List<Integer> numbers = new ArrayList<>();
+        numbers.addAll(Arrays.asList(1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9));
+
+        // find the nth largest number
 
 
 
