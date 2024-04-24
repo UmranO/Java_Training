@@ -32,6 +32,22 @@ System.out.println("--Removal with iterator-------------------------------------
             }
         }
         System.out.println(names);
+
+System.out.println("--Removal with removeIf()------------------------------------------------------------------");
+
+List<String> names2 = new ArrayList<>();
+        names2.addAll(Arrays.asList(
+                "Ahmed", "ahmed", "aHmEd", "John", "Ercon", "Daniel", "Mustafa", "Mohammed", "Ahmed", "ahmed", "Yuliia", "Chris"
+        ));
+
+
+        names2.removeIf( p -> p.equalsIgnoreCase("ahmed"));     //Dikkat etmen gereken direkt Collection'dan
+                                                                            //call ediyoruz.
+        System.out.println(names2);
+
+
+
+
     }
     }
 
