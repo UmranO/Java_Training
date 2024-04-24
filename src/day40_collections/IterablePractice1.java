@@ -52,9 +52,15 @@ System.out.println("------------------------------------------------------------
         numbers.addAll(Arrays.asList(1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9));
 
         // find the nth largest number
-
-
+                                                                   //bizim istedigimiz n.en buyuk elemani veriyor.
+        int n=3;
+        for (int i=1;(i<=n-1);i++) {                               //n.en buyuk element'i istedigi icin n-1 kere iterate
+                                                                   //etmesi gerek. n-1 kere iterate ettikten sonraki max
+            numbers.removeIf(p->p==Collections.max(numbers));      //bizim istedigimiz n.en buyuk elemani veriyor.
+        }
+        int max=Collections.max(numbers);
+        System.out.println(max);
 
     }
-    }
+}
 
