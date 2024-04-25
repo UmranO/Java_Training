@@ -1,7 +1,5 @@
 package day41_maps;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ArrayPractice {
     public static void main(String[] args){
@@ -33,5 +31,15 @@ System.out.println("--Arrays of Lists is possible-------------------------------
         arrayOfLists[0].set(4,50);
         System.out.println(Arrays.toString(arrayOfLists));
                                                     //=>[[1, 2, 3, 4, 50, 6], [7, 8, 9, 10, 11], [70, 80, 90, 100, 110]]
+
+        Set<Integer>[] arrayOfSets = new Set[5];
+        arrayOfSets[0] = new LinkedHashSet<>();
+        arrayOfSets[1] = new LinkedHashSet<>();
+        arrayOfSets[2] = new LinkedHashSet<>();
+        arrayOfSets[3] = new LinkedHashSet<>();
+        arrayOfSets[4] = new LinkedHashSet<>();
+
+
+
     }
 }
