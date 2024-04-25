@@ -37,13 +37,17 @@ System.out.println("--Arrays of Lists is possible-------------------------------
         arrayOfSets[1] = new LinkedHashSet<>();
         arrayOfSets[2] = new LinkedHashSet<>();
         arrayOfSets[3] = new LinkedHashSet<>();
-        arrayOfSets[4] = new LinkedHashSet<>();
+        arrayOfSets[4] = new LinkedHashSet<>(Arrays.asList(9,7));
+        //arrayOfSets[4] = new LinkedHashSet<>(Arrays.asList(9,7));     Bunu ben ekledim. M'de yok
 
         System.out.println(Arrays.toString(arrayOfSets));               //=> [[], [], [], [], []]
 
         arrayOfSets[2].addAll(Arrays.asList(1, 2, 3, 4));               //Each object in the Array is a Set
 
         System.out.println(Arrays.toString(arrayOfSets));               //=>[[], [], [1, 2, 3, 4], [], []]
+
+
+//Array and Collection they support any objects.
 
     }
 }
