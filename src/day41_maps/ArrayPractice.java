@@ -30,7 +30,8 @@ System.out.println("--Arrays of Lists is possible-------------------------------
         System.out.println(Arrays.toString(arrayOfLists));      //Since it's an Array we have to use toString() to print
                                                      //=>[[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11], [70, 80, 90, 100, 110]]
 
-
-
+        arrayOfLists[0].set(4,50);
+        System.out.println(Arrays.toString(arrayOfLists));
+                                                    //=>[[1, 2, 3, 4, 50, 6], [7, 8, 9, 10, 11], [70, 80, 90, 100, 110]]
     }
 }
