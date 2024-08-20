@@ -15,6 +15,7 @@ public class MapPractice {
         person1.put("married", true);
 
         System.out.println(person1);
+        // Console: =>{name=Arthur, gender=M, age=32, job_title=Developer, salary=100000.5, married=true}
 
 
 
