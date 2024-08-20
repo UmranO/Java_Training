@@ -45,6 +45,10 @@ public class MapMethods {
         System.out.println(map.containsKey("B03"));                       // =>true
         System.out.println( map.containsKey("H98"));                      // =>false
 
+//-containsValue(value)--returns true if the specified value is included in the Map, otherwise returns false------------
+        System.out.println(map.containsValue("Lucy"));                    // =>false
+        System.out.println(map.containsValue("Muhtar"));                  // =>false
+
 
   }
 }
