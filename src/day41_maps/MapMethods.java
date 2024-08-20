@@ -49,6 +49,9 @@ public class MapMethods {
         System.out.println(map.containsValue("Lucy"));                    // =>false
         System.out.println(map.containsValue("Muhtar"));                  // =>false
 
+        map.put("A04", "Lucy");
+        System.out.println(map.containsValue("Lucy"));                    // =>true
+
 
   }
 }
