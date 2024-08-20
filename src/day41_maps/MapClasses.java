@@ -5,18 +5,19 @@ import java.util.*;
 public class MapClasses {
     public static void main(String[] args) {
 
-            System.out.println("--HashMap: Random order, accept null key & null values--------------------------------------------");
-            //Map<String, Integer> hashMap = new HashMap<>();
+System.out.println("--HashMap: Random order, accept null key & null values--------------------------------------------");            //Map<String, Integer> hashMap = new HashMap<>();
+//Map<String, Integer> hashMap=new HashMap<>();
 
-            System.out.println("--LinkedHashMap: Insertion order, accepts null key  & null values---------------------------------");
-            //Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
+System.out.println("--LinkedHashMap: Insertion order, accepts null key  & null values---------------------------------");
+//Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
 
-            System.out.println("--TreeMap: Sorted order, doesn't accept null key, accepts null values-----------------------------");
-            //Map<String, Integer> treeMap = new TreeMap<>();
+System.out.println("--TreeMap: Sorted order, doesn't accept null key, accepts null values-----------------------------");
+//Map<String, Integer> treeMap = new TreeMap<>();
 
-            System.out.println("--HashTable: Random order, doesn't null key & null values, Synchronized---------------------------");
-            //Map<String, Integer> hashtable = new Hashtable<>();
+System.out.println("--HashTable: Random order, doesn't null key & null values, Synchronized---------------------------");
+//Map<String, Integer> hashtable = new Hashtable<>();
 
+System.out.println("-----------------------------------------******---------------------------------------------------");
 
 System.out.println("--HashMap: Random order, accept null key & null values--------------------------------------------");
             Map<String, Integer> hashMap=new HashMap<>();
@@ -39,7 +40,7 @@ System.out.println("--HashMap: Random order, accept null key & null values------
             hashMap.put(null, 110000);       //only 1 null key will be accepted.
             hashMap.put(null, 100000);       //And since this null key is the last one, this will be kept only
 
-            System.out.println(hashMap);
+         System.out.println(hashMap);
             //Console:{null=100000, Emily=100000, Breanna=null, Chris=null, Arron=78000,Daniel=95000, Bella=85000}
 
 System.out.println("--LinkedHashMap: Insertion order, accepts null key  & null values---------------------------------");
@@ -62,6 +63,7 @@ System.out.println("--LinkedHashMap: Insertion order, accepts null key  & null v
 
 System.out.println("--TreeMap: Sorted order, doesn't accept null key, accepts null values-----------------------------");
             Map<String, Integer> treeMap = new TreeMap<>();
+
             treeMap.put("Daniel", 95000);
             treeMap.put("Emily", 100000);
             treeMap.put("Bella", 85000);
@@ -74,7 +76,16 @@ System.out.println("--TreeMap: Sorted order, doesn't accept null key, accepts nu
 
         System.out.println("treeMap = " + treeMap);
         //Console:treeMap = {Arron=78000, Bella=85000, Breanna=null, Chris=null, Daniel=95000, Emily=100000}
-        //treeMap it does keep the Sorted Order.
+        //treeMap it does keep the Ascending Order. Keys will be sorted.
+
+System.out.println("--HashTable: Random order, doesn't null key & null values, Synchronized---------------------------");
+             Map<String, Integer> hashtable = new Hashtable<>();
+
+            hashtable.put("Daniel", 95000);
+            hashtable.put("Emily", 100000);
+            hashtable.put("Bella", 85000);
+            hashtable.put("Arron", 78000);
+ 
 
 /*
 pair: name & salary
