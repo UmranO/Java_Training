@@ -42,7 +42,8 @@ System.out.println("--HashMap: Random order, accept null key & null values------
 
          System.out.println(hashMap);
             //Console:{null=100000, Emily=100000, Breanna=null, Chris=null, Arron=78000,Daniel=95000, Bella=85000}
-
+            //Order is Random in HashMap. It doesn't keep insertion Order.
+        
 System.out.println("--LinkedHashMap: Insertion order, accepts null key  & null values---------------------------------");
             Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
 
@@ -85,8 +86,14 @@ System.out.println("--HashTable: Random order, doesn't null key & null values, S
             hashtable.put("Emily", 100000);
             hashtable.put("Bella", 85000);
             hashtable.put("Arron", 78000);
- 
+        // hashtable.put("Chris", null);        Value in Hashtable can not be null!  Results in NullPointerException
+        // hashtable.put("Breanna", null);      Value in Hashtable can not be null!  Results in NullPointerException
+        // hashtable.put(null, 120000);         Key in Hashtable can not be null!    Results in NullPointerException
+        // hashtable.put(null, 110000);         Key in Hashtable can not be null!    Results in NullPointerException
 
+        System.out.println("hashtable = " + hashtable);
+        //Console:hashtable = {Arron=78000, Daniel=95000, Emily=100000, Bella=85000}
+        //Order is Random in HashTable It doesn't keep insertion Order.
 /*
 pair: name & salary
 Daniel=95000;
