@@ -1,10 +1,15 @@
 package day41_maps;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 public class MapMethods {
     public static void main(String[] args){
 
         Map<String,String> map = new TreeMap<> ();   //put() is used to adding the key and value into the map as a pair
+
+//-put(key,value)-- is used to adding the key and value into the map as a pair------------------------------------------
+               //-- can also be used for updating the values of existing keys
 
         map.put("C02", "Josh");
         map.put("B03", "Nora");
@@ -16,17 +21,15 @@ public class MapMethods {
         map.put("A06", "Tatiana");
         map.put("A07", "Tatiana");
 
-//-size()--counts / returns the # of pairs that are stored n the Map----------------------------------------------------
-        System.out.println( map.size());
+//-size()--counts / returns the # of pairs that are stored in the Map---------------------------------------------------
         System.out.println(map);
+        System.out.println( map.size());                                    //=> 9
 
-        System.out.println( map.get("A04"));
+//-get(key)--returns the value of the specified key---------------------------------------------------------------------
+        System.out.println(map.get("A04"));                                 //=> Tatiana
 
 
-
-
-
-    }
+  }
 }
 
 /*
