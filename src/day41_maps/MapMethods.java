@@ -9,7 +9,8 @@ public class MapMethods {
         Map<String,String> map = new TreeMap<> ();   //put() is used to adding the key and value into the map as a pair
 
 //-put(key,value)-- is used to adding the key and value into the map as a pair------------------------------------------
-               //-- can also be used for updating the values of existing keys
+               //-- can also be used for updating the values of existing keys but the repalce() is faster bec it doesn't
+               //--have the intention to insert
 
         map.put("C02", "Josh");
         map.put("B03", "Nora");
@@ -29,6 +30,20 @@ public class MapMethods {
         System.out.println(map.get("A04"));                                 //=> Tatiana
         System.out.println(map.get("B03"));
         System.out.println(map.get("Z"));                                   //If no such a key it'll return you null
+
+//-replace(key,newValue)--replaces the value of the specified key with the new value------------------------------------
+
+        map.replace("C02", "Aseel");
+        map.replace("A07", "Marika");
+        System.out.println(map);
+
+//-remove(key)--removes a pair with the matching key from the Map-----------------------------------------------------
+        map.remove("A05");
+        System.out.println(map);
+
+//-containsKey(key)--returns true if the specified key is included in the Map, otherwise returns false------------------
+        System.out.println(map.containsKey("B03"));                       // =>true
+        System.out.println( map.containsKey("H98"));                      // =>false
 
 
   }
