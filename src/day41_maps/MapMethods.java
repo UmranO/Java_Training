@@ -1,8 +1,6 @@
 package day41_maps;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
+
 public class MapMethods {
     public static void main(String[] args){
 
@@ -51,6 +49,21 @@ public class MapMethods {
 
         map.put("A04", "Lucy");
         System.out.println(map.containsValue("Lucy"));                    // =>true
+
+//-isEmpty()--returns true if the size of the Map is 0 /if the Map is Empty, otherwise false----------------------------
+        System.out.println(map.isEmpty());
+
+//-equals(MapObject)--checks if the map is equal to the given map in the arguement, returns boolean---------------------
+        Map<String,String> map1 = new LinkedHashMap<>();  map1.put("C02", "Josh"); map1.put("B03", "Nora");
+        map1.put("A02", "Khashayar");
+        Map<String,String> map2 = new LinkedHashMap<>(); map2.put("A02", "Khashayar");map2.put("C02", "Josh");
+        map2.put("B03", "Nora");
+
+        System.out.println(map1.equals(map2)+"************");
+
+//-clear()--removes all the keys & values from the map, size will be set to 0-------------------------------------------
+        map.clear();
+        System.out.println(map);                                         //=>{}
 
 
   }
