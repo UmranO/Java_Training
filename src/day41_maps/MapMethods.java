@@ -18,3 +18,7 @@ public class MapMethods {
 
     }
 }
+
+/*
+pair: id - name
+ */
