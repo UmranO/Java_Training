@@ -20,6 +20,7 @@ public class MapClasses {
 
 System.out.println("--HashMap: Random order, accept null key & null values--------------------------------------------");
             Map<String, Integer> hashMap=new HashMap<>();
+
             hashMap.put("Daniel", 95000);
             hashMap.put("Daniel", 95000);    //If you try to add the same key it will not accept it.
             hashMap.put("Emily", 100000);
@@ -43,10 +44,10 @@ System.out.println("--HashMap: Random order, accept null key & null values------
 
 System.out.println("--LinkedHashMap: Insertion order, accepts null key  & null values---------------------------------");
             Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
+
             linkedHashMap.put("Daniel", 95000);
             linkedHashMap.put("Emily", 100000);
             linkedHashMap.put("Bella", 85000);
-            //map1.put("Daniel", 80000);
             linkedHashMap.put("Arron", 78000);
             linkedHashMap.put("Chris", null);     //null value is accepted in LinkedHashMap
             linkedHashMap.put("Breanna", null);   //more than 1 null value can be added in the LinkedHashMap
@@ -56,10 +57,24 @@ System.out.println("--LinkedHashMap: Insertion order, accepts null key  & null v
 
         System.out.println("linkedHashMap = " + linkedHashMap);
  //Console:linkedHashMap = {Daniel=95000, Emily=100000, Bella=85000, Arron=78000, Chris=null, Breanna=null, null=100000}
- //In LinkedHashMap it does keep the insertion order. 1st added element will be the 1st element of the LinkedHashMap
+ //LinkedHashMap it does keep the insertion order. 1st added element will be the 1st element of the LinkedHashMap
 
 
+System.out.println("--TreeMap: Sorted order, doesn't accept null key, accepts null values-----------------------------");
+            Map<String, Integer> treeMap = new TreeMap<>();
+            treeMap.put("Daniel", 95000);
+            treeMap.put("Emily", 100000);
+            treeMap.put("Bella", 85000);
+            treeMap.put("Arron", 78000);
+            treeMap.put("Chris", null);       //value can be null in treeMap
+            treeMap.put("Breanna", null);     //there can be more than 1 null value in the treeMap
+          //treeMap.put(null, 120000);          key can not be null in treeMap. It will result in NullPointerException
+          //treeMap.put(null, 110000);
+          //treeMap.put(null, 100000);
 
+        System.out.println("treeMap = " + treeMap);
+        //Console:treeMap = {Arron=78000, Bella=85000, Breanna=null, Chris=null, Daniel=95000, Emily=100000}
+        //treeMap it does keep the Sorted Order.
 
 /*
 pair: name & salary
