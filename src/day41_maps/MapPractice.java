@@ -17,8 +17,10 @@ public class MapPractice {
         System.out.println(person1);
         // Console: =>{name=Arthur, gender=M, age=32, job_title=Developer, salary=100000.5, married=true}
 
-
-
+        //keys act as the index#s. So to get the name of the Person, we have to call the get() & give the key "name"
+        System.out.println( person1.get("name") );                 //=>Arthur
+        System.out.println(person1.get("salary"));                 //=>100000.5
+        System.out.println(person1.get("job_title"));              //=>Developer
 
     }
 }
