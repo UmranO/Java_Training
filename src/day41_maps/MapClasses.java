@@ -32,6 +32,12 @@ System.out.println("--HashMap: Random order, accept null key & null values------
                                              //the last pair added was ("Arron", 78000) last one printed is Bella=85000
             System.out.println(hashMap);     //Console:{Emily=100000, Arron=78000, Daniel=95000, Bella=85000}
 
+            hashMap.put("Chris", null);      //null value is accepted in HashMap
+            hashMap.put("Breanna", null);    //null values can be duplicated in HashMap
+            hashMap.put(null, 120000);       //null key is accepted in HashMap
+            hashMap.put(null, 110000);       //only 1 null key will be accepted. And since
+            hashMap.put(null, 100000);       //And since null key is the last one this will be kept only
+
  System.out.println("--LinkedHashMap: Insertion order, accepts null key  & null values---------------------------------");
 
             Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
