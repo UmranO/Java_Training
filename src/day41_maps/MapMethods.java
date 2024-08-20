@@ -27,6 +27,8 @@ public class MapMethods {
 
 //-get(key)--returns the value of the specified key---------------------------------------------------------------------
         System.out.println(map.get("A04"));                                 //=> Tatiana
+        System.out.println(map.get("B03"));
+        System.out.println(map.get("Z"));                                   //If no such a key it'll return you null
 
 
   }
