@@ -5,8 +5,9 @@ import java.util.LinkedHashMap;
 public class MapPractice {
     public static void main(String [] args){
 
-        Map<String, Object>  person1 = new LinkedHashMap<>();
-        person1.put("name", "Arthur");
+        Map<String, Object>  person1 = new LinkedHashMap<>();    //We go with Object for the Ref. Type of the values
+                                                                 //so that it can cover a varity of data.If we want to
+        person1.put("name", "Arthur");                           //keep the insertion order we create a LinkedHashMap
         person1.put("gender", 'M');
         person1.put("age", 32);
         person1.put("job_title", "Developer");
