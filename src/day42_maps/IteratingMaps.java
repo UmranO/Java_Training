@@ -21,7 +21,16 @@ System.out.println("---Iterating the map by the keys----------------------------
     for (String eachK: map.keySet()){
     System.out.println(eachK);
 }
-  
+        System.out.println("-------------------------------------");
 
-  }
+        for(String eachKey: map.keySet()){
+            map.replace(eachKey,(map.get(eachKey)*2));
+
+        }
+        System.out.println(map);
+
+
+
+
+    }
 }
