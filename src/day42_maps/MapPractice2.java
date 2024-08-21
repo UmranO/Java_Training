@@ -1,4 +1,6 @@
 package day42_maps;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.LinkedHashMap;
 import java.time.LocalDate;
@@ -51,7 +53,11 @@ public class MapPractice2 {
             person5.put("hired_date", LocalDate.of(2022, 10, 15));
             person5.put("married", true);
 
-
+            List<Map<String, Object>> listOfMaps = new ArrayList<>();   //We can store our Maps into an Array or a
+                                                                        //Collection type. Since Collection has more ()s
+                                                                        //we chose Collection type over Array. Which
+             //Collection? Since List has index#s it'll be easier to reach each Map. And since we don't plan to add or
+             //delete but only get or search element. So ArrayList is the choice
 
         }
 }
