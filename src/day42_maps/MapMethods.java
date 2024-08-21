@@ -12,5 +12,15 @@ public class MapMethods {
         map.put("D02", "Abidullah");
         map.put("A03", "Tatiana");
 
+        Map<String, String> employees = new TreeMap<>();
+        employees.putAll(map);
+
+        System.out.println(employees);
+
+        System.out.println(map == employees);                   // false
+
+        System.out.println(map.equals(employees));              // true
+
+
     }
 }
