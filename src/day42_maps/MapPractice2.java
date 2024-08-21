@@ -33,6 +33,14 @@ public class MapPractice2 {
             person3.put("hired_date", LocalDate.of(2022, 9, 15));
             person3.put("married", true);
 
+            Map<String, Object> person4 = new LinkedHashMap<>();
+            person4.put("name", "Abidullah");
+            person4.put("gender", 'M');
+            person4.put("age", 31);
+            person4.put("job_title", "Java Developer");
+            person4.put("salary", 90000);
+            person4.put("hired_date", LocalDate.of(2021, 8, 15));
+            person4.put("married", true);
 
 
         }
