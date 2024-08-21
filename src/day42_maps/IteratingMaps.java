@@ -39,6 +39,15 @@ System.out.println("---Iterating the map by the keys----------------------------
 
         System.out.println("-------------------------------------");
 
+        //If the max salary is asked: UO
+        int max=0;
+        for(Integer eachVal : map.values()){
+
+            if (eachVal>max){max=eachVal;}
+        }
+        System.out.println(max);
+
+
 
     }
 }
