@@ -21,8 +21,9 @@ public class MapPractice1 {
         employeeMap.put("Selle", "F");
         employeeMap.put("Marika", "F");
 
+//--how many female & male employees in the map?------------------------------------------------------------------------
 System.out.println("--M Ways------------------------------------------------------------------------------------------");
-        // how many female & male employees in the map?
+
 
           int countMaleEmployee = 0;
           int countFemaleEmployees = 0;
@@ -52,6 +53,30 @@ System.out.println("--UO Way----------------------------------------------------
         System.out.println("Number of female employees: "+frequencyFemale+" Number of male employees: " +frequencyMale);
 
 System.out.println("-------------------------------------------------------------------------------------------------");
+//--display the names of all the female employees-----------------------------------------------------------------------
+System.out.println("--M Ways------------------------------------------------------------------------------------------");
+
+for (Map.Entry<String, String> eachEntry : employeeMap.entrySet()) {
+            if(eachEntry.getValue().equals("F")){
+                System.out.println(eachEntry.getKey());
+            }
+        }
+
+System.out.println("--UO Way----------------------------------------------------------------------------------------");
+        for(String name:employeeMap.keySet()){
+            if (employeeMap.get(name).equals("F")){System.out.println(name);}
+        }
+System.out.println("-------------------------------------------------------------------------------------------------");
+// update all the "M" values with "Male", "F" values with "Female" ---------------------------------------------------
+        for (Map.Entry<String, String> eachEntry : employeeMap.entrySet()) {
+            if(eachEntry.getValue().equals("M")){
+                eachEntry.setValue("Male");
+            }else{
+                eachEntry.setValue("Female");
+            }
+        }
+
+        System.out.println(employeeMap);
 
 
     }
