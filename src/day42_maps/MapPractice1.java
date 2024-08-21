@@ -27,7 +27,7 @@ public class MapPractice1 {
           int countMaleEmployee = 0;
           int countFemaleEmployees = 0;
 
-        for (String name : employeeMap.keySet()) {
+      /*  for (String name : employeeMap.keySet()) {
             String gender = employeeMap.get(name);
             if(gender.equals("M")){
                 countMaleEmployee++;
@@ -35,12 +35,16 @@ public class MapPractice1 {
                 countFemaleEmployees++;
             }
         }
+
+       */
+        System.out.println("-----------------------------------------------------------");
+
+        for (String eachValue:employeeMap.values()){
+            if (eachValue.equals("F")){countFemaleEmployees++;}
+            else {countMaleEmployee++;}        }
+
         System.out.println("countMaleEmployee = " + countMaleEmployee);
         System.out.println("countFemaleEmployees = " + countFemaleEmployees);
-
-
-
-
 
     }
 }
