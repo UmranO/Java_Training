@@ -21,7 +21,7 @@ public class MapPractice1 {
         employeeMap.put("Selle", "F");
         employeeMap.put("Marika", "F");
 
-        System.out.println("---------------------------------------------");
+System.out.println("--M Ways------------------------------------------------------------------------------------------");
         // how many female & male employees in the map?
 
           int countMaleEmployee = 0;
@@ -35,9 +35,8 @@ public class MapPractice1 {
                 countFemaleEmployees++;
             }
         }
-
        */
-        System.out.println("-----------------------------------------------------------");
+System.out.println("-----------------------------------------------------------");
 
         for (String eachValue:employeeMap.values()){
             if (eachValue.equals("F")){countFemaleEmployees++;}
@@ -46,9 +45,14 @@ public class MapPractice1 {
         System.out.println("countMaleEmployee = " + countMaleEmployee);
         System.out.println("countFemaleEmployees = " + countFemaleEmployees);
 
-//--UO Way--------------------------------------------------------------------------------------------------------------
+System.out.println("--UO Way----------------------------------------------------------------------------------------");
+
         int frequencyFemale=(Collections.frequency((employeeMap.values()),"F"));
         int frequencyMale=(Collections.frequency((employeeMap.values()),"M"));
         System.out.println("Number of female employees: "+frequencyFemale+" Number of male employees: " +frequencyMale);
+
+System.out.println("-------------------------------------------------------------------------------------------------");
+
+
     }
 }
