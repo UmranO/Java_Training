@@ -51,5 +51,7 @@ public class MapPractice2 {
             person5.put("hired_date", LocalDate.of(2022, 10, 15));
             person5.put("married", true);
 
+
+
         }
 }
