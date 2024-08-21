@@ -47,6 +47,12 @@ System.out.println("---Iterating the map by the keys----------------------------
         }
         System.out.println(max);
 
+        System.out.println("---Iterating the map by the entries/pairs-----------------------------------");
+
+        for (Map.Entry<String, Integer> eachEntry : map.entrySet()){
+            System.out.println(eachEntry);
+        }
+        System.out.println("-------------------------------------");
 
 
     }
