@@ -59,7 +59,7 @@ System.out.println("---If you can get each entry then you can get each key and e
             String eachKey = eachEnt.getKey();
             Integer eachValue = eachEnt.getValue();
             eachEnt.setValue(eachValue + 10000);      //So this setValue()'s going to change the value of the Mapas well
-            System.out.println(eachKey +" : "+eachValue);
+          //System.out.println(eachKey +" : "+eachValue);
         }
         System.out.println(map);
     }
