@@ -56,7 +56,9 @@ System.out.println("---Iterating the map by the keys----------------------------
 System.out.println("---If you can get each entry then you can get each key and each value separately:----------------");
 
         for (Map.Entry<String, Integer> eachEnt : map.entrySet()){
-            System.out.println("Key= " +  eachEnt.getKey() + "  Value= "+ eachEnt.getValue());
+            String eachKey = eachEnt.getKey();
+            Integer eachValue = eachEnt.getValue();
+            System.out.println(eachKey +" : "+eachValue);
         }
 
     }
