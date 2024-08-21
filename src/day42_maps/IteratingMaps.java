@@ -29,7 +29,15 @@ System.out.println("---Iterating the map by the keys----------------------------
         }
         System.out.println(map);
 
+        System.out.println("---Iterating the map by the values------------------------------------------");
 
+        for(Integer eachValue: map.values()){
+            System.out.println(eachValue);                  //=> prints each value of the map
+
+        }
+        System.out.println(map.values());              //=>[190000, 200000, 170000, 156000, 156000, 196000]
+
+        System.out.println("-------------------------------------");
 
 
     }
