@@ -13,14 +13,14 @@ public class MapMethods {
         map.put("A03", "Tatiana");
 
         Map<String, String> employees = new TreeMap<>();
-        employees.putAll(map);
+        employees.putAll(map);                                  //putAll takes only another map as an argument
 
         System.out.println(employees);
 
-        System.out.println(map == employees);                   // false
+        System.out.println(map == employees);                   // false   since they are 2 different objects
 
-        System.out.println(map.equals(employees));              // true
-
+        System.out.println(map.equals(employees));              // true    equals() has to be used to compare the values
+                                                                //         of 2 diff. objects
 
     }
 }
