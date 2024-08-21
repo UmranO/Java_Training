@@ -1,4 +1,5 @@
 package day42_maps;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,6 +20,27 @@ public class MapPractice1 {
         employeeMap.put("Orlando", "M");
         employeeMap.put("Selle", "F");
         employeeMap.put("Marika", "F");
+
+        System.out.println("---------------------------------------------");
+        // how many female & male employees in the map?
+
+          int countMaleEmployee = 0;
+          int countFemaleEmployees = 0;
+
+        for (String name : employeeMap.keySet()) {
+            String gender = employeeMap.get(name);
+            if(gender.equals("M")){
+                countMaleEmployee++;
+            }else{
+                countFemaleEmployees++;
+            }
+        }
+        System.out.println("countMaleEmployee = " + countMaleEmployee);
+        System.out.println("countFemaleEmployees = " + countFemaleEmployees);
+
+
+
+
 
     }
 }
