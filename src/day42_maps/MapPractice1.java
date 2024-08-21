@@ -46,5 +46,9 @@ public class MapPractice1 {
         System.out.println("countMaleEmployee = " + countMaleEmployee);
         System.out.println("countFemaleEmployees = " + countFemaleEmployees);
 
+//--UO Way--------------------------------------------------------------------------------------------------------------
+        int frequencyFemale=(Collections.frequency((employeeMap.values()),"F"));
+        int frequencyMale=(Collections.frequency((employeeMap.values()),"M"));
+        System.out.println("Number of female employees: "+frequencyFemale+" Number of male employees: " +frequencyMale);
     }
 }
