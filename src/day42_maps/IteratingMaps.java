@@ -1,6 +1,7 @@
 package day42_maps;
 import java.util.Map;
 import java.util.LinkedHashMap;
+import java.util.Set;
 
 public class IteratingMaps {
     public static void main(String[] args){
@@ -14,7 +15,13 @@ public class IteratingMaps {
         map.put("Breanna", 98000);
 
         System.out.println(map);
-    }
 
+System.out.println("---Iterating the map by the keys---------------------------------------------");
 
+    for (String eachK: map.keySet()){
+    System.out.println(eachK);
+}
+  
+
+  }
 }
