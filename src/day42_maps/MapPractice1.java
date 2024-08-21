@@ -1,4 +1,6 @@
 package day42_maps;
+import day34_abstraction.animalTask.Eagle;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -77,6 +79,15 @@ System.out.println("------------------------------------------------------------
         }
 
         System.out.println(employeeMap);
+
+System.out.println("--UO Way----------------------------------------------------------------------------------------");
+        System.out.println(employeeMap);
+
+        for(String name:employeeMap.keySet()){
+            if(employeeMap.get(name).equals("F")) {employeeMap.replace(name,"Female");}else{employeeMap.replace(name,"Male");}
+        }
+        System.out.println(employeeMap);
+
 
 
     }
