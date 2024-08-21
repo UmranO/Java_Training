@@ -1,8 +1,5 @@
 package day42_maps;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.LinkedHashMap;
+import java.util.*;
 import java.time.LocalDate;
 
 public class MapPractice2 {
@@ -59,5 +56,13 @@ public class MapPractice2 {
              //Collection? Since List has index#s it'll be easier to reach each Map. And since we don't plan to add or
              //delete but only get or search element. So ArrayList is the choice
 
-        }
+            listOfMaps.add(person1);
+            listOfMaps.add(person2);
+            listOfMaps.addAll(Arrays.asList(person3, person4, person5 ) );
+
+            System.out.println(listOfMaps);
+
+            System.out.println("---------------------------------------------------");
+
+    }
 }
