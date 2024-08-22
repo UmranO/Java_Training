@@ -15,5 +15,16 @@ public class MapPractice3 {
         person1.put("hired_date", LocalDate.of(2021, 1, 15));
         person1.put("married", true);
 
+        Map<String, Object> person2 = new LinkedHashMap<>();
+        person2.put("name", "Nora");
+        person2.put("gender", 'F');
+        person2.put("age", 31);
+        person2.put("job_title", "Back-end Developer");
+        person2.put("salary", 90000);
+        person2.put("hired_date", LocalDate.of(2022, 8, 15));
+        person2.put("married", true);
+
+
+
     }
 }
