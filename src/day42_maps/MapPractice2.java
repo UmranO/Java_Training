@@ -68,5 +68,8 @@ public class MapPractice2 {
 
             System.out.println("---------------------------------------------------");
 
+            for( Map<String, Object> eachMap  :  listOfMaps ){
+                    System.out.println(eachMap);
+            }
     }
 }
