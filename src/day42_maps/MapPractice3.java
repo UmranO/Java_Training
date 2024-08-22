@@ -51,6 +51,14 @@ public class MapPractice3 {
         person5.put("hired_date", LocalDate.of(2022, 10, 15));
         person5.put("married", true);
 
+        //If we want to store the above 5 maps into an Array the data type should be Map and the Map's key and value's
+        //data type in order to contain the above Map object? - String & Object. In order to declare it as An Array we
+        //give[]. Since we want to store 5 Map objects we can instantiate the size of the Array to 5.
+
+        Map<String, Object>[] arrayOfMap = new Map[5];                                             // index: 0 ~ 4
+
+
+
 
     }
 }
