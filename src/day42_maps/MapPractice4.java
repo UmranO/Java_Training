@@ -1,9 +1,11 @@
 package day42_maps;
-import java.util.Arrays;
+
 import java.util.List;
 import java.util.Map;
 import java.util.LinkedHashMap;
 import java.time.LocalDate;
+import day34_abstraction.carTask.Car;
+import day33_abstraction.employeeTask.Developer;
 
 public class MapPractice4 {
     public static void main(String[] args) {
@@ -108,6 +110,7 @@ System.out.println("--Key & Value of the Map can be any Objects:Collection Objec
 
         Map<int[], List<Integer>> map2 = new LinkedHashMap<>();
 
+        Map<Developer, Car> map3 = new LinkedHashMap<>();
 
     }
 }
