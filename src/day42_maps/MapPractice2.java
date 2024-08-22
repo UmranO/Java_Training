@@ -74,6 +74,31 @@ public class MapPractice2 {
                             System.out.println(eachEntry);                         //We can reach each entry in the List
                     }
             }
+            System.out.println("---------------------------------------------------");
+
+//--display the names of the employee who are hired this year (2022)---------------------------------------------------
+System.out.println("--M Way-------------------------------------------------------------------------------------------");
+            for (Map<String, Object> eachMap : listOfMaps) {                                       //gives every Map
+                    for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {               //gives every Entry
+                            if(eachEntry.getKey().equals("hired_date")){
+                                    if(  ( (LocalDate)eachEntry.getValue() ).getYear() == 2022 ){  //getValue() returns Object
+                                            System.out.println(eachMap.get("name"));               //to be able to use ()s of LocalDate
+                                    }                                                              //we need to downCast to LocalDate
+                            }
+                    }
+            }
+
+System.out.println("--UO Way------------------------------------------------------------------------------------------");
+            for (Map<String, Object> eachMap:listOfMaps){
+                            LocalDate hDate= (LocalDate) eachMap.get("hired_date");
+                            if ( hDate.getYear() == 2021 ){
+                                            System.out.println(eachMap.get("name"));
+
+                    }
+            }
+
+
+
 
     }
 }
