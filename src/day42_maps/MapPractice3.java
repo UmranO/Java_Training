@@ -86,7 +86,16 @@ System.out.println("--Change the 1st person's name from to Hasan----------------
 
         arrayOfMap[0].replace("name","Hasan");
         System.out.println(arrayOfMap[0]);
+        System.out.println("****");
+        System.out.println(Arrays.toString(arrayOfMap));
 
+System.out.println("--to Iterate the Array of Maps-------------------------------------------------------------------");
 
+        for(Map<String, Object> eachMap: arrayOfMap){
+            System.out.println(eachMap);
+        }
+System.out.println("--How many people are making less than 10000-----------------------------------------------------");
+
+System.out.println("--M Way------------------------------------------------------------------------------------------");
     }
 }
