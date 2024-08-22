@@ -1,5 +1,6 @@
 package day42_maps;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import java.util.LinkedHashMap;
 import java.time.LocalDate;
@@ -99,9 +100,14 @@ public class MapPractice4 {
         System.out.println("************************************************************");
         System.out.println(mapOfMaps);
 
-System.out.println("--Key & Value of the Map can be other Maps as well ----------------------------------------------");
+System.out.println("--Key & Value of the Map can be other Maps as well known of Map of Maps--------------------------");
 
         Map< Map<String, Integer> , Map<String, Integer>> mapOfMaps2 = new LinkedHashMap<>();
+
+System.out.println("--Key & Value of the Map can be any Objects:Collection Object, Array, Custom objects-------------");
+
+        Map<int[], List<Integer>> map2 = new LinkedHashMap<>();
+
 
     }
 }
