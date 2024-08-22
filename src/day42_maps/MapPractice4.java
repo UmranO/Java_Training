@@ -51,9 +51,9 @@ public class MapPractice4 {
         person5.put("hired_date", LocalDate.of(2022, 10, 15));
         person5.put("married", true);
 
-System.out.println("If we want to store the above 5 Maps into another data structure we can store them to another Map" +
-                   "To do that there should be a pair.If we want them to be the values of the newMap we need to create " +
-                   "the keys for each of those maps(person1..5) in the newMap");
+        System.out.println("If we want to store the above 5 Maps into another data structure we can store them to another Map" +
+                "To do that there should be a pair.If we want them to be the values of the newMap we need to create " +
+                "the keys for each of those maps(person1..5) in the newMap");
 
         Map<Integer, Map<String, Object>> mapOfMaps = new LinkedHashMap<>();
         mapOfMaps.put(0, person1);
@@ -62,33 +62,42 @@ System.out.println("If we want to store the above 5 Maps into another data struc
         mapOfMaps.put(3, person4);
         mapOfMaps.put(4, person5);
 
-System.out.println("If we want to display the 2nd persons info");
+        System.out.println("If we want to display the 2nd persons info");
         System.out.println(mapOfMaps.get(1));
-     //=>{name=Nora, gender=F, age=31, job_title=Back-end Developer, salary=90000, hired_date=2022-08-15, married=true}
+        //=>{name=Nora, gender=F, age=31, job_title=Back-end Developer, salary=90000, hired_date=2022-08-15, married=true}
 
-System.out.println("If we want to update the 2nd person's salary to 120K");
+        System.out.println("If we want to update the 2nd person's salary to 120K");
         mapOfMaps.get(1).replace("salary", 120000);                        //=>updates 2nd person's salary to 120
-        System.out.println(mapOfMaps.get(1).replace("salary",120000));     //=>returns the old value(90K bec it updated)
+        System.out.println(mapOfMaps.get(1).replace("salary", 120000));     //=>returns the old value(90K bec it updated)
         System.out.println(mapOfMaps.get(1));                              //=>{name=Nora, gender=F, age=31, job_title=Back-end Developer, salary=120000, hired_date=2022-08-15, married=true}
 
         //   mapOfMaps.putAll(Arrays.asList(person1, person2))
 
 
-System.out.println("--If we want to iterate every single map of mapOfMap-------------------------------------------");
-        for (Map<String,Object> eachValue:mapOfMaps.values()){
+        System.out.println("--If we want to iterate every single map of mapOfMap-------------------------------------------");
+        for (Map<String, Object> eachValue : mapOfMaps.values()) {
             System.out.println(eachValue);
         }
 
-System.out.println("--If we want to iterate every single entry of mapOfMap-------------------------------------------");
+        System.out.println("--If we want to iterate every single entry of mapOfMap-------------------------------------------");
 
-        for(Map.Entry<Integer, Map<String, Object>> eachMap: mapOfMaps.entrySet()){
+        for (Map.Entry<Integer, Map<String, Object>> eachMap : mapOfMaps.entrySet()) {
             System.out.println(eachMap);
         }
 
+        System.out.println("--If we want to give raise to everyone 10000----------------------------------------------------");
 
+        for (Map<String, Object> eachValue : mapOfMaps.values()) {
+            for (Map.Entry<String, Object> eachEntry : eachValue.entrySet()) {
+                if(eachEntry.getKey().equals("salary")){
+                    eachEntry.setValue( (Integer)eachEntry.getValue() + 10000);
+                    System.out.println(eachEntry.getValue());
+                }
+            }
+        }
 
-
-
-
+        System.out.println(mapOfMaps.values());
+        System.out.println("************************************************************");
+        System.out.println(mapOfMaps);
     }
 }
