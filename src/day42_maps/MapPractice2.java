@@ -102,7 +102,10 @@ System.out.println("------------------------------------------------------------
             listOfMaps.get(0).replace("name", "Vasyl");
             System.out.println(listOfMaps.get(0));
             System.out.println(listOfMaps);
+//--increase the last employee's salary by $50,000----------------------------------------------------------------------
 
+            listOfMaps.get(listOfMaps.size()-1).replace("salary",  ( (Integer)listOfMaps.get(listOfMaps.size()-1).get("salary")) + 50000 );
+            System.out.println(listOfMaps.get(listOfMaps.size()-1));
     }
 }
 
