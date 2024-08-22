@@ -103,12 +103,25 @@ System.out.println("--M Way-----------------------------------------------------
                 if (eachEntry.getKey().equals("salary")) {
                     double salary = (Integer) eachEntry.getValue();
                     if (salary < 100000) {
-                        count++;
+                        count++;                                                                 // => 3
                     }
                 }
             }
         }
         System.out.println(count);
 
+System.out.println("--UO Way-----------------------------------------------------------------------------------------");
+        int countU=0;
+        for (Map<String, Object> eachMap :arrayOfMap){
+
+            for(Map.Entry<String, Object> eachEntry:eachMap.entrySet()){
+
+                if(eachEntry.getKey().equals("salary") && ((Integer)eachEntry.getValue())<100000){
+                    countU++;
+                }
+            }
+
+        }
+        System.out.println(countU);                                                                  // => 3
     }
 }
