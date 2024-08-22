@@ -72,5 +72,16 @@ System.out.println("If we want to update the 2nd person's salary to 120K");
         System.out.println(mapOfMaps.get(1));                              //=>{name=Nora, gender=F, age=31, job_title=Back-end Developer, salary=120000, hired_date=2022-08-15, married=true}
 
         //   mapOfMaps.putAll(Arrays.asList(person1, person2))
+
+
+System.out.println("--If we want to iterate every single map of mapOfMap-------------------------------------------");
+        for (Map<String,Object> eachValue:mapOfMaps.values()){
+            System.out.println(eachValue);
+        }
+
+
+
+
+
     }
 }
