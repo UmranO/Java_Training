@@ -102,11 +102,23 @@ System.out.println("------------------------------------------------------------
             listOfMaps.get(0).replace("name", "Vasyl");
             System.out.println(listOfMaps.get(0));
             System.out.println(listOfMaps);
+
 //--increase the last employee's salary by $50,000----------------------------------------------------------------------
 
             listOfMaps.get(listOfMaps.size()-1).replace("salary",((Integer)listOfMaps.get(listOfMaps.size()-1).get("salary")) + 50000 );
                                                       //Since get()above returns Object we need to cast it to Integer to be able to use +
             System.out.println(listOfMaps.get(listOfMaps.size()-1));
+
+//--change the age of the 2nd employee from 31 to 28--------------------------------------------------------------------
+
+            listOfMaps.get(1).replace("age",28);
+            System.out.println(  listOfMaps.get(1));
+
+            System.out.println("----------");
+
+        listOfMaps.get(1).replace("age", ( (Integer)listOfMaps.get(1).get("age")) + 4) ;
+            System.out.println(  listOfMaps.get(1));
+
     }
 }
 
