@@ -104,8 +104,8 @@ System.out.println("------------------------------------------------------------
             System.out.println(listOfMaps);
 //--increase the last employee's salary by $50,000----------------------------------------------------------------------
 
-            listOfMaps.get(listOfMaps.size()-1).replace("salary",  ( (Integer)listOfMaps.get(listOfMaps.size()-1).get("salary")) + 50000 );
-                                                                    //Since get() above returns Object we need to cast it to Integer
+            listOfMaps.get(listOfMaps.size()-1).replace("salary",((Integer)listOfMaps.get(listOfMaps.size()-1).get("salary")) + 50000 );
+                                                      //Since get()above returns Object we need to cast it to Integer to be able to use +
             System.out.println(listOfMaps.get(listOfMaps.size()-1));
     }
 }
