@@ -12,6 +12,6 @@ public class MapPractice5 {
         map.put("D02", "Abidullah");
         map.put("A03", "Tatiana");
 
-        
+        map.forEach( (k, v) -> { System.out.println(k +" : "+ v); } );
     }
 }
