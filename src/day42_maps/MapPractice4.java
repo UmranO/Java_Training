@@ -50,6 +50,10 @@ public class MapPractice4 {
         person5.put("hired_date", LocalDate.of(2022, 10, 15));
         person5.put("married", true);
 
+System.out.println("If we want to store the above 5 Maps into another data structure we can store them to another Map" +
+                   "To do that there should be a pair.If we want them to be the values of the newMap we need to create " +
+                   "the keys for each of those maps(person1..5) in the newMap");
 
+        Map<Integer, Map<String, Object>> mapOfMaps = new LinkedHashMap<>();
     }
 }
