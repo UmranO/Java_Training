@@ -97,8 +97,11 @@ System.out.println("--UO Way----------------------------------------------------
                     }
             }
 
-
-
+System.out.println("--------------------------------------------------------------------------------------------------");
+//--change the 1st employee name from Artur to Vasyl--------------------------------------------------------------------
+            listOfMaps.get(0).replace("name", "Vasyl");
+            System.out.println(listOfMaps.get(0));
+            System.out.println(listOfMaps);
 
     }
 }
