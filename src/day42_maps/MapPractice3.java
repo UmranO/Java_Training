@@ -64,7 +64,14 @@ public class MapPractice3 {
         arrayOfMap[2] = person3;
         arrayOfMap[3] = person4;
         arrayOfMap[4] = person5;
-        arrayOfMap[5] = new LinkedHashMap<>();    //results in ArrayIndexOutOfBound Excep bec Array size is fixed and 5
+        //arrayOfMap[5] = new LinkedHashMap<>();   //results in ArrayIndexOutOfBound Excep bec Array size is fixed and 5
+
+        System.out.println(Arrays.toString(arrayOfMap));
+
+System.out.println("--Increase the salary of the 2nd Employee by 10,000-----");//---------------------------------------
+
+        arrayOfMap[1].replace("salary", ( (Integer)arrayOfMap[1].get("salary") ) + 10000);
+        System.out.println(arrayOfMap[1]);
 
     }
 }
