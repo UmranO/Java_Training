@@ -53,8 +53,12 @@ public class MapPractice2 {
             List<Map<String, Object>> listOfMaps = new ArrayList<>();   //We can store our Maps into an Array or a
                                                                         //Collection type. Since Collection has more ()s
                                                                         //we chose Collection type over Array. Which
-             //Collection? Since List has index#s it'll be easier to reach each Map. And since we don't plan to add or
-             //delete but only get or search element. So ArrayList is the choice
+            //Collection? Since List has index#s it'll be easier to reach each Map. And since the List is Reference Type
+            //& since we don't plan to add or delete but only get or search element what should be the object type?
+            //So ArrayList is the best to use here.
+            //The type of the List should Map so that we can add Map objects. And the Key and Value type should be same
+            //as our Maps (String,Object).List<Map<String, Object>> is called List of Map & can only contain Map objects.
+            //Anything that has is A RelationShip with this Map:Map<String, Object> can be stored in this List now
 
             listOfMaps.add(person1);
             listOfMaps.add(person2);
