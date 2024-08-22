@@ -1,4 +1,5 @@
 package day42_maps;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.LinkedHashMap;
 import java.time.LocalDate;
@@ -60,5 +61,16 @@ System.out.println("If we want to store the above 5 Maps into another data struc
         mapOfMaps.put(2, person3);
         mapOfMaps.put(3, person4);
         mapOfMaps.put(4, person5);
+
+System.out.println("If we want to display the 2nd persons info");
+        System.out.println(mapOfMaps.get(1));
+     //=>{name=Nora, gender=F, age=31, job_title=Back-end Developer, salary=90000, hired_date=2022-08-15, married=true}
+
+System.out.println("If we want to update the 2nd person's salary to 120K");
+        mapOfMaps.get(1).replace("salary", 120000);                        //=>updates 2nd person's salary to 120
+        System.out.println(mapOfMaps.get(1).replace("salary",120000));     //=>returns the old value(90K bec it updated)
+        System.out.println(mapOfMaps.get(1));                              //=>{name=Nora, gender=F, age=31, job_title=Back-end Developer, salary=120000, hired_date=2022-08-15, married=true}
+
+        //   mapOfMaps.putAll(Arrays.asList(person1, person2))
     }
 }
