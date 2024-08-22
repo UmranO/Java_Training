@@ -68,12 +68,25 @@ public class MapPractice3 {
 
         System.out.println(Arrays.toString(arrayOfMap));
 
-System.out.println("--Increase the salary of the 2nd Employee by 10,000-----");//---------------------------------------
+System.out.println("--Increase the salary of the 2nd person by 10,000-----");//---------------------------------------
 
         arrayOfMap[1].replace("salary", ( (Integer)arrayOfMap[1].get("salary") ) + 10000);
-        //To be able to add 10000 return type of get("salary") is Object has to be Casted to Integer
-
+        //To be able to add 10000, since return type of get("salary") is Object it has to be Casted to Integer
         System.out.println(arrayOfMap[1]);
+
+System.out.println("--Increase the salary of the 2nd person by 33 to see that replace() returns the old value------");
+
+        System.out.println(arrayOfMap[1].replace("salary", ( (Integer)arrayOfMap[1].get("salary") ) + 33));  //=> 100000
+
+        System.out.println("****");
+
+        System.out.println(arrayOfMap[1]);                                                //=> the updated map (person2)
+
+System.out.println("--Change the 1st person's name from to Hasan-----------------------------------------------------");
+
+        arrayOfMap[0].replace("name","Hasan");
+        System.out.println(arrayOfMap[0]);
+
 
     }
 }
