@@ -69,7 +69,12 @@ public class MapPractice2 {
             System.out.println("---------------------------------------------------");
 
             for( Map<String, Object> eachMap  :  listOfMaps ){
-                    System.out.println(eachMap);
+                    System.out.println(eachMap);                                    //We can reach each map in the List
+                    for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {
+                            System.out.println(eachEntry);                         //We can reach each entry in the List
+                    }
             }
+
     }
 }
+
