@@ -55,5 +55,10 @@ System.out.println("If we want to store the above 5 Maps into another data struc
                    "the keys for each of those maps(person1..5) in the newMap");
 
         Map<Integer, Map<String, Object>> mapOfMaps = new LinkedHashMap<>();
+        mapOfMaps.put(0, person1);
+        mapOfMaps.put(1, person2);
+        mapOfMaps.put(2, person3);
+        mapOfMaps.put(3, person4);
+        mapOfMaps.put(4, person5);
     }
 }
