@@ -79,6 +79,13 @@ System.out.println("--If we want to iterate every single map of mapOfMap--------
             System.out.println(eachValue);
         }
 
+System.out.println("--If we want to iterate every single entry of mapOfMap-------------------------------------------");
+
+        for(Map.Entry<Integer, Map<String, Object>> eachMap: mapOfMaps.entrySet()){
+            System.out.println(eachMap);
+        }
+
+
 
 
 
