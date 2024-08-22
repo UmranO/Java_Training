@@ -95,9 +95,13 @@ public class MapPractice4 {
                 }
             }
         }
-
         System.out.println(mapOfMaps.values());
         System.out.println("************************************************************");
         System.out.println(mapOfMaps);
+
+System.out.println("--Key & Value of the Map can be other Maps as well ----------------------------------------------");
+
+        Map< Map<String, Integer> , Map<String, Integer>> mapOfMaps2 = new LinkedHashMap<>();
+
     }
 }
