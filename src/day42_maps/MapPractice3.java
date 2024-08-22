@@ -68,15 +68,15 @@ public class MapPractice3 {
 
         System.out.println(Arrays.toString(arrayOfMap));
 
-System.out.println("--Increase the salary of the 2nd person by 10,000-----");//---------------------------------------
+ System.out.println("--Increase the salary of the 2nd person by 10,000-----");//---------------------------------------
 
-        arrayOfMap[1].replace("salary", ( (Integer)arrayOfMap[1].get("salary") ) + 10000);
+        arrayOfMap[1].replace("salary", ((Integer) arrayOfMap[1].get("salary")) + 10000);
         //To be able to add 10000, since return type of get("salary") is Object it has to be Casted to Integer
         System.out.println(arrayOfMap[1]);
 
 System.out.println("--Increase the salary of the 2nd person by 33 to see that replace() returns the old value------");
 
-        System.out.println(arrayOfMap[1].replace("salary", ( (Integer)arrayOfMap[1].get("salary") ) + 33));  //=> 100000
+        System.out.println(arrayOfMap[1].replace("salary", ((Integer) arrayOfMap[1].get("salary")) + 33));  //=> 100000
 
         System.out.println("****");
 
@@ -84,18 +84,31 @@ System.out.println("--Increase the salary of the 2nd person by 33 to see that re
 
 System.out.println("--Change the 1st person's name from to Hasan-----------------------------------------------------");
 
-        arrayOfMap[0].replace("name","Hasan");
+        arrayOfMap[0].replace("name", "Hasan");
         System.out.println(arrayOfMap[0]);
         System.out.println("****");
         System.out.println(Arrays.toString(arrayOfMap));
 
 System.out.println("--to Iterate the Array of Maps-------------------------------------------------------------------");
 
-        for(Map<String, Object> eachMap: arrayOfMap){
+        for (Map<String, Object> eachMap : arrayOfMap) {
             System.out.println(eachMap);
         }
 System.out.println("--How many people are making less than 10000-----------------------------------------------------");
 
 System.out.println("--M Way------------------------------------------------------------------------------------------");
+        int count = 0;
+        for (Map<String, Object> eachMap : arrayOfMap) {
+            for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {
+                if (eachEntry.getKey().equals("salary")) {
+                    double salary = (Integer) eachEntry.getValue();
+                    if (salary < 100000) {
+                        count++;
+                    }
+                }
+            }
+        }
+        System.out.println(count);
+
     }
 }
