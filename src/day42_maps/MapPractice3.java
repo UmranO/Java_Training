@@ -59,7 +59,12 @@ public class MapPractice3 {
         Map<String, Object>[] arrayOfMap = new Map[5];                               // index: 0 ~ 4
         System.out.println(Arrays.toString(arrayOfMap));                             // =>[null, null, null, null, null]
 
-
+        arrayOfMap[0] = person1;
+        arrayOfMap[1] = person2;
+        arrayOfMap[2] = person3;
+        arrayOfMap[3] = person4;
+        arrayOfMap[4] = person5;
+        arrayOfMap[5] = new LinkedHashMap<>();    //results in ArrayIndexOutOfBound Excep bec Array size is fixed and 5
 
     }
 }
