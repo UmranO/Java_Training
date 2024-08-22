@@ -1,4 +1,5 @@
 package day42_maps;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.LinkedHashMap;
 import java.time.LocalDate;
@@ -55,8 +56,8 @@ public class MapPractice3 {
         //data type in order to contain the above Map object? - String & Object. In order to declare it as An Array we
         //give[]. Since we want to store 5 Map objects we can instantiate the size of the Array to 5.
 
-        Map<String, Object>[] arrayOfMap = new Map[5];                                             // index: 0 ~ 4
-
+        Map<String, Object>[] arrayOfMap = new Map[5];                               // index: 0 ~ 4
+        System.out.println(Arrays.toString(arrayOfMap));                             // =>[null, null, null, null, null]
 
 
 
